@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		网综笔记 | 
+	 
+	lancerXXXX
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">lancerXXXX</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+		
+		<li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/01/12/a/">
+										a
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/01/12/hello-world/">
+										hello-world
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2020/01/12/%E7%BD%91%E7%BB%BC%E7%AC%94%E8%AE%B0/">
+										网综笔记
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	网综笔记
+</h1>
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2020/01/12/%E7%BD%91%E7%BB%BC%E7%AC%94%E8%AE%B0/" class="leancloud_visitors" data-flag-title="网综笔记"></span>
+		</span>
+	
+	<span>Swithun Liu</span>
+	<span>2020-01-12 19:13:32</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<!doctype html>
+<html>
+
+<body><h1>1. Wireshark</h1>
+<ul>
+<li><p>网络协议分析工具</p>
+</li>
+<li><p>过滤规则</p>
+<ul>
+<li>Display Filter</li>
+<li>Capture Filter</li>
+
+</ul>
+</li>
+<li><p>通信</p>
+<ul>
+<li>广播<code>ARP请求</code>-获取MAC地址</li>
+
+</ul>
+</li>
+<li><p>冲突域</p>
+<ul>
+<li>第一层:物理层</li>
+<li>物理分段:连接同一导线的</li>
+<li>表示: 冲突放生并传播的区域</li>
+<li>中继器,集线器 连接的结点-可以认为时同一个冲突域内</li>
+<li>划分: 第二层设备(网桥,交换机)和第三层设备</li>
+<li>查: 看连了几条网线, 中继器和集线器不算</li>
+
+</ul>
+</li>
+<li><p>广播域</p>
+<ul>
+<li>第二层: </li>
+<li>表示:接收到同样广播消息的结点的集合</li>
+<li>划分: 第三层设备(三层交换机,路由器)</li>
+<li>查: 看路由器连了几条网线</li>
+
+</ul>
+</li>
+<li><p><mark>协议栈</mark></p>
+<ul>
+<li><p>协议：标准，约定</p>
+</li>
+<li><p>协议栈：协议的实现： 代码，函数库-供上层调用 </p>
+</li>
+<li><p><mark>分类</mark></p>
+<ul>
+<li><p>应用层</p>
+<ul>
+<li>HTTP</li>
+<li>FTP</li>
+<li>TFTP</li>
+<li>TELNET</li>
+<li>DNS</li>
+<li>EMAIL</li>
+
+</ul>
+</li>
+<li><p>运输层</p>
+<ul>
+<li>TCP</li>
+<li>UDP</li>
+
+</ul>
+</li>
+<li><p>网络层</p>
+<ul>
+<li>IP</li>
+
+</ul>
+</li>
+<li><p>链路层</p>
+<ul>
+<li>WIFI</li>
+<li>以太网</li>
+<li>令牌环</li>
+<li>FDDI</li>
+<li>MAC</li>
+
+</ul>
+</li>
+<li><p>物理层</p>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+<h1>2. 交换机 Comware</h1>
+<ul>
+<li><p>交换机软件结构</p>
+<ul>
+<li>交换机初始化,操作系统引导程序BootRom</li>
+<li>comware操作系统平台</li>
+
+</ul>
+</li>
+<li><p>分类</p>
+<ul>
+<li><p>网络中所处的位置</p>
+<ul>
+<li>接入层</li>
+<li>汇聚层</li>
+<li>核心层</li>
+
+</ul>
+</li>
+<li><p>提供的功能</p>
+<ul>
+<li>三层交换机(路由交换机)</li>
+<li>二层交换机</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><p>H3C 系列以太网交换机</p>
+</li>
+
+</ul>
+<center><img src="./picture/图片1.png" alt="图片1.jpg" style="zoom:50%"></center>
+<ol start='' >
+<li><p>登录交换机</p>
+<ol start='' >
+<li><p>Consle口</p>
+<ol start='' >
+<li>计算机COM口(串行通讯)--交换机Console口(控制)</li>
+<li>首次配置唯一方法</li>
+
+</ol>
+</li>
+<li><p>Telnet</p>
+<ol start='' >
+<li><p>远程配置交换机</p>
+</li>
+<li><p>必须已经初始化配置</p>
+<ol start='' >
+<li><p>配置交换机的IP地址和子网掩码</p>
+<ol start='' >
+<li><code>&lt;H3C&gt; system</code></li>
+<li><code>[H3C] interface vlan-interface 1</code></li>
+<li><code>[H3C-vlan-interface1] ip adress ip 掩码</code></li>
+
+</ol>
+</li>
+<li><p>配置用户远程登录口令和权限</p>
+<ol start='' >
+<li><code>[H3C]telnet server enable</code></li>
+<li><code>[H3C] user-interface vty 0 4</code></li>
+<li><code>[H3C-ui-vty0-4] authentication-mode password</code></li>
+<li><code>[H3C-ui-vty0-4] set authentication password simple 123456</code></li>
+<li>[H3C-ui-vty0-4] user privilege level 3 //v5 设置用户级别         </li>
+<li><code>[H3C-line vty0-4] user-role level-15</code>  //v7</li>
+
+</ol>
+</li>
+<li><p>Telnet+ip地址</p>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li><p>Comware 网络设备操作系统</p>
+<ul>
+<li><p>常用命令</p>
+<ul>
+<li>[任意视图] display current-configuration：显示当前生效的（即RAM中的）交换机的配置参数</li>
+<li>[任意视图] display saved-configuration：显示Flash中保存的交换机的配置参数 （需先执行save命令）</li>
+<li>[用户视图] save：将当前生效的配置参数写入Flash中</li>
+<li>[用户视图] reset saved-configuration：删除Flash中的配置文件，其结果是将所有配置还原为缺省配置</li>
+<li>[用户视图] reboot：重新启动交换机</li>
+<li>[任意视图] display version：显示Comware的版本信息</li>
+<li>[任意视图] display interface ethernet1/0/1：显示交换机的某个端口的配置信息</li>
+<li>[系统视图] sysname <name>：修改交换机的名字</li>
+<li>[任意视图] quit：退出当前视图</li>
+<li>[任意视图] return：返回到用户视图（此处任意视图是指除用户视图以外的视图）</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+<ol start='' >
+<li><p>实现了的算法</p>
+<ol start='' >
+<li><p><mark>转发算法</mark></p>
+<ol start='' >
+<li><p>&lt;MAC Address, Port, Age&gt;</p>
+</li>
+<li><p>收到一个帧,用目的MAC地址</p>
+<ol start='' >
+<li>存在表项-转发,不存在-flood(自学习)</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p><mark>反向学习算法</mark></p>
+<ol start='' >
+<li>来帧-知道帧源地址对应端口</li>
+
+</ol>
+</li>
+<li><p><mark>生成树算法</mark></p>
+<ol start='' >
+<li>Bridge(交换机)之间不断得交换控制帧动态的构造生成树</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+<h1>3. 交换机端口配置和生成树协议配置</h1>
+<ol start='' >
+<li><p><strong>交换机端口配置</strong></p>
+<ol start='' >
+<li><p><strong>端口速率配置</strong></p>
+<ol start='' >
+<li>标准-10Mbps</li>
+<li>快速-100Mbps</li>
+<li>千兆-1000Mbps</li>
+<li>命令<code>s1peed { 10 | 100 | 1000 | auto }</code></li>
+
+</ol>
+</li>
+<li><p><strong>端口工作模式</strong></p>
+<figure><table>
+<thead>
+<tr><th>-</th><th>-</th><th>-</th></tr></thead>
+<tbody><tr><td>全双工</td><td>连接计算机时</td><td>不使用CSMA/CD-带冲突检测的载波监听多路访问</td></tr><tr><td>半双工</td><td>连接Hub</td><td>使用CSMA/CD</td></tr></tbody>
+</table></figure>
+<ol start='' >
+<li>命令 [H3C-Ethernet1/0/1] duplex { full | half | auto} </li>
+
+</ol>
+</li>
+<li><p><strong>端口类型配置</strong></p>
+<figure><table>
+<thead>
+<tr><th>类型</th><th>解释</th><th>一般</th></tr></thead>
+<tbody><tr><td>MDI</td><td>medium dependent interface,介质相关接口</td><td>路由器,PC机</td></tr><tr><td>MDI-X/MII</td><td>medium independent interface,介质无关接口</td><td>以太网交换机</td></tr></tbody>
+</table></figure>
+<ol start='' >
+<li>华为 H3C 智能识别</li>
+<li>命令: <code>[H3C-Ethernet1/0/1] mdi  { normal(MID-X) | cross | auto }</code></li>
+
+</ol>
+</li>
+<li><p>流量控制配置(默认禁用)</p>
+<ol start='' >
+<li>减轻/避免 大量以太网帧在交换机端口发生拥塞</li>
+<li>命令: <code>[H3C-Ethernet1/0/1] flow-control</code></li>
+
+</ol>
+</li>
+<li><p>端口聚合(链路聚合)</p>
+<ol start='' >
+<li><p><strong>全双工 [速率相同] -每个端口</strong></p>
+<ol start='' >
+<li><code>[H3C-Ethernet1/0/1] duplex full</code></li>
+<li><code>[H3C-Ethernet1/0/1] speed 100</code></li>
+
+</ol>
+</li>
+<li><p><strong>静态聚合 -每个端口</strong></p>
+<ol start='' >
+<li><code>[h3c]interface bridge-aggregation 22</code> <del>{interface-number{1-1024}}</del></li>
+<li><code>[H3C-Ethernet1/0/1]port link-aggregation group 22</code></li>
+<li>清除端口聚合</li>
+<li><code>[H3C] undo link-aggregation group agg-id</code> </li>
+<li><code>[H3C] undo interface bridge-aggregation interface-number</code>  （如第一条命令不能执行，请执行此条命令）</li>
+
+</ol>
+</li>
+<li><p>显示端口聚合的信息</p>
+<ol start='' >
+<li><code>[H3C] display link-aggregation summary</code></li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p><strong>生成树协议</strong></p>
+<ol start='' >
+<li><p>Bridge之间通过不断地(周期性)交换<code>控制帧</code>Configuration Bridge Protocol Data Unit (Configuration <code>BPDU</code>)来动态的构造生成树。</p>
+</li>
+<li><p><code>Root Bridge</code>: 生成树的Root(Bridge ID最小)</p>
+</li>
+<li><p><code>Designated Bridge</code>: (指定的桥)对于一个LAN而言，通往Root Bridge最短路径上的所经由的第一个Bridge。如果两个Bridge有相同长度的最短路径，那么取Bridge ID较小的那一个</p>
+</li>
+<li><p><code>Designated Port</code>: 如果Bridge B是LAN L的Designated Bridge, 那么Bridge B与LAN L相连的端口就称为Bridge B对于LAN L的Designated Port.</p>
+</li>
+<li><p><code>BPDU</code></p>
+<figure><table>
+<thead>
+<tr><th>root ID</th><th>cost</th><th>bridge ID</th><th>port ID</th></tr></thead>
+<tbody><tr><td>root bridge (what the sender thinks it is)</td><td>root path cost for sending bridge</td><td>Identifies(确定) sending bridge</td><td>Identifies the sending port</td></tr></tbody>
+</table></figure>
+<ol start='' >
+<li>优先级: 左<span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.323ex" height="1.532ex" viewBox="0 -570.2 1000 659.7" role="img" focusable="false" style="vertical-align: -0.208ex;"><defs><path stroke-width="0" id="E1-MJMAIN-2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E1-MJMAIN-2192" x="0" y="0"></use></g></svg></span><script type="math/tex">\rightarrow</script>右,越小越better</li>
+<li>收到btter的<code>BPDU</code>,R换成它的R,C换成它的C+1</li>
+
+</ol>
+</li>
+<li><p>每个<code>Bridge</code>只接受从(/在) <code>Root Port</code> 或 <code>Designated Port</code> 收到的(/转发)数据帧。--避免环路</p>
+<ol start='' >
+<li>动态算法</li>
+<li>分布式算法 (Bridge独立计算)</li>
+<li>消息交换处理简单(BPDU)</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p><strong>生成树协议配置</strong></p>
+<ol start='' >
+<li><p><code>display stp</code>  <em>//查看MAC地址</em></p>
+</li>
+<li><p>[系统,E端口]stp {enable|disable} <em>//设备或端口上的RSTP 启动/关闭生成树协议</em></p>
+</li>
+<li><p><code>undo stp</code> <em>//恢复缺省状态</em></p>
+</li>
+<li><p><strong>MAC最小为根桥</strong></p>
+</li>
+<li><p><strong>设定网桥优先级</strong></p>
+<ol start='' >
+<li><code>stp priority bridge-priority</code>{0~61440,不连续,步长4096,缺省32768}</li>
+
+</ol>
+</li>
+<li><p><strong>设定端口优先级</strong></p>
+<ol start='' >
+<li>端口ID: Port Priority(可配置)+Port Index</li>
+<li><code>[H3C-Ethernet1/0/1] stp port priority port-priority</code>{0~240,步长16,缺省128}</li>
+
+</ol>
+</li>
+<li><p><strong>设定端口的开销</strong></p>
+<ol start='' >
+<li><code>stp cost</code><em><code>cost</code></em>{1~200000,默认根据链路速率(100M-200)}</li>
+
+</ol>
+</li>
+<li><p>设定端口的Forward Delay</p>
+<ol start='' >
+<li>过长-收敛太慢</li>
+<li>过短-暂时环路</li>
+<li><code>[H3C] stp timer forward-delay centiseconds(厘秒,1500)</code></li>
+
+</ol>
+</li>
+<li><p><strong>显示生成树协议</strong></p>
+<ol start='' >
+<li>[任意视图] display stp  [ interface interface_list ]</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+<h1>4. 交换机上VLAN配置</h1>
+<ul>
+<li>交换机网络-广播域-广播风暴-路由器隔离成本高-VLAN成本低</li>
+
+</ul>
+<ol start='' >
+<li><p><mark>分类</mark></p>
+<ol start='' >
+<li><p>静态VLAN</p>
+<ol start='' >
+<li>基于端口的VLAN</li>
+
+</ol>
+</li>
+<li><p>动态VLAN</p>
+<ol start='' >
+<li>基于MAC地址的VLAN</li>
+<li>基于协议的VLAN</li>
+<li>基于子网的VLAN</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p><mark>标准</mark>: IEEE 802.1Q</p>
+</li>
+<li><p><mark>VLAN链路类型</mark></p>
+<figure><table>
+<thead>
+<tr><th>类型</th><th>描述</th><th>帧转换算法</th></tr></thead>
+<tbody><tr><td>接入链路(Access)</td><td>不带VLAN标签</td><td>&nbsp;</td></tr><tr><td>骨干链路(Trunk)</td><td>带VLAN标签,<del>VLAN ID和Trunk Link缺省的VLAN ID相同的</del></td><td>&nbsp;</td></tr><tr><td>混合链路(Hybrid)</td><td>有无标签都行,不常用(如Hub等共享介质链路)</td><td>&nbsp;</td></tr><tr><td>接入端口</td><td>不带VLAN标签,只属于一个VLAN</td><td>1.插入VLAN标签</br>2. 查该VLAN的MAC地址表，做出转发决定</br>若从Trunk端口转发，则携带标签发出（例外：当该帧的VLAN ID与Trunk端口的缺省VLAN ID相同时，去掉标签后再发出）</br>3.若从Access端口转发，则去掉标签后再发出</td></tr><tr><td>骨干端口</td><td>1.同骨干链路,可允许多个VLAN的帧通过</td><td>若该帧不携带标签，则根据该端口的缺省VLAN ID为该帧插入标签</br>2.查该帧所属VLAN的MAC地址表，做出转发决定</br>3.若从Trunk端口转发，则携带标签发出（例外：当该帧的VLAN ID与Trunk端口的缺省VLAN ID相同时，去掉标签后再发出）</br>4.若从Access端口转发，则去掉标签后再发出</td></tr><tr><td>混合端口</td><td>有无标签都行,可属于多个VLAN</td><td>&nbsp;</td></tr></tbody>
+</table></figure>
+</li>
+<li><p><mark>使用路由的原因</mark></p>
+<ol start='' >
+<li>VLAN<strong>隔离了广播域</strong>，也就严格地隔离了各个VLAN之间的在<strong>第二层上的互相转发</strong></li>
+<li>只有借助<strong>第三层</strong>的功能（即路由），才能使各VLAN之间互相通信。</li>
+
+</ol>
+</li>
+<li><p><mark>VLAN间路由</mark></p>
+<ol start='' >
+<li><p>路由器-造价高</p>
+</li>
+<li><p>三层交换机(仍是数据链路层设备)</p>
+<ol start='' >
+<li>二层交换-数据链路层(OSI第2层) 根据数据报目的MAC地址转发</li>
+<li>三层交换-网络层(OSI第3层) 处理不同IP子网</li>
+<li>三层交换技术=二层交换技术+三层转发技术</li>
+<li>三层交换机-具有部分路由器功能的交换机</li>
+<li>实现 VLAN的划分、VLAN内部的二层交换和VLAN间路由的功能</li>
+
+</ol>
+</li>
+<li><p><mark>二三层交换机区别</mark></p>
+<figure><table>
+<thead>
+<tr><th>类型</th><th>工作在</th><th>配置几个IP</th></tr></thead>
+<tbody><tr><td>二层交换机</td><td>数据链路层2层</td><td>一个</td></tr><tr><td>三层交换机</td><td>网络层3层</td><td>几个VLAN就几个(IP:用来路由)</td></tr></tbody>
+</table></figure>
+</li>
+
+</ol>
+</li>
+<li><p><code>VLAN</code>基本配置</p>
+<pre><code class='language-java' lang='java'>   1. [H3C]interface bridge-aggregation 1
+      [H3C-bridge-aggregation1]port link-type trunk
+      [H3C-bridge-aggregation1]port trunk permit vlan 2 to 3
+    //汇聚情况下设置trunk链路
+   2. vlan vlan_id`{1~4096}/undo
+   // 创建/删除VLAN
+   1. [H3C-vlan2] port port_num [ to port_num ]`{例:`ethernet{interface类型} 1/0/1(端口号(设备单元号,槽号,端口号)) }
+    //指定端口
+   2. [H3C-Ethernet1/0/2] port access vlan vlan-id
+    //给端口指定VLAN
+   3. [H3C-Ethernet1/0/1] port link-type { access | trunk | hybrid }
+    //设置端口链路类型
+</code></pre>
+</li>
+<li><p>静态路由表配置</p>
+<ol start='' >
+<li><pre><code class='language-java' lang='java'>[H3C] ip  route-static  ip-address { mask | mask-length }  { interface-type interface-number | gateway-address }
+// ip route-static 目的IP 掩码 下一跳的IP
+</code></pre>
+</li>
+<li><p>ip 目的地址 掩码 下一跳IP</p>
+</li>
+
+</ol>
+</li>
+<li><p><mark>VLAN间路由配置</mark></p>
+<ol start='' >
+<li><pre><code class='language-java' lang='java'>[SwitchA-vlan-interface1] ip  address  192.168.1.10  255.255.255.0
+//在虚拟接口配置各个VLAN接口的IP地址
+...
+[SwitchA] ip  route-static  210.30.103.0  255.255.255.0  192.168.1.20
+//配置静态路由表
+...
+</code></pre>
+</li>
+
+</ol>
+</li>
+
+</ol>
+<h1>5. 登录路由器与路由协议配置</h1>
+<ol start='' >
+<li><p><strong>路由器作用</strong>(网络层设备)</p>
+<ol start='' >
+<li>网络的互连和隔离</li>
+<li>根据IP地址转发数据</li>
+<li>选择数据传送的线路</li>
+
+</ol>
+</li>
+<li><p><strong>登录路由器</strong></p>
+<ol start='' >
+<li><p><strong>通过Console 口登录</strong></p>
+<ol start='' >
+<li>计算机COM串口 路由器Console口</li>
+
+</ol>
+</li>
+<li><p>通过Telnet方式登录</p>
+<ol start='' >
+<li><p><code>[RT-Ethernet0/0]ip address ip-address {mask|mask-length}</code></p>
+</li>
+<li><p>在路由器上配置Telnet用户和密码（V7系列）</p>
+<ol start='' >
+<li><code>[RT]telnet server enable</code>  /缺省情况下，Telnet服务处于关闭状态</li>
+<li><code>[RT]line vty 0</code>   /进入一个或多个VTY用户线视图</li>
+<li><code>[RT-line-vty0]authentication-mode scheme</code>  /设置登录用户的认证方式为通过AAA认证</li>
+
+</ol>
+</li>
+<li><p>创建本地用户命令如下</p>
+<ol start='' >
+<li><code>[RT]local-user test class manage</code>（创建用户名</li>
+<li><code>[RT-luser-manage-test]password simple 12</code>（创建密码）</li>
+<li><code>[RT-luser-manage-test]service-type telnet</code></li>
+<li><code>[RT-luser-manage-test]authorization-attribute user-role network-admin</code>（设置登陆权限是超级用户最高权限）</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p>通过SSH方式登录(部分设备支持）</p>
+</li>
+<li><p><strong>通过Telnet方式登录</strong></p>
+</li>
+<li><p>通过SSH方式登录(部分设备支持）</p>
+</li>
+<li><p>通过哑终端方式登录</p>
+</li>
+<li><p>通过FTP方式传送配置文件</p>
+</li>
+
+</ol>
+</li>
+<li><p>显示路由表 <code>[Quidway] display ip routing-table</code></p>
+</li>
+<li><p><strong>路由协议</strong></p>
+<ol start='' >
+<li><p><mark>距离向量路由算法(Distance  Vector)</mark></p>
+<ol start='' >
+<li><p>网络上的每个节点都<code>周期性</code>(一般30s)的与<code>相邻节点</code>交换信息。</p>
+</li>
+<li><p>信息的内容主要包括由本节点到网络上所有其它节点的最短距离。这些距离构成一个距离数组，被称为距离向量 (Distance Vector)</p>
+</li>
+<li><p><mark>路由协议--<code>RIP</code>协议(运行在UDP之上的应用测协议--操作路由条目)</mark></p>
+<ol start='' >
+<li><p>消息</p>
+<figure><table>
+<thead>
+<tr><th>版本</th><th>发送协议</th><th>播发送距离向量</th></tr></thead>
+<tbody><tr><td>RIP-1</td><td>UDP(520)</td><td>广播</td></tr><tr><td>RIP-2</td><td>UDP(520)</td><td>广播/组播(224.0.0.9)</td></tr></tbody>
+</table></figure>
+</li>
+<li><p>(距离的)度量-跳数</p>
+</li>
+<li><p>最大跳数-15, 16--<span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.323ex" height="1.431ex" viewBox="0 -526.5 1000 616" role="img" focusable="false" style="vertical-align: -0.208ex;"><defs><path stroke-width="0" id="E2-MJMAIN-221E" d="M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E2-MJMAIN-221E" x="0" y="0"></use></g></svg></span><script type="math/tex">\infty</script></p>
+</li>
+<li><p>失效-3分钟没收到某个路由的更新</p>
+</li>
+<li><p>静态路由配置</p>
+<ol start='' >
+<li><code>[Quidway] [undo] ip route-static 目的IP { mask | masklen } { interface-type interface-name | 下一跳IP } [ preference value ]</code></li>
+<li>缺省路由 ip  <code>route-static  0.0.0.0  0  10.0.0.2</code></li>
+
+</ol>
+</li>
+<li><p><code>RIP</code>配置</p>
+<ol start='' >
+<li><code>rip/undo rip</code> 启动/关闭</li>
+<li><code>[Quidway-rip] [undo] network network-address</code> 在路由器所连接的一个网段启动/关闭RIP</li>
+<li><code>[Quidway-Serial0] rip version 1/2 [broadcast | multicast]</code></li>
+<li><code>[Quidway-Serial0] [undo] rip split-horizon</code> 启动/关闭水平分割</li>
+<li><code>[Quidway-rip] [undo] summary</code> 启动/关闭RIP-2的路由聚合功能</li>
+<li><code>&lt;Quidway&gt; debugging rip 1</code> 对RIP报文进行调试</li>
+<li><code>[任意视图] undo debugging rip packet</code>关闭RIP报文调试</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p><mark>链路状态路由算法 (Link State)</mark></p>
+<ol start='' >
+<li><p>每个节点都<code>周期性</code>的向网络上所有其它节点<code>广播</code>自己到邻居节点的距离。</p>
+</li>
+<li><p>结果：每个节点都具有<code>完整的网络信息</code>，即知道网络上每条边的距离。</p>
+</li>
+<li><p>于是，每个节点都可以彼此独立的使用<code>Dijkstra最短路径算法</code>来计算到网络上其它节点的最短路径。</p>
+</li>
+<li><p><mark>路由协议--<code>OSPF</code>协议</mark></p>
+<ol start='' >
+<li><p><mark>路由引入</mark></p>
+<ol start='' >
+<li><p>被路由器隔开,访问不到所以</p>
+</li>
+<li><p>路由引入可以与整个AS自治系统外部的路由通信。</p>
+</li>
+<li><pre><code class='language-java' lang='java'>[R1]ospf    
+[R1-ospf-1]import-route static  # 在ospf中引入静态路由
+</code></pre>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p><mark>RIP和OSPF区别</mark></p>
+<figure><table>
+<thead>
+<tr><th>协议</th><th>OSI</th><th>消息</th><th>收敛速度</th><th>范围限制</th><th>问题</th><th>安全性</th><th>应用</th><th>算法</th><th>发送</th><th>子网划分</th></tr></thead>
+<tbody><tr><td>DV-RIP</td><td>应用层</td><td>所有节点最短距离</td><td>慢</td><td>最大15跳</td><td>count to infinity problem</td><td>简单,低</td><td>小规模AS</td><td>DV</td><td>用户数据包UDP</td><td>RIP-1不支持,2支持</td></tr><tr><td>LS-OSPF</td><td>网络层</td><td>邻居节点的距离</td><td>快</td><td>没有</td><td>没有</td><td>复杂,高</td><td>大规模AS</td><td>Link State-Dijkstra</td><td>IP数据报</td><td>支持及无分类的编制CIDR</td></tr></tbody>
+</table></figure>
+</li>
+
+</ol>
+</li>
+<li><p><mark>路由状态</mark></p>
+<figure><table>
+<thead>
+<tr><th>状态</th><th>优先级</th></tr></thead>
+<tbody><tr><td>direct 直连</td><td>0</td></tr><tr><td>ospf</td><td>10</td></tr><tr><td>static</td><td>60</td></tr><tr><td>rip</td><td>100</td></tr></tbody>
+</table></figure>
+</li>
+<li><p><strong>IP包在网络上的传输过程</strong></p>
+<ol start='' >
+<li>ARP - 发送 -ARP - 发送</li>
+
+</ol>
+</li>
+
+</ol>
+<h1>6. 广域网协议介绍与配置</h1>
+<ol start='' >
+<li><p>广域网协议</p>
+<ol start='' >
+<li><p>一般指Internet上负责路由器与路由器之间连接的<strong>数据链路层协议</strong></p>
+<pre><code class='language-mermaid' lang='mermaid'>graph LR
+广域网--&gt;点到点型--&gt;ppp--&gt;重点
+点到点型--&gt;HDLC--&gt;重点
+广域网--&gt;电路交换--&gt;ISDN
+广域网--&gt;分组交换
+分组交换--&gt;Datagram
+分组交换--&gt;V[Virtual-Circuit]
+Datagram--&gt;Internet_Protocol
+Datagram--&gt;CLNP
+V--&gt;X.25--&gt;重点
+V--&gt;Frame_Relay_帧中继--&gt;重点
+V--&gt;ATM
+V--&gt;MPLS
+</code></pre>
+</li>
+<li><p><mark><strong>PPP</strong>(point to point)()数据链路层</mark></p>
+<ol start='' >
+<li><p>点到点链路传输 物理层(同步/异步链路)</p>
+</li>
+<li><p><mark>组件</mark></p>
+<ol start='' >
+<li>链路控制协议（LCP，Link Control Protocol）</li>
+<li>网络控制协议（NCP，Network Control Protocol）</li>
+<li>网络安全方面的验证协议（PAP和CHAP）组成。</li>
+
+</ol>
+</li>
+<li><p>验证</p>
+<figure><table>
+<thead>
+<tr><th>验证</th><th>简介</th><th>先手</th><th>方法</th></tr></thead>
+<tbody><tr><td><mark>PAP</mark></td><td>两次握手,</br>明文口令</td><td>被验证方(同端验证)</td><td>直接发送用户名口令</td></tr><tr><td><mark>CHAP</mark></td><td>三次握手,</br>密文口令(MD5)</td><td>验证方 (异端验证)</td><td>服务器发随机码<strong>challenge</strong></br>客户端加密发回去md5(password,challenge,ppp_id)</br>服务器用数据库中的password同样加密比较</td></tr></tbody>
+</table></figure>
+</li>
+<li><p>配置</p>
+<ol start='' >
+<li><p><code>[Quidway-Serial0] link-protocol ppp</code> 封装ppp//缺省</p>
+</li>
+<li><p>PAP验证</p>
+<ol start='' >
+<li><p>验证方</p>
+<ol start='' >
+<li><code>[Quidway-Serial0] ppp authentication-mode pap</code></li>
+<li><code>[Quidway] local-user username class network</code></li>
+<li><code>[Quidway-luser] service-type ppp</code></li>
+<li><code>[Quidway-luser] password simple password</code></li>
+
+</ol>
+</li>
+<li><p>被验证方</p>
+<ol start='' >
+<li><code>[Quidway-Serial0] ppp pap local-user username password simple password</code></li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p>CHAP验证</p>
+<ol start='' >
+<li><p>验证方</p>
+<ol start='' >
+<li><code>[RA-Serial0] ppp authentication-mode chap</code></li>
+<li><code>[RA-Serial0] ppp chap user user -a</code></li>
+<li><code>[Quidway] local-user user-b class network</code></li>
+<li><code>[Quidway-luser] service-type ppp</code></li>
+<li><code>[Quidway-luser] password simple password</code></li>
+
+</ol>
+</li>
+<li><p>被验证方</p>
+<ol start='' >
+<li><code>[RB-Serial0] ppp chap user user -b</code></li>
+<li><code>[Quidway] local-user user –a class network</code></li>
+<li><code>[Quidway-luser] service-type ppp</code> </li>
+<li><code>[Quidway-luser] password simple password</code></li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p>显示与调试</p>
+<ol start='' >
+<li><code>[任意视图] display interface interface-type number</code></li>
+<li><code>[任意视图] display current-configuration</code></li>
+<li><code>ping 对端IP</code></li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p>Packet Swiching</p>
+<figure><table>
+<thead>
+<tr><th>分类</th><th>独立性</th><th>建立连接开销</th><th>分组首部携带</th></tr></thead>
+<tbody><tr><td>Datagram数据报~</td><td>独立</td><td>没有</td><td>目的地址</td></tr><tr><td>Virtual-Circuit~</td><td>同一连接的分组</br>使用相同的路由</td><td>有</td><td>表示连接的标签</td></tr></tbody>
+</table></figure>
+<ol start='' >
+<li><p>Datagram</p>
+</li>
+<li><p>Virtual-Circuit</p>
+<ol start='' >
+<li><p>Frame Relay 帧中继</p>
+<ol start='' >
+<li><p><del>可靠传送</del></p>
+</li>
+<li><p>错误检测</p>
+</li>
+<li><p>支持</p>
+<ol start='' >
+<li>SVC(Switched Virtual Circuit): 临时性的连接，用于不经常的数据传输</li>
+<li>PVC (Permanent Virtual Circuit): 永久的连接，用于经常的数据传输</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+
+</ol>
+<h1>7. 防火墙配置与NAT配置</h1>
+<ol start='' >
+<li><p>分类</p>
+<figure><table>
+<thead>
+<tr><th>类型</th><th>特点</th></tr></thead>
+<tbody><tr><td>包过滤防火墙</br>(Packet Filter)</td><td>对IP包过滤</td></tr><tr><td>应用层报文过滤</br>(Appliction Specific Packet Filter)</td><td>(状态防火墙)维护每个连接的状态,</br>检查应用层协议的数据,--决定是否允许通过</td></tr></tbody>
+</table></figure>
+</li>
+<li><p>位置</p>
+<ol start='' >
+<li>一般在内部网和Internet之间</li>
+
+</ol>
+</li>
+<li><p><strong>访问控制列表</strong></p>
+<ol start='' >
+<li><p>Access Control List, <code>ACL</code></p>
+</li>
+<li><p>分类</p>
+<figure><table>
+<thead>
+<tr><th>基于...的ACL</th><th>使用...来控制网络包</th><th>数字标识</th></tr></thead>
+<tbody><tr><td>接口</td><td>接口</td><td>1000-1999</td></tr><tr><td><strong>基本(Basic ACL)</strong></td><td>源IP</td><td>2000-2999</td></tr><tr><td><strong>高级(Advanced ACL)</strong></td><td>源和目的IP</td><td>3000-3999</td></tr><tr><td>MAC</td><td>MAC</td><td>4000-4999</td></tr></tbody>
+</table></figure>
+</li>
+
+</ol>
+</li>
+
+</ol>
+<p>      </p>
+<ol start='3' >
+<li><p><mark>ACL应用</mark> : 防火墙 / NAT</p>
+</li>
+<li><p><code>[Quidway] acl number acl-number [ match-order { config | auto } ]</code> </br>//创建ACL config:缺省按用户的配置顺序 auto: 深度优先                |</p>
+</li>
+<li><p><code>[Quidway-acl-basic-2000] rule [ rule-id ] { permit | deny }</code></br><code>[ source sour-addr sour-wildcard(反掩码) | any ] [ time-range time-name ]</code> |</p>
+</li>
+<li><p><mark>包过滤防火墙防火墙配置</mark></p>
+<ol start='' >
+<li>设置ACL控制访问列表</li>
+
+</ol>
+</li>
+<li><p>将ACL应用到接口上</p>
+<center><img src="./picture/图片2.png" alt="图片2.png" style="zoom:70%"></center>
+</li>
+
+</ol>
+<pre><code class='language-java' lang='java'>      # 打开防火墙功能。
+      //[Router] firewall enable//v7不需要这个命令   
+      # 设置防火墙缺省过滤方式为允许包通过。
+      //[Router] firewall default permit//v7不需要这个命令
+      # 配置Ethernet0入方向访问规则禁止所有包通过。
+      [Router] acl number 3001 match-order auto
+      [Router-acl-adv-3001] rule deny ip source any destination any
+
+<pre><code># 允许内部特定PC访问外部网，允许内部服务器与外部特定PC通讯。
+[Router-acl-adv-3001] rule permit ip source 129.38.1.4 0 destination any
+[Router-acl-adv-3001] rule permit ip source 129.38.1.1 0 destination 202.39.2.3 0
+[Router-acl-adv-3001] rule permit ip source 129.38.1.2 0 destination 202.39.2.3 0
+[Router-acl-adv-3001] rule permit ip source 129.38.1.3 0 destination 202.39.2.3 0    
+# 配置Serial0入方向访问规则禁止所有包通过。 
+#[Router] acl number 3002 match-order auto
+#[Router-acl-adv-3002] rule deny ip source any destination any
+#
+## 允许外部网与内部特定PC通讯。
+#[Router-acl-adv-3002] rule permit ip source any destination 129.38.1.4 0
+## 允许外部特定PC访问内部服务器。
+#[Router-acl-adv-3002] rule permit ip source 202.39.2.3 0 destination 129.38.1.1 0
+#[Router-acl-adv-3002] rule permit ip source 202.39.2.3 0 destination 129.38.1.2 0
+#[Router-acl-adv-3002] rule permit ip source 202.39.2.3 0 destination 129.38.1.3 0
+#
+## 将规则3001 作用于从接口Ethernet0 进入的包。
+#[Router-Ethernet0] firewall packet-filter 3001 inbound//v7去掉firewall关键词
+#
+## 将规则3002 作用于从接口Serial0 进入的包。
+#[Router-Serial0] firewall packet-filter 3002 inbound//v7去掉firewall关键词</code></pre><p></code></pre></p>
+<ol start='5' >
+<li><p><mark>NAT技术的用处</mark></p>
+<ol start='' >
+<li><p>解决IP地址紧缺问题</p>
+</li>
+<li><p>保护私网</p>
+</li>
+<li><p>常见形式 --NAPT(Network Address Port Tanslation)</p>
+</li>
+<li><p>易于更换ISP</p>
+</li>
+<li><p>IP伪装</p>
+</li>
+<li><p>服务器前端, 在多个服务器之间分配负载</p>
+</li>
+<li><p>缺点</p>
+<ol start='' >
+<li><p>开销增加</p>
+<ol start='' >
+<li>重新计算IP TCP/UDP Header Checksum</li>
+<li>违反协议分层</li>
+<li>应用层携带有IP或端口号的协议不能正常运行</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p>配置</p>
+<ol start='' >
+<li><p>举例</p>
+<pre><code class='language-java' lang='java'>[Quidway] acl number 2000 match-order auto//创建一个acl
+[Quidway-acl-basic-2000] rule permit source 192.168.1.0 0.0.0.255//规则
+[Quidway-acl-basic-2000] rule deny source any
+[Quidway] nat address-group 1 210.30.101.1 210.30.101.4//定义地址池
+[Quidway-Serial0] nat outbound 2000 address-group 1//地址池与ACL关联
+</code></pre>
+</li>
+
+</ol>
+</li>
+
+</ol>
+</li>
+<li><p>建立内部服务器映射</p>
+<ol start='' >
+<li><code>[Quidway-Serial0] nat  server  protocol  tcp  global  210.30.103.22(要映射成的)  8080 inside  192.168.1.4  www</code></li>
+
+</ol>
+</li>
+
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/01/12/a/">
+                a
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">Swithun Liu</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank" rel="noopener">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank" rel="noopener">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank" rel="noopener">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
