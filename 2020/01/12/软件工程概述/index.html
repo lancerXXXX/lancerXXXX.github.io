@@ -1372,80 +1372,49 @@ $\rightarrow$软件寿命缩短/夭折
 <p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104135108701.png" alt="image-20191104135108701"></p>
 <p>• 层次系统中，每一层为上层<strong>提供服务</strong>，并作为其下层<strong>客户</strong>。<br>• <strong>连接件</strong>通过决定层间如何交互的<strong>协议</strong>来定义，<strong>拓扑约束</strong>包括对相<strong>邻层间交互</strong>的约束。<br>• 这种风格支持基于<strong>可增加抽象层</strong>的设计，允许将一个复杂问题分解成一个<strong>增量步骤序列</strong>的实现。</p>
 </li>
+<li><p><font color="#33CCFF"><strong><em>仓库/黑板系统</em></strong>(数据中心风格)</font></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104140752868.png" alt="image-20191104140752868"></p>
+<p><strong>•</strong> 两种不同的<strong>构件</strong>,<strong>中央数据结构</strong>说明<strong>当前状态</strong>，<strong>独立构件</strong>在中央数据存储上<strong>执行</strong>. 仓库与外构件间的相互作用在系统中会有较大的变化。<br><strong>•</strong> <strong>控制原则</strong>的选取将产生两个主要的<strong>子类</strong>：</p>
+<pre><code>– 若输入流中某类**时间触发**进程执行选择，仓库是传统型数据库；
+– 若中央数据结构的**当前状态触发**进程执行选择，仓库是黑板系统。</code></pre><p><strong>•</strong> 黑板系统的</p>
+<ul>
+<li><strong><em>应用 :</em></strong> 传统应用是<strong>信号处理领域</strong>，如语音和模式识别，另外的应用包括<strong>松耦合代理数据共享存取</strong>等。</li>
 </ul>
+<p>三部分组成</p>
+<ol>
+<li><strong>知识源</strong> : 包含独立的与应用程序相关的<strong>知识</strong>,知识源之间不直接进行通信,<strong>交互只通过黑板完成</strong></li>
+<li><strong>黑板数据结构</strong> : 按照与应用程序相关的<strong>层次来组织</strong>的,<strong>解决问题</strong>的数据 <strong>.</strong> 知识源通过<strong>不断改变黑板数据</strong>来解决问题</li>
+<li><strong>控制</strong> : 完全由黑板的<strong>状态驱动</strong>, 黑板状态的改变决定知识的改变</li>
+</ol>
+</li>
+<li><p><font color="#33CCFF"><strong><em>正交软件结构</em></strong>(调用返回风格)</font></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142358752.png" alt="image-20191104142358752"></p>
+<p><strong>•</strong> 由<strong>组织层和线索</strong>的构件构成</p>
+<pre><code>– **层**是由一组具有相同**抽象**级别的构件构成；
+– **线索**是子系统的特例，它由**完成不同层次功能**的构件组成，通过相互调用来**关联**，每一条线索完成个系统中相对独立的一部分功能。</code></pre><p><strong>•</strong> 如果线索是相互独立的，即不同线索中的构件之间<strong>没有相互调用</strong>(即同一层级)，那么这个结构就是<strong>完全正交</strong>的。</p>
+<p><strong>•</strong> 正交软件架构是一种以<strong>垂直线索构件族</strong>为基础的<strong>层次化结构</strong>。<br><strong>•</strong> 在软件演化过程中，系统需求会不断发生变化。在正交软件架构中，因线索的正交性，<strong>每个需求变动仅影响某一条线索</strong>。</p>
+</li>
+<li><p><font color="#33CCFF"><strong><em>客户 / 服务器架构</em></strong>(调用返回风格)</font></p>
+<img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142509348.png" alt="image-20191104142509348" style="zoom:80%;">
+
+<p><strong>•</strong> 服务器负责<strong>管理系统资源</strong>：访问与并发性控制、安全性、备份与恢复和全局数据完整性规则。<br><strong>•</strong> 客户应用程序提供用户与服务器交互的<strong>界面</strong>、向服务器<strong>提交用户请求</strong>并<strong>接收来自服务器的信息</strong>、利用客户应用程序对存在于<strong>客户端的数据执行应用逻辑要求</strong>。<br><strong>•</strong> 网络通信软件的主要作用是完成服务器和客户应用程序之间的<strong>数据传输</strong>。</p>
+<p>• 服务器为多个客户应用程序管理数据<br>• 对于硬件和软件的变化具有极大的<strong>适应性</strong>和<strong>灵活性</strong><br>• <strong>易于</strong>对系统进行<strong>扩充</strong>和<strong>缩小</strong><br>• 系统中的<strong>功能构件</strong>充分<strong>隔离</strong></p>
+</li>
+<li><p><font color="#33CCFF"><strong><em>浏览器 / 服务器架构</em></strong>(调用返回风格)</font></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142935432.png" alt="image-20191104142935432"></p>
+<p>• B/S是C/S的扩展，瘦客户。<br>• 应用(程序)在一定程度上具有<strong>集中特征</strong>。<br>• <strong>减轻</strong>安装、配置和升级等<strong>维护工作</strong>。<br>• <strong>层</strong>与层之间<strong>相互独立</strong>，任何一层的改变都不影响其他层原有的功能，所以可用不同厂家的产品组成性能更佳的系统。（<strong>平台透明性</strong>）</p>
+</li>
+<li><p><font color="#33CCFF"><strong><em>MVC架构</em></strong>(独立构件风格)</font></p>
+<img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104143250398.png" alt="image-20191104143250398" style="zoom:120%;">
+
+<p>• 模型(Model)－视图(View)－控制器(Controller)<br>• MVC是一种软件设计典范，用业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。<br>• <strong>视图</strong>是用户看到并与之交互的<strong>界面</strong>。<br>• <strong>模型</strong>表示<strong>企业数据</strong>和<strong>业务规则</strong>。<br>• <strong>控制器</strong>接受用户的输入并调用模型和视图去<strong>完成用户的需求</strong>，控制器<strong>本身不输出</strong>任何结果和做任何处理。</p>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<pre><code>- &lt;font color=&quot;#33CCFF&quot;&gt;***仓库/黑板系统***(数据中心风格)&lt;/font&gt;
-
-  ![image-20191104140752868](软件工程概述/image-20191104140752868.png)
-
-  **•** 两种不同的**构件**,**中央数据结构**说明**当前状态**，**独立构件**在中央数据存储上**执行**. 仓库与外构件间的相互作用在系统中会有较大的变化。
-  **•** **控制原则**的选取将产生两个主要的**子类**：
-      – 若输入流中某类**时间触发**进程执行选择，仓库是传统型数据库；
-      – 若中央数据结构的**当前状态触发**进程执行选择，仓库是黑板系统。
-  **•** 黑板系统的
-
-  - ***应用 :*** 传统应用是**信号处理领域**，如语音和模式识别，另外的应用包括**松耦合代理数据共享存取**等。
-
-  三部分组成
-  1. **知识源** : 包含独立的与应用程序相关的**知识**,知识源之间不直接进行通信,**交互只通过黑板完成**
-  2. **黑板数据结构** : 按照与应用程序相关的**层次来组织**的,**解决问题**的数据 **.** 知识源通过**不断改变黑板数据**来解决问题
-  3. **控制** : 完全由黑板的**状态驱动**, 黑板状态的改变决定知识的改变
-
-
-
-- &lt;font color=&quot;#33CCFF&quot;&gt;***正交软件结构***(调用返回风格)&lt;/font&gt;
-
-  ![image-20191104142358752](软件工程概述/image-20191104142358752.png)
-
-  **•** 由**组织层和线索**的构件构成
-      – **层**是由一组具有相同**抽象**级别的构件构成；
-      – **线索**是子系统的特例，它由**完成不同层次功能**的构件组成，通过相互调用来**关联**，每一条线索完成个系统中相对独立的一部分功能。
-
-  **•** 如果线索是相互独立的，即不同线索中的构件之间**没有相互调用**(即同一层级)，那么这个结构就是**完全正交**的。
-
-  **•** 正交软件架构是一种以**垂直线索构件族**为基础的**层次化结构**。
-  **•** 在软件演化过程中，系统需求会不断发生变化。在正交软件架构中，因线索的正交性，**每个需求变动仅影响某一条线索**。
-
-- &lt;font color=&quot;#33CCFF&quot;&gt;***客户 / 服务器架构***(调用返回风格)&lt;/font&gt;
-
-  &lt;img src=&quot;软件工程概述/image-20191104142509348.png&quot; alt=&quot;image-20191104142509348&quot; style=&quot;zoom:80%;&quot; /&gt;
-
-  **•** 服务器负责**管理系统资源**：访问与并发性控制、安全性、备份与恢复和全局数据完整性规则。
-  **•** 客户应用程序提供用户与服务器交互的**界面**、向服务器**提交用户请求**并**接收来自服务器的信息**、利用客户应用程序对存在于**客户端的数据执行应用逻辑要求**。
-  **•** 网络通信软件的主要作用是完成服务器和客户应用程序之间的**数据传输**。
-
-  • 服务器为多个客户应用程序管理数据
-  • 对于硬件和软件的变化具有极大的**适应性**和**灵活性**
-  • **易于**对系统进行**扩充**和**缩小**
-  • 系统中的**功能构件**充分**隔离**
-
-
-
-- &lt;font color=&quot;#33CCFF&quot;&gt;***浏览器 / 服务器架构***(调用返回风格)&lt;/font&gt;
-
-  ![image-20191104142935432](软件工程概述/image-20191104142935432.png)
-
-  • B/S是C/S的扩展，瘦客户。
-  • 应用(程序)在一定程度上具有**集中特征**。
-  • **减轻**安装、配置和升级等**维护工作**。
-  • **层**与层之间**相互独立**，任何一层的改变都不影响其他层原有的功能，所以可用不同厂家的产品组成性能更佳的系统。（**平台透明性**）
-
-
-
-- &lt;font color=&quot;#33CCFF&quot;&gt;***MVC架构***(独立构件风格)&lt;/font&gt;
-
-  &lt;img src=&quot;软件工程概述/image-20191104143250398.png&quot; alt=&quot;image-20191104143250398&quot; style=&quot;zoom:120%;&quot; /&gt;
-
-  • 模型(Model)－视图(View)－控制器(Controller)
-  • MVC是一种软件设计典范，用业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。
-  • **视图**是用户看到并与之交互的**界面**。
-  • **模型**表示**企业数据**和**业务规则**。
-  • **控制器**接受用户的输入并调用模型和视图去**完成用户的需求**，控制器**本身不输出**任何结果和做任何处理。</code></pre><ul>
+</li>
 <li><p>软件架构<strong>设计</strong></p>
 <p>• 在软件架构设计的起初，要考虑软件必须<strong>放在所处的环境</strong>。<br>• 一旦建立了软件的<strong>环境模型</strong>，并且描述出所有的<strong>外部软件接口</strong>，那么设计师就可以通过<strong>定义和求精实现架构的构件</strong>来<strong>描述</strong>系统的结构。这个过程不停地<strong>迭代</strong>，直到获得一个完善的架构。<br>• 通过软件架构，系统将<strong>逻辑关系密切的单元划分到一起</strong>，形成系统的<strong>逻辑划分</strong>，有利于后续独立的开发和管理。<br>• 这个划分经常是基于<strong>类模型</strong>进行的，并可参照一些设计优化方法形成更合理的组织方式，达到模块内部的<strong>高内聚</strong>模块间的<strong>低耦合</strong>。<br>• <font color="#f9bd10">软件架构对应的实现就是将软件使用所谓的“<strong>包(Package)</strong>”进行<strong>构造</strong>，每个包对应某种<strong>专属的功能</strong>，并尽可能<strong>独立</strong></font>。<br>• 包中的<strong>类</strong>互相紧密<strong>配合协作</strong>完成<strong>包的功能</strong>，每个包与其他包中含有的类之间的<strong>接口</strong>应该尽可能<strong>简单</strong>，<strong>降低</strong>它们的<strong>耦合性</strong></p>
 </li>
