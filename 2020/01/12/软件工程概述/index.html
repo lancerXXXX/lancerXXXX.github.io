@@ -1365,8 +1365,12 @@ $\rightarrow$软件寿命缩短/夭折
 <p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104134306146.png" alt="image-20191104134306146"></p>
 <p>• 每个构件都有一组<strong>输入和输出</strong>，构件读取输入的数据流，经过内部处理，然后产生输出数据流。<br>• 构件被称为<strong>过滤器</strong>，这种风格的<strong>连接件</strong>就是数据流传输的<strong>管道</strong>，将一个过滤器的输出传到另一过滤器的    输入。<br>• 过滤器是<strong>独立的实体</strong>，不能与其他的过滤器<strong>共享数据</strong>，而且一个过滤器不知道它上游和下游的<strong>标识</strong>。</p>
 <ul>
-<li><strong>应用: **适合</strong>批处理<strong>和</strong>非交互处理<strong>的系统，使软件具有良好的</strong>信息隐藏性<strong>和</strong>模块独立性<strong>，从而产生</strong>高内聚、低耦合**的特点。</li>
+<li><strong>应用:</strong>适合<strong>批处理</strong>和<strong>非交互处理</strong>的系统，使软件具有良好的<strong>信息隐藏性</strong>和<strong>模块独立性</strong>，从而产生<strong>高内聚、低耦合</strong>的特点。</li>
 </ul>
+</li>
+<li><p><strong><em>层次系统</em></strong>(调用返回风格)</p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104135108701.png" alt="image-20191104135108701"></p>
+<p>• 层次系统中，每一层为上层<strong>提供服务</strong>，并作为其下层<strong>客户</strong>。<br>• <strong>连接件</strong>通过决定层间如何交互的<strong>协议</strong>来定义，<strong>拓扑约束</strong>包括对相<strong>邻层间交互</strong>的约束。<br>• 这种风格支持基于<strong>可增加抽象层</strong>的设计，允许将一个复杂问题分解成一个<strong>增量步骤序列</strong>的实现。</p>
 </li>
 </ul>
 </li>
@@ -1375,17 +1379,7 @@ $\rightarrow$软件寿命缩短/夭折
 </ul>
 </li>
 </ul>
-<pre><code>- ***层次系统***(调用返回风格)
-
-  ![image-20191104135108701](软件工程概述/image-20191104135108701.png)
-
-  • 层次系统中，每一层为上层**提供服务**，并作为其下层**客户**。
-  • **连接件**通过决定层间如何交互的**协议**来定义，**拓扑约束**包括对相**邻层间交互**的约束。
-  • 这种风格支持基于**可增加抽象层**的设计，允许将一个复杂问题分解成一个**增量步骤序列**的实现。
-
-
-
-- &lt;font color=&quot;#33CCFF&quot;&gt;***仓库/黑板系统***(数据中心风格)&lt;/font&gt;
+<pre><code>- &lt;font color=&quot;#33CCFF&quot;&gt;***仓库/黑板系统***(数据中心风格)&lt;/font&gt;
 
   ![image-20191104140752868](软件工程概述/image-20191104140752868.png)
 
