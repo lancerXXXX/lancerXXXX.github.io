@@ -152,6 +152,281 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2020/01/15/wsl%E4%BB%A5%E5%8F%8Avim%E9%85%8D%E7%BD%AE/">
+                wsl以及vim配置
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2020-01-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>@[TOC]<br><code>������������������� ��һ�� �л�root�ͷ�root��sudo su��exit   ���� �������</code><br><code>�ڶ���  �ص��ն����¿� ���� �������</code><br><code>������ �ٶ�,��Ӧ,google.....���� �������</code><br><code>���Ĳ� �ػ����� �������</code><br><code>���岽 ж��Ubuntu  �ȿ�C:\Users\�û���\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs����Ķ���ɾûɾ��</code><br><code>���ɾ���˾���װ</code><br><code>���ɾ���� �½�txt</code></p>
+<pre><code>DEL /F /A /Q \\?\%1
+RD /S /Q \\?\%1</code></pre><p><code>д���ϱ�,��׺�ĳ�.bat  ���ļ�������ȥɾ��</code> </p>
+<h2 id="���µĲ���������"><a href="#���µĲ���������" class="headerlink" title="���µĲ���������"></a>���µĲ���������</h2><p>markdown Ԥ������һ��������<a href="https://github.com/suan/vim-instant-markdown" target="_blank" rel="noopener"><br>���</a><br>�������ÿ��ٷ��ĵ�</p>
+<h1 id="�������GitHub̫��"><a href="#�������GitHub̫��" class="headerlink" title="�������GitHub̫��"></a>�������GitHub̫��</h1><p>��Ҫ����GitHub ����Ҫ�Ƚ���������<br><a href="https://blog.csdn.net/weixin_38437404/article/details/89489401" target="_blank" rel="noopener">https://blog.csdn.net/weixin_38437404/article/details/89489401</a></p>
+<h1 id="��װUbuntu"><a href="#��װUbuntu" class="headerlink" title="��װUbuntu"></a>��װUbuntu</h1><ol>
+<li><p>��������Linux��Windows��ϵͳ<br><img src="https://img-blog.csdnimg.cn/20190811121024967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"></p>
+</li>
+<li><p>��������֮��<br>Microsoft Store��װUbuntu<br><img src="https://img-blog.csdnimg.cn/20190811121243692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"></p>
+</li>
+<li><p>��װing<br>�����û��� ����<br><img src="https://img-blog.csdnimg.cn/20190811121411572.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br><img src="https://img-blog.csdnimg.cn/20190811122337315.png" alt="���������ͼƬ����"><br>��Ubuntuͼ��–&gt;����<br><img src="https://img-blog.csdnimg.cn/20190811122428473.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>Ctrl shift C/V�Ǹ���  </p>
+</li>
+<li><p>���пƴ�Դ(Ŀǰ���Դ��������п�,��������ô֪��)</p>
+</li>
+</ol>
+<pre><code>##�пƴ�Դ
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</code></pre><p>����ԭ����</p>
+<pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources_init.list
+sudo vim /etc/apt/sources.list</code></pre><p>���û�ù�vim</p>
+<ul>
+<li>ԭ���Ķ�ɾ��</li>
+</ul>
+<pre><code>100dd</code></pre><ul>
+<li>�����ϱߵ�Դ,Ȼ��</li>
+</ul>
+<pre><code>i
+Ctrl Shift V</code></pre><ul>
+<li>����ͨģʽ<br><code>Esc</code></li>
+<li>�����˳�<pre><code>:wq</code></pre>Ȼ����������<pre><code>sudo apt-get update
+sudo apt-get upgrade</code></pre>Ȼ��������<h1 id="��װranger�l�������"><a href="#��װranger�l�������" class="headerlink" title="��װranger�ļ�������"></a>��װranger�ļ�������</h1></li>
+</ul>
+<pre><code>sudo apt-get install ranger</code></pre><p>����ranger</p>
+<pre><code>ranger</code></pre><p><img src="https://img-blog.csdnimg.cn/20190811124301925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>������Է�����������<br><img src="https://img-blog.csdnimg.cn/20190811124348418.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>ranger������</p>
+<ul>
+<li>���������ļ�����Ŀ¼</li>
+</ul>
+<p>��<code>q</code>�˳�ranger</p>
+<pre><code>ranger --copy-config=all</code></pre><p>����ranger</p>
+<pre><code>sudo su
+������
+ranger</code></pre><p>�Ȱ�z�ٰ�h �鿴�����ļ�</p>
+<p><img src="https://img-blog.csdnimg.cn/20190811125550717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br><img src="https://img-blog.csdnimg.cn/20190811125638781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>���rc.cong����ranger�������ļ�  ���Ű��������<br><img src="https://img-blog.csdnimg.cn/20190811125619481.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>ѡ��2,��Ĭ�����������vim��  .tiny�Ǽ���vim<br>�����������������,�������Լ��Ŀ�ݼ�</p>
+<p><img src="https://img-blog.csdnimg.cn/20190811130052848.png" alt="���������ͼƬ����"><br>�����<code>!</code>�ĳ�vim�½��ļ�<br>���Ը�ԭ����Ҳ�����¼ӿ�ݼ�<br>�����˱����˳�<br>�ն˹������´�–����–��Ч</p>
+<h1 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h1><h2 id="��װVim���������"><a href="#��װVim���������" class="headerlink" title="��װVim���������"></a>��װVim���������</h2><pre><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></pre><p>Ĭ�ϰ�װ��<code>/.vim/bundle/vundle</code>Ŀ¼��.<br><code>.vimrc</code>�������ļ�,Ϊ�˱��������ļ�����ӷ��</p>
+<ul>
+<li>�½�һ��������������������ļ�</li>
+</ul>
+<pre><code>sudo vim ~/.vimrc.bundles</code></pre><p>���<code>.</code>����</p>
+<pre><code>set nocompatible              &quot; ȥ��VIһ����,����Ҫ����
+filetype off                  &quot; ����Ҫ����
+
+
+ set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+   &quot;Vundle  ����������� һ������ɾ
+  Plugin &apos;VundleVim/Vundle.vim&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;Markdown  ʹvim֧��markdown�Ĳ��
+  Plugin &apos;godlygeek/tabular&apos;
+  Plugin &apos;plasticboy/vim-markdown&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;Markdown  Preview  markdown��̬Ԥ���Ĳ��
+  Plugin &apos;iamcco/mathjax-support-for-mkdp&apos;
+  Plugin &apos;iamcco/markdown-preview.vim&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;NerdTree  ��߲���
+  Plugin &apos;scrooloose/nerdtree&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;Picture Preview   ranger��Ԥ��ͼƬ 
+  Plugin &apos;tokuhirom/w3m&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;UltiSnips     ���������
+  Plugin &apos;SirVer/ultisnips&apos;
+  Plugin &apos;honza/vim-snippets&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;YCM&quot;    ���ܸ�֪ (����������ע�ʹ�,ֱ������װ����,���İ�װ�ٺ�����)
+  &quot; Plugin &apos;Valloric/YouCompleteMe&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;airline&quot;  ���������������Ǹ����ļ������Ϣ����
+  Plugin &apos;vim-airline/vim-airline&apos;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+  &quot;tagbar  �ұ߲��� ��ʾ�ļ��Ĵ��
+  &quot;�డ�ṹ�尡ʲô������в�֧�ֵ�����������GitHub��
+  Plugin &apos;majutsushi/tagbar&apos;
+
+   call vundle#end()    &quot; ����
+   syntax on
+   filetype indent on
+   filetype plugin on
+   filetype plugin indent on    &quot; ����
+   &quot; ����vim�Դ��Ͳ����Ӧ���﷨���ļ�������ؽű�
+   &quot; ���Ӳ���ı�����,����ʹ���������:
+   &quot;filetype plugin on
+
+   &quot; ���õ�����
+   &quot; :PluginList       - �г����������õĲ��
+   &quot; :PluginInstall     - ��װ���,׷�� `!` ���Ը��»�ʹ�� :PluginUpdate
+   &quot; :PluginSearch foo - ���� foo ; ׷�� `!` ������ػ��� 
+   &quot; :PluginClean      - ���δʹ�ò��,��Ҫȷ��; ׷�� `!` �Զ���׼�Ƴ�δʹ�ò��
+   &quot; ���� :h vundle ��ȡ����ϸ�ں�wiki�Լ�FAQ
+   &quot; �����Լ��Էǲ��Ƭ�η�������֮��
+</code></pre><p>��<code>call vundle#begin()</code>��<code>call vundle#end()</code>֮��ľ��Ǽ���Ҫ��װ�Ĳ��,�ϱߵ����Ұ�װ�˵Ĳ��,����Ĺ��������˼򵥵�ע��,����ȥ���Ǹ��Ե�GitHub�Ͽ�</p>
+<ul>
+<li>�½������ļ�</li>
+</ul>
+<pre><code>sudo vim ~/.vimrc</code></pre><p>���<code>.</code>����<br>��������  ǰ���о��ǰѸող�����ǲ��ּӽ���  ������Ҷ�����ע��</p>
+<pre><code>&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;����vimrc.bundles
+if filereadable(expand(&quot;~/.vimrc.bundles&quot;))
+    source ~/.vimrc.bundles
+endif
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;tagbar  vim���ұߵĲ���(���ÿ�ݼ���֧��markdown����)
+map &lt;C-t&gt; :TagbarToggle&lt;CR&gt;
+let g:tagbar_type_markdown = {
+    \ &apos;ctagstype&apos; : &apos;markdown&apos;,
+    \ &apos;kinds&apos; : [
+        \ &apos;h:Heading_L1&apos;,
+        \ &apos;i:Heading_L2&apos;,
+        \ &apos;k:Heading_L3&apos;
+    \ ]
+    \ }
+
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;NearTree  vim������������ÿ�ݼ�Ϊctrl+b
+map &lt;C-b&gt; :NERDTreeToggle&lt;cr&gt;
+
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;Markdown  
+&quot;disable folding
+let g:vim_markdown_folding_disabled=1
+&quot; Highlight YAML frontmatter as used by Jekyll
+let g:vim_markdown_frontmatter=1
+
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;iamcco/Markdown-Preview  markdownԤ�����������
+let g:mkdp_auto_start = 1
+let g:mkdp_path_to_chrome = &quot;firefox&quot;
+let g:mkdp_auto_open = 1
+let g:mkdp_auto_close = 1
+&quot;let g:mkdp_refresh_slow = 1
+let g:mkdp_open_to_the_world = 1
+map &lt;C-m&gt; :MarkdownPreview&lt;cr&gt;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;UltiSnips
+let g:UltiSnipsExpandTrigger=&quot;&lt;tab&gt;&quot;
+let g:UltiSnipsJumpForwardTrigger=&quot;&lt;CR&gt;&quot;
+let g:UltiSnipsJumpBackwardTrigger=&quot;&lt;c-z&gt;&quot;
+let g:UltiSnipsEditSplit=&quot;vertical&quot;
+let g:UltiSnipsUsePythonVersion = 3
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set cindent
+set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,&gt;1s,=1s,:1s
+set nu
+set ts=4
+colorscheme torte
+
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;YouCompeleteMe  ��������Լ����tab����UltiSnips�ļ�λ��ͻ
+function! g:UltiSnips_Complete()
+      call UltiSnips#ExpandSnippet()
+        if g:ulti_expand_res == 0
+            if pumvisible()
+                    return &quot;\&lt;C-n&gt;&quot;      
+              else
+                    call UltiSnips#JumpForwards()
+                    if g:ulti_jump_forwards_res == 0
+                        return &quot;\&lt;TAB&gt;&quot;
+                endif
+            endif
+        endif
+        return &quot;&quot;
+    endfunction
+
+
+
+function! g:UltiSnips_Reverse()
+    call UltiSnips#JumpBackwards()
+    if g:ulti_jump_backwards_res == 0
+        return &quot;\&lt;C-P&gt;&quot;
+    endif
+
+    return &quot;&quot;
+endfunction
+
+
+if !exists(&quot;g:UltiSnipsJumpForwardTrigger&quot;)
+    let g:UltiSnipsJumpForwardTrigger = &quot;&lt;tab&gt;&quot;
+endif
+if !exists(&quot;g:UltiSnipsJumpBackwardTrigger&quot;)
+    let g:UltiSnipsJumpBackwardTrigger=&quot;&lt;s-tab&gt;&quot;
+endif
+
+au InsertEnter * exec &quot;inoremap &lt;silent&gt; &quot; . g:UltiSnipsExpandTrigger     . &quot; &lt;C-R&gt;=g:UltiSnips_Complete()&lt;cr&gt;&quot;
+au InsertEnter * exec &quot;inoremap &lt;silent&gt; &quot; .     g:UltiSnipsJumpBackwardTrigger . &quot; &lt;C-R&gt;=g:UltiSnips_Reverse()&lt;cr&gt;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;���ÿ���ʹ�����&quot;        
+set mouse=a</code></pre><p>�ϱ��ǶԸ������������,��ݼ�������֮���,�Ҷ�����ע��,���忴���Բ����GitHub,    README.md�ļ��ж��о���Ľ���</p>
+<ul>
+<li>��װ���<br>���������д�vim ʹ��PluginInstall���װ��� <pre><code>vim
+:PluginInstall</code></pre></li>
+</ul>
+<p><strong>��</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20190811134854724.png" alt="���������ͼƬ����"><br><code>+</code>��װ���<br><code>&gt;</code>����װ��<br><img src="https://img-blog.csdnimg.cn/20190811135023640.png" alt="���������ͼƬ����"><br>��� �˳� </p>
+<pre><code>:qa</code></pre><h1 id="������ͼ�λ����������"><a href="#������ͼ�λ����������" class="headerlink" title="������ͼ�λ����������"></a>������ͼ�λ����������</h1><ol>
+<li>���û�������(������ʾ�豸)</li>
+</ol>
+<pre><code>vim ~/.bashrc</code></pre><p>���һ������</p>
+<pre><code>export DISPLAY=:0</code></pre><p>ʹ������Ч</p>
+<pre><code>source ~/.bashrc</code></pre><p>2.Windows��װXming<br><a href="https://links.jianshu.com/go?to=https://nchc.dl.sourceforge.net/project/xming/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe" target="_blank" rel="noopener">Xming���ص�ַ</a></p>
+<p>��װ��ѡ���<br><img src="https://img-blog.csdnimg.cn/20190811140712969.png" alt="���������ͼƬ����"><br><img src="https://img-blog.csdnimg.cn/20190811140733849.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>ѡ��һ��  ,displaynumber��0 (����ǰ������ö�Ӧ)<br>Ȼ��һ·Ĭ����һ��<br>3.װ�������һ��</p>
+<p><img src="https://img-blog.csdnimg.cn/20190811142300227.png" alt="���������ͼƬ����"><br><img src="https://img-blog.csdnimg.cn/20190811142457392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"></p>
+<ul>
+<li>������������Ӧ�û�����</li>
+</ul>
+<pre><code>sudo apt-get install ttf-wqy-microhei</code></pre><ul>
+<li>�������<h1 id="MarkDown"><a href="#MarkDown" class="headerlink" title="MarkDown"></a>MarkDown</h1><img src="https://img-blog.csdnimg.cn/20190811145921199.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTQxMDI3,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"><br>֮ǰ�Ѿ�װ�������<br>��ͨģʽ��(��<code>Esc</code>�ص���ͨģʽ)  ����ǰ������ĸ��<code>tab</code>�����Բ�ȫ</li>
+</ul>
+<pre><code>:MarkdownPreview</code></pre><p>�Ϳ���������������Ԥ��</p>
+<h1 id="Ultisnips���������"><a href="#Ultisnips���������" class="headerlink" title="Ultisnips���������"></a>Ultisnips���������</h1><p>���ǰ�涼һ��װ����<br>�����ȫ���ܳ������� ���簴tab���ܲ�ȫ�ο���������<br><a href="https://www.cnblogs.com/acbingo/p/4757275.html" target="_blank" rel="noopener">����</a></p>
+<h1 id="YouCompleteMe"><a href="#YouCompleteMe" class="headerlink" title="YouCompleteMe"></a>YouCompleteMe</h1><ol>
+<li>��װ<br><a href="https://blog.csdn.net/liao20081228/article/details/80347889" target="_blank" rel="noopener">����</a></li>
+<li>���ܳ��ֵĴ���</li>
+</ol>
+<ul>
+<li><a href="https://blog.csdn.net/qq_39815320/article/details/89073050" target="_blank" rel="noopener">ERROR: Python headers are missing in /usr/include/python2.7.</a></li>
+<li><a href="https://www.itbulu.com/python-requests.html" target="_blank" rel="noopener">ImportError: No module named requests</a><h2 id="YCM��Ultisnips������ͻ���������ֻʹ��TAB�����޴���"><a href="#YCM��Ultisnips������ͻ���������ֻʹ��TAB�����޴���" class="headerlink" title="YCM��Ultisnips������ͻ���������ֻʹ��TAB�����޴���"></a>YCM��Ultisnips������ͻ���������ֻʹ��TAB�����޴���</h2>���ϱ߸����ļ��Ѿ��Ĺ���<br><a href="https://blog.csdn.net/qq_20336817/article/details/51115411" target="_blank" rel="noopener">�������</a><h1 id="vim��ʽ��"><a href="#vim��ʽ��" class="headerlink" title="vim��ʽ��"></a>vim��ʽ��</h1>1��gg ��ת����һ��</li>
+</ul>
+<p>2��shift+v ת������ģʽ</p>
+<p>3��shift+g ȫѡ</p>
+<p>4������ =</p>
+<h1 id="�ն�����"><a href="#�ն�����" class="headerlink" title="�ն�����"></a>�ն�����</h1><p><a href="https://www.jianshu.com/p/b147735ff3f2" target="_blank" rel="noopener">����</a><br><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes" target="_blank" rel="noopener">��������</a></p>
+<h1 id="�ο�"><a href="#�ο�" class="headerlink" title="�ο�"></a>�ο�</h1><p><a href="https://blog.csdn.net/Striker_V/article/details/52592591" target="_blank" rel="noopener">https://blog.csdn.net/Striker_V/article/details/52592591</a><br><a href="https://www.imydl.tech/linux/431.html" target="_blank" rel="noopener">https://www.imydl.tech/linux/431.html</a><br><a href="https://zhuanlan.zhihu.com/p/35536223" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35536223</a><br><a href="https://www.jianshu.com/p/aca81f8c7f08" target="_blank" rel="noopener">https://www.jianshu.com/p/aca81f8c7f08</a></p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2020/01/13/4_%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E7%AE%A1%E7%90%86/">
                 4_运行时存储空间的组织和管理
             </a>
@@ -4914,6 +5189,10 @@ gcd(a,0) = a</script></div></div>
         <ul>
             
             <li>
+                <a class="footer-post" href="/2020/01/15/wsl%E4%BB%A5%E5%8F%8Avim%E9%85%8D%E7%BD%AE/">wsl以及vim配置</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2020/01/13/4_%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E7%AE%A1%E7%90%86/">4_运行时存储空间的组织和管理</a>
             </li>
             
@@ -4923,10 +5202,6 @@ gcd(a,0) = a</script></div></div>
             
             <li>
                 <a class="footer-post" href="/2020/01/13/2_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/">2_语法分析</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2020/01/13/1_%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/">1_词法分析</a>
             </li>
             
         </ul>
