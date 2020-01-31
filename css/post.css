@@ -1,0 +1,59 @@
+.post-view,
+.post-view__article {
+  padding: 0rem 2rem 6rem 2rem;
+  overflow-x: hidden;
+}
+article.post-view__article .article__content h1,
+article.post-view__article .article__content h2,
+article.post-view__article .article__content h3,
+article.post-view__article .article__content h4,
+article.post-view__article .article__content h5,
+article.post-view__article .article__content h6,
+article.post-view__article .article__content p {
+  margin: 1em 0;
+}
+article.post-view__article .article__content blockquote {
+  border-left: 2px solid $color-black;
+  padding: 0em 2rem;
+}
+article.post-view__article .article__content code {
+  border-radius: 4px;
+}
+article.post-view__article .article__content code .gutter {
+  width: 2em;
+  text-align: center;
+  color: $color-white;
+  background: $color-gray;
+}
+article.post-view__article .article__content code.hljs {
+  overflow-x: scroll;
+  max-width: 80rem;
+  margin: 2rem 0;
+}
+article.post-view__article .article__content code:not(.hljs) {
+  font-weight: bold;
+  background: $color-auxiliary;
+  border-radius: 4px;
+  padding: 0.2rem 0.4em;
+  margin: 0.4em;
+  vertical-align: middle;
+  display: inline-block;
+}
+article.post-view__article .article__content ul,
+article.post-view__article .article__content ol {
+  padding-left: 2em;
+}
+article.post-view__article .article__content ul li,
+article.post-view__article .article__content ol li {
+  padding: 0.2em 0;
+}
+article.post-view__article .article__content img {
+  width: auto;
+  max-width: 100%;
+  margin: 2rem 0;
+}
+@media screen and (max-width: $M) {
+  .post-view__article {
+    padding: 0rem 1rem 6rem 1rem;
+  }
+}
