@@ -148,39 +148,29 @@
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 常微分方程
- 1.1. 基本概念
-
+          <div class="index-text mb-1">1. 常微分方程1.1. 基本概念
 
 通解: 与微分函数方程阶数相同个数的独立的任意常数的解
 特解: 不含任意常数的解
 定解条件: 用来确定通解中任意常数的条件
-积分曲线: 微分方程的解的y=y(x)y=y(x)y=y(x)表示的曲线
+积分曲线: 微分方程的解的$y=y(x)$表示的曲线
 
 
- 1.2. 常见的几类一阶方程及解法
- 1.2.1. 可分离变量的方程
+1.2. 常见的几类一阶方程及解法1.2.1. 可分离变量的方程
 
-dydx=f(x)g(y)\frac{dy}{dx}=f(x)g(y)
-dxdy​=f(x)g(y)
+\frac{dy}{dx}=f(x)g(y)改写成:
+\frac{dy}{g(y)}=f(x)dx\ \ (g(y)\neq 0)两端积分:
+\int_{}^{}\frac{dy}{g(y)}=\int_{}^{}f(x)dx求通解
 
+1.2.2. 齐次方程
+\frac{dy}{dx}=f(\frac{y}{x})变量代换: $\frac{y}{x}=u$带入: \frac{du}{f(u)-u}=\frac{dx}{x}
 
-改写成:
-dyg(y)=f(x)dx  (g(y)≠0)\frac{dy}{g(y)}=f(x)dx\ \ (g(y)\neq 0)
-g(y)dy​=f(x)dx  (g(y)​=0)
-两端积分:
-∫dyg(y)=∫f(x)dx\int_{}^{}\frac{dy}{g(y)}=\int_{}^{}f(x)dx
-∫​g(y)dy​=∫​f(x)dx
-求通解
-
- 1.2.2. 齐次方程
-
-dydx=f(yx)\frac{dy}{dx}=f(\frac{y}{x})
-dxdy​=f(xy​)
-
-
-变量代换: yx=u\frac{y}{x}=uxy​=u
-带入: $$\</div>
+1.2.3. 线性方程
+\frac{dy}{dx}+P(x)y=Q(x)通解: 
+y=e^{-\int_{}^{}P(x)dx}(\int_{}^{}Q(x)e^{\int_{}^{}P(x)dx}dx+C)
+1.2.4. 伯努利方程
+形如
+y'+p(x)y=Q(x)yx^{n}改</div>
         </div>
       </a>
 
@@ -219,17 +209,15 @@ dxdy​=f(xy​)
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 常数项级数
- 1.1. 1.1级数的概念与性质
+          <div class="index-text mb-1">1. 常数项级数1.1. 1.1级数的概念与性质
+**定义**
 
 
-定义
-
-设有数列{un}\{ u_{n}\}{un​},则称∑n=1∞=u1+u2+⋅⋅⋅+un+⋅⋅⋅\sum_{n=1}^{\infty}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdot∑n=1∞​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅为无穷级数，
-令Sn=u1+u2+⋅⋅⋅+un+⋅⋅⋅S_{n}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdotSn​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅，则称数列SnS_{n}Sn​为级数∑n=1∞un\sum_{n=1}^{\infty}u_{n}∑n=1∞​un​的部分和数列，
-如果部分和数列SnS_{n}Sn​有极限SSS，即
-lim⁡n→+∞Sn=S,\lim_{n\rightarrow +\infty } S_{n}=S,limn→+∞​Sn​=S,
-则称级数∑n=1∞un\sum_{n=1}^{\infty}u_{n}∑n=1∞​un​收敛，这时极限S叫作级数∑n=</div>
+设有数列${ u{n}}$,则称$\sum{n=1}^{\infty}=u1+u_2+\cdot \cdot \cdot +u{n}+\cdot \cdot \cdot$为无穷级数，  
+令$S{n}=u_1+u_2+\cdot \cdot \cdot +u{n}+\cdot \cdot \cdot$，则称数列$S{n}$为级数$\sum{n=1}^{\infty}u_{n}$的部分和数列，  
+如果部分和数列$S{n}$有极限$S$，即$\lim{n\rightarrow +\infty } S{n}=S,$则称级数$\sum{n=1}^{\infty}u{n}$收敛，这时极限S叫作级数$\sum{n=1}^{\infty} u_{n}$的和  
+如果${S{n}}$没有极限，则称级数$\sum{n=1}^{\infty}u_{n}$发散  
+若级数$\sum{n=1}^{\infty}u{n}$收敛于$S$，此时称$r{n}=S-S{n}=u{n+1}+u{n+2}+\cdot \cdot \cdot$为级数$\s</div>
         </div>
       </a>
 
@@ -268,21 +256,27 @@ lim⁡n→+∞Sn=S,\lim_{n\rightarrow +\infty } S_{n}=S,limn→+∞​Sn​=S,
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 重积分
- 1.1.二重积分
-
+          <div class="index-text mb-1">1. 重积分1.1.二重积分
 定义
-
-z=f(x,y)z=f(x,y)z=f(x,y)是平面上有界闭区间D上的有界函数
-∬Df(x,y)dσ=Δlim⁡d→0∑k=1nf(ξk,ηk)Δσk\iint_{D}^{}f(x,y)d\sigma\overset{\Delta }{=}\lim_{d\rightarrow 0} \sum_{k=1}^{n}f(\xi_{k},\eta_{k})\Delta \sigma_{k}
-∬D​f(x,y)dσ=Δd→0lim​k=1∑n​f(ξk​,ηk​)Δσk​
-d:      n个小区域直径的最大值d:\ \ \ \ \ \ n个小区域直径的最大值d:      n个小区域直径的最大值
-Δσk: 第k个小区域的面积\Delta \sigma_{k}:\ 第k个小区域的面积Δσk​: 第k个小区域的面积
-如果f(x,y)在D上连续,则∬Df(x,y)dσ如果f(x,y)在D上连续,则\iint_{D}^{}f(x,y)d\sigma如果f(x,y)在D上连续,则∬D​f(x,y)dσ总存在
+> $z=f(x,y)$是平面上有界闭区间D上的有界函数  
+>$$
+> \iint_{D}^{}f(x,y)d\sigma\overset{\Delta }{=}\lim_{d\rightarrow 0} \sum_{k=1}^{n}f(\xi_{k},\eta_{k})\Delta \sigma_{k}
+> $$
+> $d:\ \ \ \ \ \ n个小区域直径的最大值$  
+> $\Delta \sigma_{k}:\ 第k个小区域的面积$  
+> $如果f(x,y)在D上连续,则\iint_{D}^{}f(x,y)d\sigma$总存在  
 
 几何意义
 
-如果f(x,y)在区域D连续且非负</div>
+$如果f(x,y)在区域D连续且非负$,则二重积分表示曲顶圆柱体的体积
+
+性质
+
+比较定理:  
+
+$在D上,f(x,y)\leqslant g(x,y)$
+\iint_{D}^{}f(x,y)d\sigma\leqslant \iint_{D}^{}g(x,y)d\sigma估值定理$M,m是{\color{red}连续}函数f(x,y)在闭区域D上的最大值和最小值,S表示D的面积,则$
+</div>
         </div>
       </a>
 
@@ -321,17 +315,16 @@ d:      n个小区域直径的最大值d:\ \ \ \ \ \ n个小区域直径�
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1.多元函数的极限,连续,偏导数,全微分
- 1.1多元函数
- 1.2二元函数的连续与连续
-
+          <div class="index-text mb-1">1.多元函数的极限,连续,偏导数,全微分1.1多元函数1.2二元函数的连续与连续
 重极限的概念
 
-f(x,y)再开区间/闭区间D内有定义,P0(x0,y0)是D内的内点/边界点对于任意ε&gt;0,∃δ&gt;0,使得0&lt;(x−x0)2+(y−y0)2&lt;δ且P(x,y)∈D的一切都有∣f(x,y)−A∣&lt;ε,则称A为f(x,y)为x→x0,y→y0时的极限记为limx→x0y→y0f(x,y)=A\begin{aligned}
-&amp;f(x,y)再开区间/闭区间D内有{\color{red}定义},P_0(x_0,y_0)是D内的内点/边界点
-\\ &amp;对于任意\varepsilon &gt;0,\exists \delta  &gt;0,使得
-\\ &amp;0&lt;\sqrt[]{(x-x_0)^2+(y-y_0)^2}&lt;\delta  
-\\ &amp;且P(x,y)\in D的一切都有|f(x,y)-A|&lt;\varepsilon ,则称A为f(x,y)为x\rightarrow x_0,y\rightarrow y_0时的极</div>
+\begin{aligned}
+&f(x,y)再开区间/闭区间D内有{\color{red}定义},P_0(x_0,y_0)是D内的内点/边界点
+\\ &对于任意\varepsilon >0,\exists \delta  >0,使得
+\\ &0
+\left{\begin{matrix}\frac{\partial F}{\partial x}=\frac{\partial f}{\partial x}+\lambda \frac{\partial \varphi}{\partial x}=0\ \frac{\partial F}{\partial y}=\frac{\partial f}{\partial y}+\lambda\frac{\partial \varphi}{\partial y}=0\ \frac{\partial F}{\partial \lambda}=\varphi(x,y)=0\end{matrix}\right.
+
+> 所有满足的解$(x,y,\lambda)$</div>
         </div>
       </a>
 
@@ -370,21 +363,27 @@ f(x,y)再开区间/闭区间D内有定义,P0(x0,y0)是D内的内点/边界点对
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 向量代数
- 1.1. 与向量有关的基本概念
- 1.1.1. 向量a的方向余弦
-ao={cos⁡α,cos⁡β,cos⁡γ},cos⁡2α+cos⁡2β+cos⁡2γa^{o}=\{\cos \alpha , \cos \beta , \cos \gamma \}, \cos^2\alpha+\cos^2\beta +\cos^2\gamma 
-ao={cosα,cosβ,cosγ},cos2α+cos2β+cos2γ
- 1.2. 向量的运算性质
- 1.2.1. 数量积
-a⋅b=∣a∣∣b∣cos⁡&lt;a,b&gt;a\cdot b=|a||b|\cos &lt;a, b&gt; 
-a⋅b=∣a∣∣b∣cos&lt;a,b&gt;
- 1.2.2. 向量积
-b×a=−(a×b)b\times a=-(a \times b)
-b×a=−(a×b)
- 1.2.3. 混合积
-(abc)=(a×b)⋅c轮换对称性:(abc)=(bca)=(cab)交换变号性:两向量互换,变号应用:平行六面体体积:∣(a,b,c)∣三向量共面:(a,b,c)=0\begin{aligned}
-&amp;</div>
+          <div class="index-text mb-1">1. 向量代数1.1. 与向量有关的基本概念1.1.1. 向量a的方向余弦
+a^{o}=\{\cos \alpha , \cos \beta , \cos \gamma \}, \cos^2\alpha+\cos^2\beta +\cos^2\gamma1.2. 向量的运算性质1.2.1. 数量积
+a\cdot b=|a||b|\cos 1.2.2. 向量积
+b\times a=-(a \times b)1.2.3. 混合积
+\begin{aligned}
+&(abc)=(a×b)\cdot c
+\\&轮换对称性:(abc)=(bca)=(cab)
+\\&交换变号性: 两向量互换, 变号
+\\&应用:&平行六面体体积:|(a, b, c)|
+\\&&三向量共面:(a, b, c)=0
+\end{aligned}2. 平面与直线2.1. 平面方程
+一般式方程
+
+
+Ax+By+Cz+D=0, 
+\\n=\{ A, B, C\}为平面的法向量
+点法式方程
+
+
+A(x-x_0)+B(y-y_0)+C(z-z_0)=0, 
+\\(x_0, y_0, z_0)为平面上任意一点, n=\{ A, B</div>
         </div>
       </a>
 
@@ -423,20 +422,20 @@ b×a=−(a×b)
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 不定积分与定积分的概念性质理论
- 1.1重要性质
- 1.1.1定积分存在定理
+          <div class="index-text mb-1">1. 不定积分与定积分的概念性质理论1.1重要性质1.1.1定积分存在定理
+1.$设f(x) 在[a, b]上{\color{red}连续}, 则\int{a}^{b}f(x) dx存在$2.$设f(x) 在[a, b]上{\color{red}有界}, 且只有{\color{red}有限个间断点}, 则\int{a}^{b}f(x) dx存在, $$({\color{yellow}原函数不一定存在}, 有跳跃间断点一定不存在原函数)$$(若不连续, 原函数与定积分是否存在可以不相干)$
 
-1.设f(x)在[a,b]上连续,则∫abf(x)dx存在设f(x) 在[a, b]上{\color{red}连续}, 则\int_{a}^{b}f(x) dx存在设f(x)在[a,b]上连续,则∫ab​f(x)dx存在
-2.$设f(x) 在[a, b]上{\color{red}有界}, 且只有{\color{red}有限个间断点}, 则\int_{a}^{b}f(x) dx存在, $
-(原函数不一定存在,有跳跃间断点一定不存在原函数)({\color{yellow}原函数不一定存在}, 有跳跃间断点一定不存在原函数)(原函数不一定存在,有跳跃间断点一定不存在原函数)
-(若不连续,原函数与定积分是否存在可以不相干)(若不连续, 原函数与定积分是否存在可以不相干)(若不连续,原函数与定积分是否存在可以不相干)
+1.1.2原函数存在定理
+$这f(x) 在[a, b]上{\color{red}连续}, 必存在原函数$
 
- 1.1.2原函数存在定理
+1.1.3不定积分与定积分的关系
 
-这f(x)在[a,b]上连续,必存在原函数这f(x) 在[a, b]上{\color{red}连续}, 必存在原函数这f(x)在[a,b]上连续,必存在原函数
-
-</div>
+\begin{aligned}
+x_0处跳跃间断点, 其他连续, 
+\\\lim_{ x\rightarrow x_0^{-}} f(x)=f(x_0^{-}), \lim_{x\rightarrow x_0^{+}} f(x)=f(x_0^{+}), 
+\\F(x)=\int_{c}^{x}f(x)dx
+\\不论c是否等于x_0, 都有
+\\&①F(x)在</div>
         </div>
       </a>
 
@@ -475,22 +474,32 @@ b×a=−(a×b)
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 导数与微分, 导数的计算
- 1.1. 定义
-
+          <div class="index-text mb-1">1. 导数与微分, 导数的计算1.1. 定义
 导数
 
 
-f(x)在x=x0的某邻域U(x0)内有定义,lim⁡x→x0f(x)−f(x0)x−x0存在就可导记为f′(x0)\begin{aligned}
-&amp;f(x)在x=x_0的{\color{red}某邻域U(x_0)内有定义}, 
-\\&amp;\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)  }{x-x_0}存在就{\color{blue}可导}记为f&#x27;(x_0) 
+
+
+
+\begin{aligned}
+&f(x)在x=x_0的{\color{red}某邻域U(x_0)内有定义}, 
+\\&\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)  }{x-x_0}存在就{\color{blue}可导}记为f'(x_0) 
 \end{aligned}
-​f(x)在x=x0​的某邻域U(x0​)内有定义,x→x0​lim​x−x0​f(x)−f(x0​)​存在就可导记为f′(x0​)​
+\begin{aligned}
+&如果没有给x=x_0处连续的条件
+\\&f'(x_0)=\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)  }{x-x_0}\xrightarrow[]{不能使用洛必达达} =\lim_{x\rightarrow x_0}f'(x)  =A(\infty )
+\\&因为如果f(x) 在x=x_0处不连续\lim_{x\rightarrow x_0} f(x) -f(x_0)不能保证=0 
+\end{aligned}
+
+函数的微分
 
 
-如果没有给x=x0处连续的条件f′(x0)=lim⁡x→x0f(x)−f(x0)x−x0→不能使用洛必达达=lim⁡x→x0f′(x)=A(∞)因为如果f(x)在x=x0处不连续lim⁡x→x0f(x)−f(x0)不能保证=0\begin{aligned}
-&amp;如果没有给x=x_0处连续的条件
-\\&amp;f&#x27;(x_0)=\</div>
+
+
+
+\begin{aligned}
+&y=f(x)在x=x_0的某邻域U(x_0)内有定义
+\\&x_0+\Delta\</div>
         </div>
       </a>
 
@@ -529,29 +538,21 @@ f(x)在x=x0的某邻域U(x0)内有定义,lim⁡x→x0f(x)−f(x0)x−x0存在就
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 函数
- 1.1. 关于奇偶性
+          <div class="index-text mb-1">1. 函数1.1. 关于奇偶性
+任一定义在对称于原点的数集X上的函数 f(x), 必可以分解成一奇一偶函数之和  
 
-任一定义在对称于原点的数集X上的函数 f(x), 必可以分解成一奇一偶函数之和
-f(x)=22[f(x)−f(−x)]+12[f(x)+f(−x)]f(x)= \frac{2}{2}[ f(x)- f(-x)]+\frac{1}{2} [ f(x) + f(-x) ]
-f(x)=22​[f(x)−f(−x)]+21​[f(x)+f(−x)]
-
+f(x)= \frac{2}{2}[ f(x)- f(-x)]+\frac{1}{2} [ f(x) + f(-x) ]
 求导一次奇偶性改变一次
-常见奇函数    ln⁡1−x1+x,ln⁡(x+1+x2),ex−1ex+1\ln\frac{1-x}{1+x}, \ln(x+\sqrt{1+x^2}), \frac{e^x- 1}{e^x+1}ln1+x1−x​,ln(x+1+x2​),ex+1ex−1​
-
-
-
+常见奇函数    $\ln\frac{1-x}{1+x}, \ln(x+\sqrt{1+x^2}), \frac{e^x- 1}{e^x+1}$
 
 $f(x)是奇函数\rightarrow f’(x) 是是偶函数; $
+
 $f(x)是偶函\leftrightarrow f’(x) 是奇函数; $
 
+解释: 连续的奇函数其原函数 都是 偶函数;连续函数一定有原函数: 如果f(x)连续,则  $(\int_{a}^{x}f(x)dx)’=f(x), 所以变上限积分至少是一个原函数$ 
 
-
-
-
-解释: 连续的奇函数其原函数 都是 偶函数;
-连续函数一定有原函数: 如果f(x)连续,
-则  (∫axf(x)dx)′=f(x),所以变上限积分至少是一个原函</div>
+$f(x)连续, 若是奇函数, 则 \int_{a}^{x} f(t) dt是偶函数$
+$F(x)=\int{0}^{- x}f(t)dt\overset{\text{t=- u}}{=}\int{0}^{- x} [- f(u)(- du)] =</div>
         </div>
       </a>
 
@@ -590,28 +591,28 @@ $f(x)是偶函\leftrightarrow f’(x) 是奇函数; $
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1.1. 不定积分与定积分的概念性质理论
- 1.1.1.2.1分段函数的不定积分与定积分
+          <div class="index-text mb-1">1.1. 不定积分与定积分的概念性质理论1.1.1.2.1分段函数的不定积分与定积分
+分段求原函数使原函数在分界点处连续这样的到的原函数不但在分界点连续, 并且使可导的
 
-分段求原函数
-使原函数在分界点处连续
-这样的到的原函数不但在分界点连续, 并且使可导的
+2.2. 不定积分与定积分的计算2.1.2.3.1简单有理分式的积分1.
 
- 2.2. 不定积分与定积分的计算
- 2.1.2.3.1简单有理分式的积分
-
-
-
-x+5x2−6x+13=122x−6x2−6x+13+8dx(x−3)2+22=ln⁡...+arctan⁡...\frac{x+5}{x^2-6x+13}=\frac{1}{2}\frac{2x-6}{x^2-6x+13}+8\frac{dx}{(x-3)^2+2^2}=\ln... +\arctan... 
-x2−6x+13x+5​=21​x2−6x+132x−6​+8(x−3)2+22dx​=ln...+arctan...
-
+\frac{x+5}{x^2-6x+13}=\frac{1}{2}\frac{2x-6}{x^2-6x+13}+8\frac{dx}{(x-3)^2+2^2}=\ln... +\arctan...
 标准步骤拆项积分
 
- 2.2.2.3.2三角函数的有理分式的积分
-
+2.2.2.3.2三角函数的有理分式的积分
 两角和与差
 
-sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)−sin⁡(a)sin⁡(b)tan⁡(a+b)=[tan⁡(a)+tan⁡(b)]1−t</div>
+
+\begin{aligned}
+\sin (a+b)&=\sin(a)\cos(b)+\cos(a)\sin(b)
+\\\cos(a+b)&=\cos(a)\cos(b)-\sin(a)\sin(b)
+\\\tan(a+b)&=\frac{[\tan(a)+\tan(b)]}{1-\tan(a)\tan(b)}
+\\\tan(a-b)&=\frac{[\tan(a)-\tan(b)]}{1+\tan(a)\tan(b)}
+\end{aligned}
+拆项
+
+
+\begi</div>
         </div>
       </a>
 
@@ -652,18 +653,23 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 导数与微分, 导数的计算
- 1.1. 按定义求一点出的导数
+          <div class="index-text mb-1">1. 导数与微分, 导数的计算1.1. 按定义求一点出的导数
 
-①高阶导数没告诉存在,但是洛必达还要用得到的话可以考虑凑成导数例如:需要g′′(x),利用g′(x)−g′(0)x−0\begin{aligned}
-&amp;①高阶导数没告诉存在, 但是洛必达还要用得到的话可以考虑凑成导数
-\\&amp;例如: 需要g&#x27;&#x27;(x), 利用\frac{g&#x27;(x)-g&#x27;(0)}{x-0}
+\begin{aligned}
+&①高阶导数没告诉存在, 但是洛必达还要用得到的话可以考虑凑成导数
+\\&例如: 需要g''(x), 利用\frac{g'(x)-g'(0)}{x-0}
 \end{aligned}
-​①高阶导数没告诉存在,但是洛必达还要用得到的话可以考虑凑成导数例如:需要g′′(x),利用x−0g′(x)−g′(0)​​
+1.2. 已知f(x) 在某点$x=x_0$处可导, 求与此有关的某极限或其中某参数, 或已知某极限求f(x) 在$x=x_0$处的导数
 
- 1.2. 已知f(x) 在某点x=x0x=x_0x=x0​处可导, 求与此有关的某极限或其中某参数, 或已知某极限求f(x) 在x=x0x=x_0x=x0​处的导数
-
-①选择题可以用的结论设f(x)在x=0处连续且lim⁡x→0f(x)x=A则f(0)=0,f′(0)存在且等于A②[f(x)−f(−x)]′∣x=0=A不能推出f′(x)∣x=0+f′(−x)∣x=0=A,和的导数存在不能推出两项的导数存在③f</div>
+\begin{aligned}
+①&选择题可以用的结论
+\\&设f(x) 在x=0处连续且\lim_{x\rightarrow 0} \frac{f(x) }{x}=A
+\\&则f(0)=0, f'(0)存在且等于A
+\\②&[f(x) -f(-x) ]'\mid_{x=0}=A不能推出
+\\&f'(x) \mid_{x=0}+f'(-x)\mid_{x=0}=A, 
+\\&和的导数存在不能推出两项的导数存在
+\\③&f'(x_0)存在, 在x=x_0处连续
+\\&f'(x_0)=\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)  }{x-x</div>
         </div>
       </a>
 
@@ -893,8 +899,27 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
   
 
   
-    <!-- KaTeX -->
-    <link rel="stylesheet" href="/lib/katex/katex.min.css"  ><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+              processEscapes: true,
+              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+      });
+
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+
+    </script>
+
+    <script src="https://cdn.staticfile.org/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML" ></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
   
 
 
