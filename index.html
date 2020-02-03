@@ -141,46 +141,36 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/8_%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">
-        <p class="h4 index-header">数学/8_常微分方程</p>
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/1_%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/">
+        <p class="h4 index-header">1_函数极限连续</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 常微分方程
- 1.1. 基本概念
+          <div class="index-text mb-1"> 1. 函数
+ 1.1. 关于奇偶性
+
+任一定义在对称于原点的数集X上的函数 f(x), 必可以分解成一奇一偶函数之和
+f(x)=22[f(x)−f(−x)]+12[f(x)+f(−x)]f(x)= \frac{2}{2}[ f(x)- f(-x)]+\frac{1}{2} [ f(x) + f(-x) ]
+f(x)=22​[f(x)−f(−x)]+21​[f(x)+f(−x)]
+
+求导一次奇偶性改变一次
+常见奇函数    ln⁡1−x1+x,ln⁡(x+1+x2),ex−1ex+1\ln\frac{1-x}{1+x}, \ln(x+\sqrt{1+x^2}), \frac{e^x- 1}{e^x+1}ln1+x1−x​,ln(x+1+x2​),ex+1ex−1​
 
 
-通解: 与微分函数方程阶数相同个数的独立的任意常数的解
-特解: 不含任意常数的解
-定解条件: 用来确定通解中任意常数的条件
-积分曲线: 微分方程的解的y=y(x)y=y(x)y=y(x)表示的曲线
 
 
- 1.2. 常见的几类一阶方程及解法
- 1.2.1. 可分离变量的方程
-
-dydx=f(x)g(y)\frac{dy}{dx}=f(x)g(y)
-dxdy​=f(x)g(y)
+$f(x)是奇函数\rightarrow f’(x) 是是偶函数; $
+$f(x)是偶函\leftrightarrow f’(x) 是奇函数; $
 
 
-改写成:
-dyg(y)=f(x)dx  (g(y)≠0)\frac{dy}{g(y)}=f(x)dx\ \ (g(y)\neq 0)
-g(y)dy​=f(x)dx  (g(y)​=0)
-两端积分:
-∫dyg(y)=∫f(x)dx\int_{}^{}\frac{dy}{g(y)}=\int_{}^{}f(x)dx
-∫​g(y)dy​=∫​f(x)dx
-求通解
-
- 1.2.2. 齐次方程
-
-dydx=f(yx)\frac{dy}{dx}=f(\frac{y}{x})
-dxdy​=f(xy​)
 
 
-变量代换: yx=u\frac{y}{x}=uxy​=u
-带入: $$\</div>
+
+解释: 连续的奇函数其原函数 都是 偶函数;
+连续函数一定有原函数: 如果f(x)连续,
+则  (∫axf(x)dx)′=f(x),所以变上限积分至少是一个原函</div>
         </div>
       </a>
 
@@ -189,6 +179,20 @@ dxdy​=f(xy​)
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
         
         
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          
         
       </div>
     </div>
@@ -198,24 +202,27 @@ dxdy​=f(xy​)
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/7_%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">
-        <p class="h4 index-header">数学/7_无穷级数</p>
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
+        <p class="h4 index-header">3_一元函数积分学</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 常数项级数
- 1.1. 1.1级数的概念与性质
+          <div class="index-text mb-1"> 1. 不定积分与定积分的概念性质理论
+ 1.1重要性质
+ 1.1.1定积分存在定理
 
+1.设f(x)在[a,b]上连续,则∫abf(x)dx存在设f(x) 在[a, b]上{\color{red}连续}, 则\int_{a}^{b}f(x) dx存在设f(x)在[a,b]上连续,则∫ab​f(x)dx存在
+2.$设f(x) 在[a, b]上{\color{red}有界}, 且只有{\color{red}有限个间断点}, 则\int_{a}^{b}f(x) dx存在, $
+(原函数不一定存在,有跳跃间断点一定不存在原函数)({\color{yellow}原函数不一定存在}, 有跳跃间断点一定不存在原函数)(原函数不一定存在,有跳跃间断点一定不存在原函数)
+(若不连续,原函数与定积分是否存在可以不相干)(若不连续, 原函数与定积分是否存在可以不相干)(若不连续,原函数与定积分是否存在可以不相干)
 
-定义
+ 1.1.2原函数存在定理
 
-设有数列{un}\{ u_{n}\}{un​},则称∑n=1∞=u1+u2+⋅⋅⋅+un+⋅⋅⋅\sum_{n=1}^{\infty}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdot∑n=1∞​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅为无穷级数，
-令Sn=u1+u2+⋅⋅⋅+un+⋅⋅⋅S_{n}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdotSn​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅，则称数列SnS_{n}Sn​为级数∑n=1∞un\sum_{n=1}^{\infty}u_{n}∑n=1∞​un​的部分和数列，
-如果部分和数列SnS_{n}Sn​有极限SSS，即
-lim⁡n→+∞Sn=S,\lim_{n\rightarrow +\infty } S_{n}=S,limn→+∞​Sn​=S,
-则称级数∑n=1∞un\sum_{n=1}^{\infty}u_{n}∑n=1∞​un​收敛，这时极限S叫作级数∑n=</div>
+这f(x)在[a,b]上连续,必存在原函数这f(x) 在[a, b]上{\color{red}连续}, 必存在原函数这f(x)在[a,b]上连续,必存在原函数
+
+</div>
         </div>
       </a>
 
@@ -224,6 +231,20 @@ lim⁡n→+∞Sn=S,\lim_{n\rightarrow +\infty } S_{n}=S,limn→+∞​Sn​=S,
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
         
         
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          
         
       </div>
     </div>
@@ -309,119 +330,6 @@ b×a=−(a×b)
  1.2.3. 混合积
 (abc)=(a×b)⋅c轮换对称性:(abc)=(bca)=(cab)交换变号性:两向量互换,变号应用:平行六面体体积:∣(a,b,c)∣三向量共面:(a,b,c)=0\begin{aligned}
 &amp;</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/1_%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/">
-        <p class="h4 index-header">1_函数极限连续</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 函数
- 1.1. 关于奇偶性
-
-任一定义在对称于原点的数集X上的函数 f(x), 必可以分解成一奇一偶函数之和
-f(x)=22[f(x)−f(−x)]+12[f(x)+f(−x)]f(x)= \frac{2}{2}[ f(x)- f(-x)]+\frac{1}{2} [ f(x) + f(-x) ]
-f(x)=22​[f(x)−f(−x)]+21​[f(x)+f(−x)]
-
-求导一次奇偶性改变一次
-常见奇函数    ln⁡1−x1+x,ln⁡(x+1+x2),ex−1ex+1\ln\frac{1-x}{1+x}, \ln(x+\sqrt{1+x^2}), \frac{e^x- 1}{e^x+1}ln1+x1−x​,ln(x+1+x2​),ex+1ex−1​
-
-
-
-
-$f(x)是奇函数\rightarrow f’(x) 是是偶函数; $
-$f(x)是偶函\leftrightarrow f’(x) 是奇函数; $
-
-
-
-
-
-解释: 连续的奇函数其原函数 都是 偶函数;
-连续函数一定有原函数: 如果f(x)连续,
-则  (∫axf(x)dx)′=f(x),所以变上限积分至少是一个原函</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
-        <p class="h4 index-header">3_一元函数积分学</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 不定积分与定积分的概念性质理论
- 1.1重要性质
- 1.1.1定积分存在定理
-
-1.设f(x)在[a,b]上连续,则∫abf(x)dx存在设f(x) 在[a, b]上{\color{red}连续}, 则\int_{a}^{b}f(x) dx存在设f(x)在[a,b]上连续,则∫ab​f(x)dx存在
-2.$设f(x) 在[a, b]上{\color{red}有界}, 且只有{\color{red}有限个间断点}, 则\int_{a}^{b}f(x) dx存在, $
-(原函数不一定存在,有跳跃间断点一定不存在原函数)({\color{yellow}原函数不一定存在}, 有跳跃间断点一定不存在原函数)(原函数不一定存在,有跳跃间断点一定不存在原函数)
-(若不连续,原函数与定积分是否存在可以不相干)(若不连续, 原函数与定积分是否存在可以不相干)(若不连续,原函数与定积分是否存在可以不相干)
-
- 1.1.2原函数存在定理
-
-这f(x)在[a,b]上连续,必存在原函数这f(x) 在[a, b]上{\color{red}连续}, 必存在原函数这f(x)在[a,b]上连续,必存在原函数
-
-</div>
         </div>
       </a>
 
@@ -555,6 +463,74 @@ d:      n个小区域直径的最大值d:\ \ \ \ \ \ n个小区域直径�
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_1_%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/">
+        <p class="h4 index-header">题型1_函数极限连续</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> 1. 函数
+ 2. 极限
+ 2.1. 求函数的极限
+
+
+恒等变形约分化简
+提出极限不为0的
+等价无穷小替换
+洛必达
+佩亚诺余项泰勒公式
+有时 夹逼定理
+最后可能 归结到 四则运算 复合函数求极限 连续函数 以及几个重要极限
+导数定义求极限
+
+
+
+
+00,∞∞,0∗∞\frac{0}{0},\frac{\infty }{\infty }, 0*\infty00​,∞∞​,0∗∞
+
+
+
+$幂指数函数化成指数函数( ( 1+x ){\frac{1}{x}}=e{\frac{1}{x}\ln ( 1+x )}  ), 
+原式分子化成e^{u}-1 等价无穷小u替换$
+用佩亚诺余项泰勒公式展开项数观察分母的项数1+2x→佩亚诺余项泰勒展开式比用等价无穷小替换更精细用佩亚诺余项泰勒公式展开项数观察分母的项数\sqrt[]{1+2x}\rightarrow
+佩亚诺余项泰勒展开式比用等价无穷小替换更精细用佩亚诺余项泰勒公式展开项数观察分母的项数1+2x​→佩亚诺余项泰勒展开式比用等价无穷小替换更精细
+1x可以考虑换成换成x\frac{1}{x} 可以考虑换成换成xx1​可以考虑换成换成x
+
+
+
+∞−</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
         <p class="h4 index-header">题型3_一元函数积分学</p>
         
@@ -615,43 +591,74 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_1_%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/">
-        <p class="h4 index-header">题型1_函数极限连续</p>
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_2_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/">
+        <p class="h4 index-header">题型2_一元函数微分学</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 函数
- 2. 极限
- 2.1. 求函数的极限
+          <div class="index-text mb-1"> 1. 导数与微分, 导数的计算
+ 1.1. 按定义求一点出的导数
+
+①高阶导数没告诉存在,但是洛必达还要用得到的话可以考虑凑成导数例如:需要g′′(x),利用g′(x)−g′(0)x−0\begin{aligned}
+&amp;①高阶导数没告诉存在, 但是洛必达还要用得到的话可以考虑凑成导数
+\\&amp;例如: 需要g&#x27;&#x27;(x), 利用\frac{g&#x27;(x)-g&#x27;(0)}{x-0}
+\end{aligned}
+​①高阶导数没告诉存在,但是洛必达还要用得到的话可以考虑凑成导数例如:需要g′′(x),利用x−0g′(x)−g′(0)​​
+
+ 1.2. 已知f(x) 在某点x=x0x=x_0x=x0​处可导, 求与此有关的某极限或其中某参数, 或已知某极限求f(x) 在x=x0x=x_0x=x0​处的导数
+
+①选择题可以用的结论设f(x)在x=0处连续且lim⁡x→0f(x)x=A则f(0)=0,f′(0)存在且等于A②[f(x)−f(−x)]′∣x=0=A不能推出f′(x)∣x=0+f′(−x)∣x=0=A,和的导数存在不能推出两项的导数存在③f</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/7_%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">
+        <p class="h4 index-header">7_无穷级数</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> 1. 常数项级数
+ 1.1. 1.1级数的概念与性质
 
 
-恒等变形约分化简
-提出极限不为0的
-等价无穷小替换
-洛必达
-佩亚诺余项泰勒公式
-有时 夹逼定理
-最后可能 归结到 四则运算 复合函数求极限 连续函数 以及几个重要极限
-导数定义求极限
+定义
 
-
-
-
-00,∞∞,0∗∞\frac{0}{0},\frac{\infty }{\infty }, 0*\infty00​,∞∞​,0∗∞
-
-
-
-$幂指数函数化成指数函数( ( 1+x ){\frac{1}{x}}=e{\frac{1}{x}\ln ( 1+x )}  ), 
-原式分子化成e^{u}-1 等价无穷小u替换$
-用佩亚诺余项泰勒公式展开项数观察分母的项数1+2x→佩亚诺余项泰勒展开式比用等价无穷小替换更精细用佩亚诺余项泰勒公式展开项数观察分母的项数\sqrt[]{1+2x}\rightarrow
-佩亚诺余项泰勒展开式比用等价无穷小替换更精细用佩亚诺余项泰勒公式展开项数观察分母的项数1+2x​→佩亚诺余项泰勒展开式比用等价无穷小替换更精细
-1x可以考虑换成换成x\frac{1}{x} 可以考虑换成换成xx1​可以考虑换成换成x
-
-
-
-∞−</div>
+设有数列{un}\{ u_{n}\}{un​},则称∑n=1∞=u1+u2+⋅⋅⋅+un+⋅⋅⋅\sum_{n=1}^{\infty}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdot∑n=1∞​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅为无穷级数，
+令Sn=u1+u2+⋅⋅⋅+un+⋅⋅⋅S_{n}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdotSn​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅，则称数列SnS_{n}Sn​为级数∑n=1∞un\sum_{n=1}^{\infty}u_{n}∑n=1∞​un​的部分和数列，
+如果部分和数列SnS_{n}Sn​有极限SSS，即
+lim⁡n→+∞Sn=S,\lim_{n\rightarrow +\infty } S_{n}=S,limn→+∞​Sn​=S,
+则称级数∑n=1∞un\sum_{n=1}^{\infty}u_{n}∑n=1∞​un​收敛，这时极限S叫作级数∑n=</div>
         </div>
       </a>
 
