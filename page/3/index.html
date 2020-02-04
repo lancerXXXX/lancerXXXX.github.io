@@ -148,7 +148,7 @@
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">2020-01-31
+          <div class="index-text mb-1"> 2020-01-31
 
 
 
@@ -204,7 +204,7 @@ hum(地)
 
 
 7
-app</div>
+ap</div>
         </div>
       </a>
 
@@ -243,18 +243,28 @@ app</div>
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">提示过程中如果出现了问题 第一步 切换root和非root即sudo su和exit   重试 如果不行第二步  关掉终端重新开 重试 如果不行第三步 百度,必应,google.....重试 如果不行第四步 关机重启 如果不行第五步 卸载Ubuntu  先看C:\Users\用户名\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs这里的东西删没删掉如果删掉了就重装如果删不掉 新建txt 
+          <div class="index-text mb-1"> 提示
+过程中如果出现了问题 第一步 切换root和非root即sudo su和exit 重试 如果不行
+第二步 关掉终端重新开 重试 如果不行
+第三步 百度,必应,google.....重试 如果不行
+第四步 关机重启 如果不行
+第五步 卸载Ubuntu 先看C:\Users\用户名\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs这里的东西删没删掉
+如果删掉了就重装
+如果删不掉 新建txt
 DEL /F /A /Q \\?\%1
 RD /S /Q \\?\%1
-写进上边,后缀改成.bat  把文件夹托上去删掉 
-更新的部分在这里markdown 预览插件我换成了这个这个具体设置看官方文档
-解决访问GitHub太慢需要访问GitHub 所以要先解决这个问题https://blog.csdn.net/weixin_38437404/article/details/89489401
-安装Ubuntu
-打开适用于Linux的Windows子系统
 
+写进上边,后缀改成.bat 把文件夹托上去删掉
+ 更新的部分在这里
+markdown 预览插件我换成了这个
+这个
+具体设置看官方文档
+ 解决访问GitHub太慢
+需要访问GitHub 所以要先解决这个问题
+https://blog.csdn.net/weixin_38437404/article/details/89489401
+ 安装Ubuntu
 
-
-</div>
+打开适用于Linux的Win</div>
         </div>
       </a>
 
@@ -482,27 +492,8 @@ RD /S /Q \\?\%1
   
 
   
-    <!-- MathJax -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-          tex2jax: {
-              inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-              processEscapes: true,
-              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-          }
-      });
-
-      MathJax.Hub.Queue(function() {
-          var all = MathJax.Hub.getAllJax(), i;
-          for(i=0; i < all.length; i += 1) {
-              all[i].SourceElement().parentNode.className += ' has-jax';
-          }
-      });
-
-    </script>
-
-    <script src="https://cdn.staticfile.org/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML" ></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="/lib/katex/katex.min.css"  ><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
