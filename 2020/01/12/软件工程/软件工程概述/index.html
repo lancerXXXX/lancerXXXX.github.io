@@ -1312,7 +1312,7 @@ C --&gt;B
 <blockquote>
 <ul>
 <li>将五种模型有机的<strong>统一</strong>,形成<strong>完整</strong>的模型</li>
-<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104120534870.png" srcset="/img/loading.gif" alt="image-20191104120534870"></li>
+<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104120534870.png" srcset="/img/loading.gif" alt="image-20191104120534870"></li>
 <li>从五个不同的角度描述软件架构</li>
 <li>每个视图只关心系统的一个<strong>侧面</strong>,五个视图结合在一起才能反应系统的<strong>软件架构的全部内容</strong></li>
 </ul>
@@ -1372,19 +1372,19 @@ C --&gt;B
 <ul>
 <li><font color="#33CCFF">***管道与过滤器***(数据流风格)</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104134306146.png" srcset="/img/loading.gif" alt="image-20191104134306146"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104134306146.png" srcset="/img/loading.gif" alt="image-20191104134306146"></p>
 <p>• 每个构件都有一组<strong>输入和输出</strong>，构件读取输入的数据流，经过内部处理，然后产生输出数据流。<br>• 构件被称为<strong>过滤器</strong>，这种风格的<strong>连接件</strong>就是数据流传输的<strong>管道</strong>，将一个过滤器的输出传到另一过滤器的    输入。<br>• 过滤器是<strong>独立的实体</strong>，不能与其他的过滤器<strong>共享数据</strong>，而且一个过滤器不知道它上游和下游的<strong>标识</strong>。</p>
 <ul>
 <li><strong>应用:</strong>适合<strong>批处理</strong>和<strong>非交互处理</strong>的系统，使软件具有良好的<strong>信息隐藏性</strong>和<strong>模块独立性</strong>，从而产生<strong>高内聚、低耦合</strong>的特点。</li>
 </ul>
 </li>
 <li><p><strong><em>层次系统</em></strong>(调用返回风格)</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104135108701.png" srcset="/img/loading.gif" alt="image-20191104135108701"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104135108701.png" srcset="/img/loading.gif" alt="image-20191104135108701"></p>
 <p>• 层次系统中，每一层为上层<strong>提供服务</strong>，并作为其下层<strong>客户</strong>。<br>• <strong>连接件</strong>通过决定层间如何交互的<strong>协议</strong>来定义，<strong>拓扑约束</strong>包括对相<strong>邻层间交互</strong>的约束。<br>• 这种风格支持基于<strong>可增加抽象层</strong>的设计，允许将一个复杂问题分解成一个<strong>增量步骤序列</strong>的实现。</p>
 </li>
 <li><font color="#33CCFF">***仓库/黑板系统***(数据中心风格)</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104140752868.png" srcset="/img/loading.gif" alt="image-20191104140752868"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104140752868.png" srcset="/img/loading.gif" alt="image-20191104140752868"></p>
 <p><strong>•</strong> 两种不同的<strong>构件</strong>,<strong>中央数据结构</strong>说明<strong>当前状态</strong>，<strong>独立构件</strong>在中央数据存储上<strong>执行</strong>. 仓库与外构件间的相互作用在系统中会有较大的变化。<br><strong>•</strong> <strong>控制原则</strong>的选取将产生两个主要的<strong>子类</strong>：</p>
 <pre><code>– 若输入流中某类**时间触发**进程执行选择，仓库是传统型数据库；
 – 若中央数据结构的**当前状态触发**进程执行选择，仓库是黑板系统。
@@ -1401,7 +1401,7 @@ C --&gt;B
 </li>
 <li><font color="#33CCFF">***正交软件结构***(调用返回风格)</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142358752.png" srcset="/img/loading.gif" alt="image-20191104142358752"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142358752.png" srcset="/img/loading.gif" alt="image-20191104142358752"></p>
 <p><strong>•</strong> 由<strong>组织层和线索</strong>的构件构成</p>
 <pre><code>– **层**是由一组具有相同**抽象**级别的构件构成；
 – **线索**是子系统的特例，它由**完成不同层次功能**的构件组成，通过相互调用来**关联**，每一条线索完成个系统中相对独立的一部分功能。
@@ -1410,18 +1410,18 @@ C --&gt;B
 </li>
 <li><font color="#33CCFF">***客户 / 服务器架构***(调用返回风格)</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142509348.png" srcset="/img/loading.gif" alt="image-20191104142509348" style="zoom:80%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142509348.png" srcset="/img/loading.gif" alt="image-20191104142509348" style="zoom:80%;"></p>
 <p><strong>•</strong> 服务器负责<strong>管理系统资源</strong>：访问与并发性控制、安全性、备份与恢复和全局数据完整性规则。<br><strong>•</strong> 客户应用程序提供用户与服务器交互的<strong>界面</strong>、向服务器<strong>提交用户请求</strong>并<strong>接收来自服务器的信息</strong>、利用客户应用程序对存在于<strong>客户端的数据执行应用逻辑要求</strong>。<br><strong>•</strong> 网络通信软件的主要作用是完成服务器和客户应用程序之间的<strong>数据传输</strong>。</p>
 <p>• 服务器为多个客户应用程序管理数据<br>• 对于硬件和软件的变化具有极大的<strong>适应性</strong>和<strong>灵活性</strong><br>• <strong>易于</strong>对系统进行<strong>扩充</strong>和<strong>缩小</strong><br>• 系统中的<strong>功能构件</strong>充分<strong>隔离</strong></p>
 </li>
 <li><font color="#33CCFF">***浏览器 / 服务器架构***(调用返回风格)</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142935432.png" srcset="/img/loading.gif" alt="image-20191104142935432"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104142935432.png" srcset="/img/loading.gif" alt="image-20191104142935432"></p>
 <p>• B/S是C/S的扩展，瘦客户。<br>• 应用(程序)在一定程度上具有<strong>集中特征</strong>。<br>• <strong>减轻</strong>安装、配置和升级等<strong>维护工作</strong>。<br>• <strong>层</strong>与层之间<strong>相互独立</strong>，任何一层的改变都不影响其他层原有的功能，所以可用不同厂家的产品组成性能更佳的系统。（<strong>平台透明性</strong>）</p>
 </li>
 <li><font color="#33CCFF">***MVC架构***(独立构件风格)</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104143250398.png" srcset="/img/loading.gif" alt="image-20191104143250398" style="zoom:120%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191104143250398.png" srcset="/img/loading.gif" alt="image-20191104143250398" style="zoom:120%;"></p>
 <p>• 模型(Model)－视图(View)－控制器(Controller)<br>• MVC是一种软件设计典范，用业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。<br>• <strong>视图</strong>是用户看到并与之交互的<strong>界面</strong>。<br>• <strong>模型</strong>表示<strong>企业数据</strong>和<strong>业务规则</strong>。<br>• <strong>控制器</strong>接受用户的输入并调用模型和视图去<strong>完成用户的需求</strong>，控制器<strong>本身不输出</strong>任何结果和做任何处理。</p>
 </li>
 </ul>
@@ -1453,10 +1453,10 @@ C --&gt;B
 </li>
 </ul>
   <center>
-      <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/软件工程概述image-20191106133303375.png" srcset="/img/loading.gif" alt="image-20191106133303375" style="zoom:80%;"><div>初始类图<div>
+      <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/软件工程概述image-20191106133303375.png" srcset="/img/loading.gif" alt="image-20191106133303375" style="zoom:80%;"><div>初始类图<div>
   </div></div></center>
 
-  <center><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106140014688.png" srcset="/img/loading.gif" alt="image-20191106140014688" style="zoom:80%;"><div>实体类的便携表示</div>
+  <center><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106140014688.png" srcset="/img/loading.gif" alt="image-20191106140014688" style="zoom:80%;"><div>实体类的便携表示</div>
   </center>
 
 <p>  <em>可见性</em></p>
@@ -1469,12 +1469,12 @@ C --&gt;B
 </blockquote>
 <p>  <em>构造型</em></p>
 <blockquote>
-<p>&lt;\<entity\>&gt; : 实体类  <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106145437645.png" srcset="/img/loading.gif" alt="image-20191106145437645"></entity\></p>
-<p>&lt;\<boundary\>&gt; : 边界类   <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106145622842.png" srcset="/img/loading.gif" alt="image-20191106145622842" style="zoom:50%;"></boundary\></p>
-<p>&lt;\<control\>&gt;: 控制类 <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106145607730.png" srcset="/img/loading.gif" alt="image-20191106145607730" style="zoom:50%;"></control\></p>
+<p>&lt;\<entity\>&gt; : 实体类  <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106145437645.png" srcset="/img/loading.gif" alt="image-20191106145437645"></entity\></p>
+<p>&lt;\<boundary\>&gt; : 边界类   <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106145622842.png" srcset="/img/loading.gif" alt="image-20191106145622842" style="zoom:50%;"></boundary\></p>
+<p>&lt;\<control\>&gt;: 控制类 <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106145607730.png" srcset="/img/loading.gif" alt="image-20191106145607730" style="zoom:50%;"></control\></p>
 </blockquote>
 <h3 id="3-类的关系"><a href="#3-类的关系" class="headerlink" title="3. 类的关系"></a>3. 类的<strong>关系</strong></h3><h3 id="4-对象与类"><a href="#4-对象与类" class="headerlink" title="4.对象与类"></a>4.<strong>对象</strong>与<strong>类</strong></h3><p>  • 系统中的每个<strong>对象</strong>在表示上具有唯一的<strong>标识ID</strong>以及通过其<strong>属性</strong>进行<strong>描述</strong>。<br>  • 比如一个具体的项目名字为“考勤系统”，项目经理名“王楠”，项目开始日期“2010年10月20日”。这些属性称为<strong>实例变量</strong>（instance variable）或<strong>属性</strong>（attribute）。<br>  • 同类对象的<strong>共同结构</strong>可通过类进行说明，除了类名外，所有的<strong>实例变量</strong>都可包含在类中作为类的<br>  <strong>初始信息</strong>。因此对于“项目”类来说，它是所有具体“项目对象”的一个模板。</p>
-<p>  <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106141329997.png" srcset="/img/loading.gif" alt="image-20191106141329997" style="zoom:80%;"></p>
+<p>  <img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106141329997.png" srcset="/img/loading.gif" alt="image-20191106141329997" style="zoom:80%;"></p>
 <p>  • 连接类与对象间的<strong>实线</strong>，表示类图中关联关系的实例化<br>  • <u>对象名:类的类型</u><br>  • 实例变量的初始值</p>
 <h2 id="5-2-②类的细化"><a href="#5-2-②类的细化" class="headerlink" title="5.2. ②类的细化"></a>5.2. ②<strong>类的细化</strong></h2><ul>
 <li>在下一轮的迭代中，将<strong>重新审视</strong>并分析<strong>需求陈述</strong>和<strong>词汇表</strong>中提到的<strong>功能与对象之间的对应关系</strong>。</li>
@@ -1513,30 +1513,30 @@ C --&gt;B
 </ul>
 </li>
 </ul>
-<h3 id="5-2-2-设计优化"><a href="#5-2-2-设计优化" class="headerlink" title="5.2.2. 设计优化"></a>5.2.2. 设计优化</h3><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106143300232.png" srcset="/img/loading.gif" alt="image-20191106143300232"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106143328337.png" srcset="/img/loading.gif" alt="image-20191106143328337" style="zoom:50%;"></p>
+<h3 id="5-2-2-设计优化"><a href="#5-2-2-设计优化" class="headerlink" title="5.2.2. 设计优化"></a>5.2.2. 设计优化</h3><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106143300232.png" srcset="/img/loading.gif" alt="image-20191106143300232"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106143328337.png" srcset="/img/loading.gif" alt="image-20191106143328337" style="zoom:50%;"></p>
 <h2 id="5-3-③-补充和确认"><a href="#5-3-③-补充和确认" class="headerlink" title="5.3. ③. 补充和确认"></a>5.3. ③. <strong>补充和确认</strong></h2><ul>
 <li>当初始版本的分析类图完整的构建出来后，需要确认是否<strong>需求中的所有信息</strong>在模型中都得到了体现而没有遗漏。</li>
 <li>可使用UML中的<strong>顺序图</strong>对需求场景中涉及到的不同对象之间的<strong>交互过程进行建模</strong>。</li>
 <li>类图在UML中是一种<strong>静态图</strong>，因为描述了系统的<strong>功能侧面</strong>，而基于类图的<strong>顺序图</strong>可以用来设计对象之间的<strong>动态交互</strong>过程，描述对象之间的<strong>过程调用顺序和关系</strong>。</li>
 <li>通过<strong>顺序图</strong>可以用来检验类图中说明的<strong>功能</strong>是否能够实现活动<strong>图中描述的功能需求</strong>。</li>
 </ul>
-<h3 id="5-3-1-顺序图"><a href="#5-3-1-顺序图" class="headerlink" title="5.3.1. 顺序图"></a>5.3.1. <font color="#33CCFF">顺序图</font></h3><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144116241.png" srcset="/img/loading.gif" alt="image-20191106144116241" style="zoom:80%;"></p>
+<h3 id="5-3-1-顺序图"><a href="#5-3-1-顺序图" class="headerlink" title="5.3.1. 顺序图"></a>5.3.1. <font color="#33CCFF">顺序图</font></h3><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144116241.png" srcset="/img/loading.gif" alt="image-20191106144116241" style="zoom:80%;"></p>
 <ul>
 <li>对象的删除和创建<ul>
-<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144253227.png" srcset="/img/loading.gif" alt="image-2019110614425227" style="zoom:60%;"></li>
+<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144253227.png" srcset="/img/loading.gif" alt="image-2019110614425227" style="zoom:60%;"></li>
 </ul>
 </li>
 <li>结构表示<ul>
-<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144503063.png" srcset="/img/loading.gif" alt="image-20191106144503063"></li>
+<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144503063.png" srcset="/img/loading.gif" alt="image-20191106144503063"></li>
 </ul>
 </li>
 <li>场景模拟<ul>
-<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144659810.png" srcset="/img/loading.gif" alt="image-20191106144659810"></li>
+<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144659810.png" srcset="/img/loading.gif" alt="image-20191106144659810"></li>
 </ul>
 </li>
 </ul>
-<h3 id="5-3-2-通信图"><a href="#5-3-2-通信图" class="headerlink" title="5.3.2. 通信图"></a>5.3.2. 通信图</h3><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144428093.png" srcset="/img/loading.gif" alt="image-20191106144428093"></p>
+<h3 id="5-3-2-通信图"><a href="#5-3-2-通信图" class="headerlink" title="5.3.2. 通信图"></a>5.3.2. 通信图</h3><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191106144428093.png" srcset="/img/loading.gif" alt="image-20191106144428093"></p>
 <h2 id="5-4-④界面类设计"><a href="#5-4-④界面类设计" class="headerlink" title="5.4. ④界面类设计"></a>5.4. ④<strong>界面类设计</strong></h2><ul>
 <li><strong>基本要求</strong>：通过界面使得模型中含有的类的<strong>某些部分对外部可见</strong>，比如用户通过界面可进行业务内容的修改或访问，即包括人机交互界面。</li>
 <li>界面类设计通常可<strong>推迟进行</strong>，因为可以直接应用现成的类库中的模型，采用<strong>不同的类库</strong>对整体的类设计会有很大的影响。</li>
@@ -1612,7 +1612,7 @@ C --&gt;B
 <p>每个实例变量,需要指定其类型</p>
 <p>每个方法中的参数和返回值, 需要指定其类型</p>
 <p>每个关联关系, 其关联关系,使用或导航方向必须说明</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111140648874.png" srcset="/img/loading.gif" alt="image-20191111140648874" style="zoom:80%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111140648874.png" srcset="/img/loading.gif" alt="image-20191111140648874" style="zoom:80%;"></p>
 <blockquote>
 <p>带有下划线的方法和属性—&gt; 类变量(静态),和 类方法(静态)</p>
 <p>静态变量的使用需要仔细斟酌—&gt;破坏了面向对象的本地性(封装性)原则</p>
@@ -1647,7 +1647,7 @@ C --&gt;B
 <p>明确了类于类之间的静态关系,</p>
 <p>关联关系最终体现为对应类中增加了<strong>实例变量</strong></p>
 <p>变量存在的的具体形式依赖于关联的具体类型</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111143339843.png" srcset="/img/loading.gif" alt="image-20191111143339843"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111143339843.png" srcset="/img/loading.gif" alt="image-20191111143339843"></p>
 <ol>
 <li>存在关联关系</li>
 <li>has :关联的名字   ▶: 关联名字的方向  (名字信息不会出现在程序代码中)</li>
@@ -1655,17 +1655,17 @@ C --&gt;B
 <li>points : 一个(集合类型)实例变量 管理这些点</li>
 <li>→ : 导航方向(能从多边形或者包含的点的信息 /  不能从点获知多边形的信息)</li>
 <li>✗:显示的表示无此导航方向</li>
-<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111144502739.png" srcset="/img/loading.gif" alt="image-20191111144502739" style="zoom:5%;"> : 聚合 (另外一种关联 :部分与整体的弱包含关系—相互之间没有存在层面的依赖性) (多边形被删,点还在)</li>
-<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111144719227.png" srcset="/img/loading.gif" alt="image-20191111144719227" style="zoom:5%;">组合 (特殊的关联关系, 点的存在依赖于多边形对象—多边形被删,点也被删)</li>
+<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111144502739.png" srcset="/img/loading.gif" alt="image-20191111144502739" style="zoom:5%;"> : 聚合 (另外一种关联 :部分与整体的弱包含关系—相互之间没有存在层面的依赖性) (多边形被删,点还在)</li>
+<li><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111144719227.png" srcset="/img/loading.gif" alt="image-20191111144719227" style="zoom:5%;">组合 (特殊的关联关系, 点的存在依赖于多边形对象—多边形被删,点也被删)</li>
 </ol>
 <p>​    导航</p>
 <blockquote>
 <p>导航至”可选”方向</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150020048.png" srcset="/img/loading.gif" alt="image-20191111150020048"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150020048.png" srcset="/img/loading.gif" alt="image-20191111150020048"></p>
 <p>导航至“唯一”方向</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150045547.png" srcset="/img/loading.gif" alt="image-20191111150045547"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150045547.png" srcset="/img/loading.gif" alt="image-20191111150045547"></p>
 <p>导航至“任意”方向</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150100557.png" srcset="/img/loading.gif" alt="image-20191111150100557"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150100557.png" srcset="/img/loading.gif" alt="image-20191111150100557"></p>
 </blockquote>
 </blockquote>
 <ol>
@@ -1675,13 +1675,13 @@ C --&gt;B
 <p>描述对象间访问的瞬时性, 将某些类向其他类进行传递, 这种瞬时的关系并不在对象键保持</p>
 <font color="#f9bd10">局部变量/方法参数/对静态方法的调用</font>
 
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150359703.png" srcset="/img/loading.gif" alt="image-20191111150359703"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150359703.png" srcset="/img/loading.gif" alt="image-20191111150359703"></p>
 <p>可以使用&lt;\<include\>&gt;代替uses</include\></p>
 </blockquote>
 <p>举例</p>
 <blockquote>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150509946.png" srcset="/img/loading.gif" alt="image-20191111150509946"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150523255.png" srcset="/img/loading.gif" alt="image-20191111150523255"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150509946.png" srcset="/img/loading.gif" alt="image-20191111150509946"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191111150523255.png" srcset="/img/loading.gif" alt="image-20191111150523255"></p>
 </blockquote>
 <ol>
 <li>软件架构: MVC的实现</li>
@@ -1704,16 +1704,16 @@ C --&gt;B
 <p> 图形设计工具-类方法的详细设计</p>
 <blockquote>
 <p>程序流程图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107000444417.png" srcset="/img/loading.gif" alt="image-20200107000444417" style="zoom:50%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107000444417.png" srcset="/img/loading.gif" alt="image-20200107000444417" style="zoom:50%;"></p>
 <p>盒图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107000522990.png" srcset="/img/loading.gif" alt="image-20200107000522990" style="zoom:80%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107000522990.png" srcset="/img/loading.gif" alt="image-20200107000522990" style="zoom:80%;"></p>
 <p>问题分析图$(PAD)$</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107000822212.png" srcset="/img/loading.gif" alt="image-20200107000822212" style="zoom:80%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107000822212.png" srcset="/img/loading.gif" alt="image-20200107000822212" style="zoom:80%;"></p>
 </blockquote>
 <p> 表格工具-类方法的详细设计</p>
 <blockquote>
 <p>判定表/决策表</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107001045194.png" srcset="/img/loading.gif" alt="image-20200107001045194" style="zoom:67%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107001045194.png" srcset="/img/loading.gif" alt="image-20200107001045194" style="zoom:67%;"></p>
 <blockquote>
 <p>构成</p>
 <blockquote>
@@ -1724,7 +1724,7 @@ C --&gt;B
 </blockquote>
 </blockquote>
 <p>判定树 (决策树)</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107001211637.png" srcset="/img/loading.gif" alt="image-20200107001211637" style="zoom:67%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107001211637.png" srcset="/img/loading.gif" alt="image-20200107001211637" style="zoom:67%;"></p>
 </blockquote>
 <p> 语言工具-类方法的详细设计</p>
 <blockquote>
@@ -1748,19 +1748,19 @@ C --&gt;B
 </blockquote>
 <p>基本结构</p>
 <blockquote>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191119184825694.png" srcset="/img/loading.gif" alt="image-20191119184825694" style="zoom:70%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191119184825694.png" srcset="/img/loading.gif" alt="image-20191119184825694" style="zoom:70%;"></p>
 <p>• Entry：给出当<strong>刚进入该状态时</strong>应该进行的动作（action）。在这里可以表示一个简单的赋值操作，也可以是对一个或多个方法的调用。<br>• Do：给出在保持该状态的过程中，<strong>对象应执行的活动</strong>。这个部分一般对那些受时间控制行为的对象比较适用，因为它们通常要求能够持续的读取信息。<br>• Exit：这个部分描述当<strong>离开该状态时</strong>应进行的动作。<br>             这三个部分的内容是可选的，根据需要进行取舍。</p>
 </blockquote>
 <p>状态转换</p>
 <blockquote>
 <p>• 状态通过状态转换进行<strong>过渡（Transition）</strong>。<br>• 事件部分：转换的主要内容，状态图主要是对被动系统的行为描述，对外界的刺激事件进行相应的响应。<br>• 条件部分：状态间的转换只有在事件被触发并且满足某个特定条件的情况下才会进行，可选。<br>• 动作：表示当转换发生时执行的一个动作，该动作执行的时机是在转换对应的目标状态的entry事件被执行之前，即还未进入到目标状态前。</p>
 <blockquote>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191119185054793.png" srcset="/img/loading.gif" alt="image-20191119185054793" style="zoom:70%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191119185054793.png" srcset="/img/loading.gif" alt="image-20191119185054793" style="zoom:70%;"></p>
 </blockquote>
 </blockquote>
 <p>状态图的扩展</p>
 <blockquote>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191119185340529.png" srcset="/img/loading.gif" alt="image-20191119185340529" style="zoom:70%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191119185340529.png" srcset="/img/loading.gif" alt="image-20191119185340529" style="zoom:70%;"></p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -1827,7 +1827,7 @@ C --&gt;B
 <li><p>职责:  一起”变化”的原因—-两个以上变化方向,会产生过多的变化点</p>
 </li>
 <li><p>解决方法:   <strong>拆分变化</strong></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125164855283.png" srcset="/img/loading.gif" alt="image-20191125164855283"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125164855283.png" srcset="/img/loading.gif" alt="image-20191125164855283"></p>
 </li>
 <li><p>条件苛刻:  可以有多个功能:  但是如果会成为单独的变化方向—-&gt; 类职责的拆分/保留功能共存(装饰模式)</p>
 </li>
@@ -1838,7 +1838,7 @@ C --&gt;B
 <li>具体类的变化不会影响到Cient</li>
 <li>Cilent只需关系业务的实现, 不必关心使用对象的具体实现</li>
 <li><p>松耦合</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107100504308.png" srcset="/img/loading.gif" alt="image-20200107100504308" style="zoom:67%;"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107100504308.png" srcset="/img/loading.gif" alt="image-20200107100504308" style="zoom:67%;"></p>
 </li>
 </ul>
 <h3 id="8-4-3-依赖倒置原则"><a href="#8-4-3-依赖倒置原则" class="headerlink" title="8.4.3. 依赖倒置原则"></a>8.4.3. 依赖倒置原则</h3><ul>
@@ -1847,7 +1847,7 @@ C --&gt;B
 <li><p>扩展基础具体—&gt;扩展难度大</p>
 </li>
 <li><p>具体类变化无常—&gt;扩展类不稳定</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125170548837.png" srcset="/img/loading.gif" alt="image-20191125170548837"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125170548837.png" srcset="/img/loading.gif" alt="image-20191125170548837"></p>
 </li>
 </ul>
 <h3 id="8-4-4-开放封闭原则"><a href="#8-4-4-开放封闭原则" class="headerlink" title="8.4.4. 开放封闭原则"></a>8.4.4. 开放封闭原则</h3><ul>
@@ -1864,7 +1864,7 @@ C --&gt;B
 </ul>
 </li>
 <li><p>OCP是相对的</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107102241962.png" srcset="/img/loading.gif" alt="image-20200107102241962"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200107102241962.png" srcset="/img/loading.gif" alt="image-20200107102241962"></p>
 <p>增加零件: 新整一个继承Part 不用改Client</p>
 </li>
 </ul>
@@ -1908,10 +1908,10 @@ C --&gt;B
 <li><p>例</p>
 <ul>
 <li><p>多重继承</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125172942939.png" srcset="/img/loading.gif" alt="image-20191125172942939"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125172942939.png" srcset="/img/loading.gif" alt="image-20191125172942939"></p>
 </li>
 <li><p>CARP</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125173004611.png" srcset="/img/loading.gif" alt="image-20191125173004611"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20191125173004611.png" srcset="/img/loading.gif" alt="image-20191125173004611"></p>
 </li>
 </ul>
 </li>
@@ -2222,7 +2222,7 @@ C --&gt;B
 <li><p>MDA的变换都是由工具自动完成的，这个过程转换规则的定义也是非常重要的，即要对模型间的过渡进行形式化的描述。</p>
 </li>
 <li><p>图中将PIM和PSM的转换描述为模型1到模型2的过渡</p>
-<center><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/QQ截图20191204085958.png" srcset="/img/loading.gif" alt="QQ截图20191204085958.png" style="zoom:50%"></center>  </li>
+<center><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/QQ截图20191204085958.png" srcset="/img/loading.gif" alt="QQ截图20191204085958.png" style="zoom:50%"></center>  </li>
 <li>有模型和转换规则需要正式的语义定义，因此OMG组织出台了一系列的规范将MDA方法标准化，其中最重要的语义描述包含在规范MetaObjectFacility（MOF）中。</li>
 </ul>
 <h4 id="9-1-3-7-重构"><a href="#9-1-3-7-重构" class="headerlink" title="9.1.3.7. 重构"></a>9.1.3.7. 重构</h4><ul>
@@ -2280,7 +2280,7 @@ C --&gt;B
 </ul>
 </li>
 </ul>
-<h2 id="11-3-测试分类和测试V类型"><a href="#11-3-测试分类和测试V类型" class="headerlink" title="11.3. 测试分类和测试V类型"></a>11.3. 测试分类和测试V类型</h2><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/QQ截图20191211082952.png" srcset="/img/loading.gif" alt="QQ截图201912110829.52"></p>
+<h2 id="11-3-测试分类和测试V类型"><a href="#11-3-测试分类和测试V类型" class="headerlink" title="11.3. 测试分类和测试V类型"></a>11.3. 测试分类和测试V类型</h2><p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/QQ截图20191211082952.png" srcset="/img/loading.gif" alt="QQ截图201912110829.52"></p>
 <ol>
 <li>类测试(单元测试)<ol>
 <li>测试: 每个单一的新开发的功能模块</li>
@@ -2647,28 +2647,28 @@ C --&gt;B
 <p><font color="#33CCFF">软件维护</font> 改正 适应 完善 预防 性 文档决定性因素</p>
 <p><font color="#33CCFF">代码重构&amp;正向工程</font> 重新 数据结构&amp;算法&amp;编码 重构不改体系结构只局部数据结构</p>
 <p>用例图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224530109.png" srcset="/img/loading.gif" alt="image-20200108224530109"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224540973.png" srcset="/img/loading.gif" alt="image-20200108224540973"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224530109.png" srcset="/img/loading.gif" alt="image-20200108224530109"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224540973.png" srcset="/img/loading.gif" alt="image-20200108224540973"></p>
 <p>活动图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224607469.png" srcset="/img/loading.gif" alt="image-20200108224607469"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224614814.png" srcset="/img/loading.gif" alt="image-20200108224614814"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224607469.png" srcset="/img/loading.gif" alt="image-20200108224607469"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224614814.png" srcset="/img/loading.gif" alt="image-20200108224614814"></p>
 <p>数据流图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108220612871.png" srcset="/img/loading.gif" alt="image-20200108220612871"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108220539954.png" srcset="/img/loading.gif" alt="image-20200108220539954"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108220548177.png" srcset="/img/loading.gif" alt="image-20200108220548177"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108220612871.png" srcset="/img/loading.gif" alt="image-20200108220612871"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108220539954.png" srcset="/img/loading.gif" alt="image-20200108220539954"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108220548177.png" srcset="/img/loading.gif" alt="image-20200108220548177"></p>
 <p>类图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224949774.png" srcset="/img/loading.gif" alt="image-20200108224949774"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225004127.png" srcset="/img/loading.gif" alt="image-20200108225004127"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108224949774.png" srcset="/img/loading.gif" alt="image-20200108224949774"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225004127.png" srcset="/img/loading.gif" alt="image-20200108225004127"></p>
 <p>顺序图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225110181.png" srcset="/img/loading.gif" alt="image-20200108225110181"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225119989.png" srcset="/img/loading.gif" alt="image-20200108225119989"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225241747.png" srcset="/img/loading.gif" alt="image-20200108225241747"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225110181.png" srcset="/img/loading.gif" alt="image-20200108225110181"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225119989.png" srcset="/img/loading.gif" alt="image-20200108225119989"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108225241747.png" srcset="/img/loading.gif" alt="image-20200108225241747"></p>
 <p>状态图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231050164.png" srcset="/img/loading.gif" alt="image-20200108231050164"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231103299.png" srcset="/img/loading.gif" alt="image-20200108231103299"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231050164.png" srcset="/img/loading.gif" alt="image-20200108231050164"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231103299.png" srcset="/img/loading.gif" alt="image-20200108231103299"></p>
 <p>工程网络图</p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231347738.png" srcset="/img/loading.gif" alt="image-20200108231347738"></p>
-<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231358086.png" srcset="/img/loading.gif" alt="image-20200108231358086"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231347738.png" srcset="/img/loading.gif" alt="image-20200108231347738"></p>
+<p><img src="/2020/01/12/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0/image-20200108231358086.png" srcset="/img/loading.gif" alt="image-20200108231358086"></p>
 
             <hr>
           </div>
