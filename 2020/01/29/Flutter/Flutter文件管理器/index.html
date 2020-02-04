@@ -307,10 +307,9 @@
 </span></code></pre>
 <p><code>StatelessElement</code>实现了<code>BuildContext</code>,所以,嗯</p>
 <p>图示</p>
-<pre class="highlight"><code class="mermaid">graph LR
-StatelessWidget--&gt;|创建|StatelessElement
-StatelessWidget--&gt;|传递自身引用|StatelessElement--&gt;|中使用StatelessWidget的build方法将自身作为参数|StatelessWidget
-</code></pre>
+ <pre class="mermaid">            graph LR
+ StatelessWidget-->|创建|StatelessElement
+ StatelessWidget-->|传递自身引用|StatelessElement-->|中使用StatelessWidget的build方法将自身作为参数|StatelessWidget</pre>
 </li>
 </ol>
 </li>

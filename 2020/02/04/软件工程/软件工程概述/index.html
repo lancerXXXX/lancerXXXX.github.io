@@ -640,12 +640,11 @@
 <ul>
 <li>软件开发 (宏观上)任务框架/规范</li>
 </ul>
-<pre class="highlight"><code class="mermaid">graph TD
-开始 -- 业务目标 --&gt; A
-A[软件生命周期模型] --&gt; B[具体过程定义] 
-B --&gt; C[实践]
-C --&gt;B
-</code></pre>
+<pre class="mermaid">graph TD
+开始 -- 业务目标 --> A
+A[软件生命周期模型] --> B[具体过程定义] 
+B --> C[实践]
+C -->B</pre>
 <table>
 <thead>
 <tr>
@@ -2892,10 +2891,9 @@ C --&gt;B
 </li>
 </ol>
 <center>
-<pre class="highlight"><code class="mermaid">graph TD
-功能需求--估算--&gt;未调整的功能点数--计算--&gt;调整后的功能点数--导出--&gt;人月工作量
-影响因子--估算--&gt;项目影响程度--计算--&gt;调整后的功能点数
-</code></pre>
+<pre class="mermaid">graph TD
+功能需求--估算-->未调整的功能点数--计算-->调整后的功能点数--导出-->人月工作量
+影响因子--估算-->项目影响程度--计算-->调整后的功能点数</pre>
 </center>
 <h2 id="133-开发成本估算"><a class="markdownIt-Anchor" href="#133-开发成本估算"></a> 13.3. 开发成本估算</h2>
 <ol>
