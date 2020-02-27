@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="">
+  <meta name="author" content="Swithun Liu">
+  <meta name="keywords" content="">
+  <title>一份完整的vscode-markdown配置 ~ lancerXXXX</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>lancerXXXX</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Thursday, February 27th 2020, 12:00 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    471 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="1-基础插件"><a class="markdownIt-Anchor" href="#1-基础插件"></a> 1. 基础插件</h1>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-11-42-19.png" srcset="/img/loading.gif" alt></p>
+<blockquote>
+<p>All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more).</p>
+</blockquote>
+<h1 id="2-预览插件"><a class="markdownIt-Anchor" href="#2-预览插件"></a> 2. 预览插件</h1>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-11-43-09.png" srcset="/img/loading.gif" alt></p>
+<blockquote>
+<p>一个极强的markdown预览插件<br>
+<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/" target="_blank" rel="noopener">使用文档链接</a></p>
+</blockquote>
+<blockquote>
+<p>也可以选择 vscode 自带的markdown预览搭配预览增强的插件,但是上面这个预览插件几乎可以满足你的所有需求, 根据你的写作习惯和写作需求选择两种方式</p>
+</blockquote>
+<blockquote>
+<p>自定义预览主题<br>
+<img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-21-44.png" srcset="/img/loading.gif" alt><br>
+插件本身有10来个主题可选, 用户编写的css会覆盖在选择的主题上, 所以在用户设置的css中不需要写出完整的主题,只对需要的地方更改就行</p>
+</blockquote>
+<h1 id="3-代码片段"><a class="markdownIt-Anchor" href="#3-代码片段"></a> 3. 代码片段</h1>
+<p>如果需要书写数学公式,可能更需要这部分<br>
+先了解一下片段能带来什么<br>
+<a href="https://bonxg.com/p/85.html" target="_blank" rel="noopener">链接</a></p>
+<h2 id="31-vscode自带的代码块引擎"><a class="markdownIt-Anchor" href="#31-vscode自带的代码块引擎"></a> 3.1. vscode自带的代码块引擎</h2>
+<p><code>ctrl-shift-p</code></p>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-11-51-16.png" srcset="/img/loading.gif" alt></p>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-11-51-48.png" srcset="/img/loading.gif" alt></p>
+<blockquote>
+<p>写起来较为麻烦</p>
+</blockquote>
+<h2 id="32-hypersnips-第三方的代码块引擎"><a class="markdownIt-Anchor" href="#32-hypersnips-第三方的代码块引擎"></a> 3.2. HyperSnips 第三方的代码块引擎</h2>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-11-56-14.png" srcset="/img/loading.gif" alt></p>
+<blockquote>
+<ul>
+<li>目前是预览版, 但是基本可以达到<a href="https://github.com/SirVer/ultisnips" target="_blank" rel="noopener">UltiSnips</a>的效果,
+<ul>
+<li>UltiSnips支持python, HyperSnips支持JavaScript
+<ul>
+<li>基于此,你可以写出很智能的片段</li>
+<li><img src="https://github.com/draivin/hsnips/raw/master/images/welcome.gif" srcset="/img/loading.gif" alt="box"></li>
+<li><img src="https://i.loli.net/2019/05/03/5ccbc1ac18d6f.png" srcset="/img/loading.gif" alt="下标"></li>
+<li>在<a href="https://bonxg.com/p/85.html" target="_blank" rel="noopener">这篇文章中</a>的片段很多都可以使用JavaScript实现</li>
+<li>不足的是目前不支持上下文</li>
+</ul>
+</li>
+<li><code>A</code>标签:
+<ul>
+<li>UltiSnips和HyperSnips都有,自动补全:不需要按tab</li>
+</ul>
+</li>
+<li>单词内触发
+<ul>
+<li>UltiSnips中使用<code>i</code>标签, HyperSnips中使用正则表达式实现,即将你的触发条件用``包住</li>
+</ul>
+</li>
+<li>片段规则看文档
+<ul>
+<li><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-15-09.png" srcset="/img/loading.gif" alt></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="4-标题增加序号"><a class="markdownIt-Anchor" href="#4-标题增加序号"></a> 4. 标题增加序号</h1>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-16-19.png" srcset="/img/loading.gif" alt></p>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-17-07.png" srcset="/img/loading.gif" alt></p>
+<p>自动增加序号</p>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-16-40.png" srcset="/img/loading.gif" alt></p>
+<h1 id="5-插入图片"><a class="markdownIt-Anchor" href="#5-插入图片"></a> 5. 插入图片</h1>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-17-44.png" srcset="/img/loading.gif" alt></p>
+<p>预先设置好图片的存储路径, 我设置的是 <code>文件名/</code><br>
+可以将剪切板中的图片自动保存到设定的目录,并帮你插入到文章中</p>
+<p>不止是图片,链接等等功能</p>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-18-57.png" srcset="/img/loading.gif" alt></p>
+<h1 id="6-表格"><a class="markdownIt-Anchor" href="#6-表格"></a> 6. 表格</h1>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-25-15.png" srcset="/img/loading.gif" alt></p>
+<p>表格在markdown中是较为麻烦的部分</p>
+<p>这个插件中表格的部分我很喜欢</p>
+<center>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-26-41.png" srcset="/img/loading.gif" alt></p>
+<p><img src="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/2020-02-27-12-27-09.png" srcset="/img/loading.gif" alt></p>
+</center>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Markdown">Markdown</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Markdown">Markdown</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.11.1/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '141649f765ab2d157740',
+      clientSecret: '633ae0ac8685d0cf4de6a1b0f1c4144938ffb936',
+      repo: 'lancerXXXX.github.io',
+      owner: 'lancerXXXX',
+      admin: 'lancerXXXX',
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 15,
+      pagerDirection: 'last',
+      createIssueManually: 'true',
+      distractionFreeMode: 'false'
+    });
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "一份完整的vscode-markdown配置&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+  
+
+  
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="/lib/katex/katex.min.css"  ><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
