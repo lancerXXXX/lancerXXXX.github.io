@@ -141,349 +141,14 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/4_%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E7%AE%A1%E7%90%86/">
-        <p class="h4 index-header">4_运行时存储空间的组织和管理</p>
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList30/">
+        <p class="h4 index-header">英语/WordList30</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">&lt;!doctype html&gt;
-
-1. 运行时存储空间的组织和管理
-
-通常的命令式编程语言
-
-表现: 多个函数的实现和相互调用
-
-入口函数-mian()
-
-代码执行过程-依据过程调用关系形成一个(调用结构图)
-
-辅助(存储空间)-每个过程的执行
-
-过程的代码- 需要一定存储空间
-过程中的局部变量-需要存储空间暂存
-
-
-
-
-词法,语法,语义分析后
-
-生成目标代码前
-
-程序的静态正文&amp;实现这个程序的运行时的活动  联系起来
-
-弄清楚 将来在 代码运行时刻
-
-代码中的各种(变量,常量,等用户定义的量)如何存放,如何访问
-
-
-
-
-
-
-
-
-程序的执行过程中
-
-程序中数据的存取 通过 与之对应的存储单元来进行的
-
-
-存储单元表示--标识符
-
-对应的内存地址由编译程序或由其生成的目标程序运行时进行分配
-
-
-
-1.1. 过程的活动 (概念一)
-
-过程的一次执行--过程的一次活动
-
-1.2. 活动记录 (概念二)
-
-过程活动时存放所需信息的存储空间
-
-1.3. 活动的生存期
-
-过程P一次活动的生存期
-
-从执行该过程第一步操作--最后一步操作之间的操作时间
-
-
-过程可以时递归的
-
-一个</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/3_%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/">
-        <p class="h4 index-header">3_语义分析</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">&lt;!doctype html&gt;
-
-1. 语义分析
-
-主流技术
-
-语法制导翻译技术
-
-
-功能
-
-静态语义
-
-审查每个语法结构的.this(eg. 类型,运算,维数,越界)
-
-
-之后,翻译(真正的.this)
-
-eg. 变量的存储分配/表达式的求值/语句的翻译(中间代码的生成)
-
-
-
-
-
-1.1. 语义规则和产生式联系的两种方式
-
-语义规则的两种描述方法
-
-1.1.1. 语法制导的定义
-
-带属性和规则的上下无关文法
-
-1.1.1.1. 基础文法
-
-属性(翻译)文法
-
-定义
-
-语义规则函数无副作用 的 语法制导定义
-
-副作用
-
-过程调用/程序段--&gt;可以看成 产生式左部非终结符 的虚拟综合属性
-eg. 打印, 输出中间代码....
-
-
-
-
-语义信息是上下文有关的
-
-衔接: 上下文无关文法 &amp; 程序语义
-
-
-
-基础文法
-
-文法符号--&gt;一组属性
-产生式--&gt;一组语义规则(属性的计算规则)
-属性:  串 数值  类型  表引用 ... 
-语法制导定义中   文法--&gt;基础文法
-
-
-
-1.1.1.1.1. 综合属性
-
-属性b在左边, 产生式右部或者A的其</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/2_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/">
-        <p class="h4 index-header">2_语法分析</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">&lt;!doctype html&gt;
-
-1. 语法分析
-
-目标:语法记号(token)流 \rightarrow 语法短语 (分析树)
-实质:无结构数据 \rightarrow 有结构数据
-依据:上下无关文法
-
-graph LR
-    A(字符)
-    subgraph 词法分析器-正规式
-    B(字符串)
-    C(记号)
-    end
-    subgraph 语法分析器-上下文无关文法
-    C
-    D(表达式)
-    E(语句)
-    F(程序块)
-    G(程序)
-    end
-    H(语法分析树)
-A--&amp;gt;B--&amp;gt;C--&amp;gt;D--&amp;gt;E--&amp;gt;F--&amp;gt;G--&amp;gt;H
-
-
-1.1. 上下无关文法
-
-正规式定义简单的语言
-
-给定结构 固定次数/无指定次数 重复
-
-描述配对/嵌套
-
-四元组
-
-V_T 终 非空有限 记号名-同义词
-V_N 非 非空有限 和终无交集
-S 开始符号
-P 产生式集合
-
-
-
-1.2. 最左推导
-1.3. 最右推导
-1.4. 判断满足语</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/1_%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/">
-        <p class="h4 index-header">1_词法分析</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-
-&nbsp;
-1. 绪论
-1.1. 识别过程
-词法-语法-语义(分析)-中间代码生成-可执行代码
-1.2. 编译器构造与分析
-集成开发环境编辑器源程序编译器可执行程序解释器可执行程序操作系统\rightarrow [集成开发环境(编辑器\overset{源程序}{\rightarrow }编译器)]\left\{\begin{matrix}
-\overset{可执行程序.exe}{\rightarrow }
-\\\rightarrow 解释器\overset{可执行程序.exe}{\rightarrow }
-\end{matrix}\right. 操作系统
-1.3. 前端后端
-graph LR
-I[出错管理器]--&gt;B
-I--&gt;C
-I--&gt;D
-I--&gt;E
-I--&gt;F
-I--&gt;G
-A[源程序]--&gt;B[词法分析器]
-subgraph 前端
-B--&gt;C[语法分析器]--&gt;D[语义分析器]--&gt;E[中间代码生成器]
-end 
-subgraph 后端
-E–&gt;F[代码优化器]–&gt;G[代码生成器]
-end
-H[符号表管理器</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
-          &nbsp;
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/01/01/%E8%8B%B1%E8%AF%AD/2020-1-%E6%96%B0%E4%B8%9C%E6%96%B9%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E7%BB%BF%E7%9A%AE%E4%B9%A62020/">
-        <p class="h4 index-header">2020-1-新东方考研英语2020绿皮书</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 2020-01-31
+          <div class="index-text mb-1"> WordList 30
 
 
 
@@ -496,72 +161,32 @@ H[符号表管理器</div>
 
 
 
-1
-bruise
-Bruce Lee
-① ~ one’s nose② ~ one’s faceno ~ on one’s body
-cruise
 
-
-2
-forecast
-fore(先,前) cast(抛)
-① ~ a sharp drop …② weather ~
-forecaster
-
-
-3
-access
-ac(=near,近) cess(走)
-① give sb. ~ to our system② how to gain ~ access to  itblock the ~ to the factory~ a computer datebase
-accessibelinaccessible
-
-
-4
-flexible
-flex(弯曲)
-① a ~ schedule
-flexibility
-
-
-5
-alongside
-along(沿着) side(边)
-① a girl seated ~ him② with his wife ~
+tutor
+词根记忆：tut+（指导，教育）+or→家庭教师
+1 My ~ frequently reminds me to avail myself of every chance to improve my English. ⊙2 The foreign teacher ~ed Tom in French twice a week. ⊙
 
 
 
-6
-humiliate
-hum(地)
-① The boss ~d Tom
+
+chancellor
+联想记忆：chance（运气）+llor→当选总理靠的不是运气→总理
+1 Steven was a widely respected ~ of the exchequer. ⊙2 The ~ of the court was accused of bribery. ⊙3 The ~ of our university gave a very long speech in the commencement. ⊙
 
 
 
-7
-ap</div>
+
+crisis
+联想记忆：cri（看作cry，哭）+sis（看作SOS，求救信号）→哭喊着发出求救信号→危机
+1 an economic ~</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-01&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
         
         
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/categories/%E8%8B%B1%E8%AF%AD">英语</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/tags/%E8%8B%B1%E8%AF%AD">英语</a>&nbsp;
-          
         
       </div>
     </div>
@@ -571,57 +196,553 @@ ap</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/08/15/VIM/wsl%E4%BB%A5%E5%8F%8Avim%E9%85%8D%E7%BD%AE/">
-        <p class="h4 index-header">wsl以及vim的配置</p>
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList29/">
+        <p class="h4 index-header">英语/WordList29</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"> 提示
-过程中如果出现了问题 第一步 切换root和非root即sudo su和exit 重试 如果不行
-第二步 关掉终端重新开 重试 如果不行
-第三步 百度,必应,google.....重试 如果不行
-第四步 关机重启 如果不行
-第五步 卸载Ubuntu 先看C:\Users\用户名\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs这里的东西删没删掉
-如果删掉了就重装
-如果删不掉 新建txt
-DEL /F /A /Q \\?\%1
-RD /S /Q \\?\%1
+          <div class="index-text mb-1"> WordList 29
 
-写进上边,后缀改成.bat 把文件夹托上去删掉
- 更新的部分在这里
-markdown 预览插件我换成了这个
-这个
-具体设置看官方文档
- 解决访问GitHub太慢
-需要访问GitHub 所以要先解决这个问题
-https://blog.csdn.net/weixin_38437404/article/details/89489401
- 安装Ubuntu
 
-打开适用于Linux的Win</div>
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+bald
+
+1 He started growing ~ in his thirties. ⊙
+bare
+
+
+
+manifest
+
+1 The symptoms of this kind of disease will ~ themselves in ten days. ⊙  10⊙2 Kevin strove to make his ideas ~ to us. ⊙
+manifestation
+
+
+
+channel
+
+1 the English Channel ⊙2 My kid changed the ~ to watch a cartoon. ⊙3 We hope that this conflict would be settled through diplomatic ~s. ⊙4 The capital intended to broaden the export base and secure efficiency gains from international trade was ~ed instead</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-15&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
         
         
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/wsl">wsl</a>&nbsp;
-          
-            <a href="/categories/vim">vim</a>&nbsp;
-          &nbsp;
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList28/">
+        <p class="h4 index-header">英语/WordList28</p>
         
         
-          <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/wsl">wsl</a>&nbsp;
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 28
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+medieval
+词根记忆：medi（中间）+ev（时期）+al（…的）→中世纪的
+1
+
+
+
+
+artificial
+词根记忆：arti（技巧）+fic（制造）+ial（…的）→在制造时采用人为技术的→人造的，人工的
+1 Artificial flowers are used for scientific as well as for decorative purposes. They are made from a variety of materials, such as wax and glass, so skillfully that they can scarcely be distinguished from natural flowers. ⊙ ~ satellite ⊙   // ~ organ ⊙   // ~ intelligence ⊙2 Helen’s ~ warmth repelled us. ⊙
+
+
+
+
+meadow
+发音记忆：“麦兜”→麦兜猪在草地上晒太阳→草地
+1 If the rains</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList27/">
+        <p class="h4 index-header">英语/WordList27</p>
+        
+        
           
-            <a href="/tags/vim">vim</a>&nbsp;
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 27
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+tide
+联想记忆：潮（tide）起潮落，岁月（time）如歌
+1 During high ~, most of the beach is covered with water. ⊙2 The ~ of public opinion seems to be turning against the government. ⊙
+tidal
+
+
+
+ambulance
+词根记忆：ambul（行走）+ance（表性质）→可到处行走的医院→救护车
+1
+
+
+
+
+tolerant
+词根记忆：toler（容忍，忍受）+ant→容忍的，宽容的
+1 The job requires a ~ person who is good at dealing with complaints from customers. ⊙
+patientforgiving
+
+
+
+proceeding
+
+1 The army’s ~ was interrupted by the heavy rain. ⊙2 The ~s of the meeting were pub</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList26/">
+        <p class="h4 index-header">英语/WordList26</p>
+        
+        
           
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 26
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+association
+
+1 research ~s ⊙   // an alumni ~ ⊙2 I benefited much from my ~ with Tom. ⊙3 My hometown offers me many happy ~s. ⊙
+
+
+
+
+periodical
+
+12 The manager turns ~ reports to the board of directors. ⊙
+regular
+
+
+
+testify
+词根记忆：test（证据）+ify→用证据来证明→证实
+1 ~ in court ⊙ ~ to ⊙   His nervous behaviour testified to his guilt. ⊙
+attestsubstantiate
+
+
+
+prolong
+词根记忆：pro（向前）+long（长）→向前延长→拉长，延长
+1 The President ~ed his visit by a week for some reasons. ⊙
+prolonged
+
+
+
+hum
+发音记忆：</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList25/">
+        <p class="h4 index-header">英语/WordList25</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 25
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+gradual
+词根记忆：grad（行走）+ual（…的）→一步步往前行走的→逐步的
+1 This is a ~ process that takes place over time, perhaps years. ⊙
+gradually
+
+
+
+deceive
+联想记忆：欺骗（deceive）他人，会受到（receive）惩罚
+1 I do not wish to ~ the young girl who loves me. ⊙ ~ oneself ⊙
+
+
+
+
+vibrate
+
+1 The engines make the small cabin ~. ⊙
+
+
+
+
+verify
+词根记忆：veri（真实）+fy（使…）→使…以为是真的→证实，证明
+1 The network will require Internet users to ~ their identity by providing their credit card numbers. ⊙
+
+
+
+
+recollect
+联想记忆：re（一再）+collect（收</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList24/">
+        <p class="h4 index-header">英语/WordList24</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 24
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+sue
+
+1 The injured workers could ~ for damages in the court. ⊙
+prosecuteindict
+
+
+
+status
+词根记忆：stat（站）+us→站的位置→地位，身份
+1 Many people chase after wealth and ~ instead of health and happiness. ⊙2 marital ~ ⊙   // The diplomat is drafting out a ~ report on foreign affairs. ⊙
+
+
+
+
+premise
+词根记忆：pre（…前的）+mis（=发送）+e→预先发送的→前提；假设
+1 You should provide a necessary ~ to your argument. ⊙2 Keep off the ~s. ⊙
+
+
+
+
+bully
+联想记忆：bull（公牛）+y→欺负公牛，自讨苦吃→欺负
+1 Her son was a ~ at school. ⊙2 If</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList23/">
+        <p class="h4 index-header">英语/WordList23</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 23
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+grateful
+
+1 I should be ~ for any advice you can give. ⊙
+
+
+
+
+diverse
+词根记忆：di（分开）+vers（转）+e→分开转→不同的
+1 The researchers must gather information from many ~ fields. ⊙
+diversity
+
+
+
+compass
+词根记忆：com（完全）+pass（通过）→在海上完全通过它辨别方向→罗盘，指南针
+1 ~ point （⊙   // The ~ was first used in sailing. ⊙2 a pair of ~es ⊙   // The long, skinny legs of the man make him look like a pair of ~es. ⊙
+encompass
+
+
+
+violet
+
+12 The ~ silk was so nice that Janet wanted to buy it. ⊙
+
+
+
+
+dock
+
+1 The shi</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList22/">
+        <p class="h4 index-header">英语/WordList22</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 22
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+recipe
+词根记忆：re+cip（拿，取）+e→拿来主义不是好方法→方法
+1 For those who need guidance in their cooking, ~s are lifesavers. ⊙2 ~ for success ⊙   // The couple outlined their ~ for a happy marriage. ⊙
+
+
+
+
+entrepreneur
+来自enterprise（n. 企业）
+1 Martin would not have succeeded in such a risky business if he had not been such a clever ~. ⊙
+
+
+
+
+orphan
+发音记忆：与often同音→孤儿（orphan）常常（often）无家可归→孤儿
+1
+
+
+
+
+expose
+词根记忆：ex（出）+pos（放）+e→放出来→使暴露
+1 As soon as men leave the aerosphere, they are ~d to the </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/02/27/%E8%8B%B1%E8%AF%AD/WordList21/">
+        <p class="h4 index-header">英语/WordList21</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1"> WordList 21
+
+
+
+
+单词
+记忆
+接
+联系
+
+
+
+
+
+up
+
+1 ~-to-date ideas ⊙   // David went to a trendy salon to get an ~-to-date haircut. ⊙
+
+
+
+
+alleviate
+词根记忆：al（表加强）+lev（轻的）+iate（使）→使…变轻→减轻
+1 The unexpected heavy rain ~d the drought. ⊙  // ~ a crisis ⊙
+
+
+
+
+identify
+词根记忆：i+dent（牙齿）+ify→通过牙齿鉴定身份→鉴定
+1 Quite a few botanists could not ~ the genus of these flowers. ⊙2 One cannot ~ happiness with wealth. ⊙3 The changes identified by David Graddol all present clear and major challenges to UK’s providers of English langu</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
+        
+        
         
       </div>
     </div>
@@ -631,7 +752,7 @@ https://blog.csdn.net/weixin_38437404/article/details/89489401
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+      <a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   
