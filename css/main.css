@@ -6,8 +6,8 @@ header,
   overflow-wrap: break-word;
 }
 body {
-  background-color: #566270;
-  color: #EFFFE9;
+  background-color: #cccccc;
+  color: #3c4858;
 }
 body a {
   color: #3c4858;
@@ -30,7 +30,7 @@ body a:hover {
 #board {
   position: relative;
   margin-top: -3rem;
-  background-color: #fff;
+  background-color: #fffcf0;
   border-radius: 0.5rem;
   z-index: 3;
 }
@@ -84,10 +84,10 @@ body a:hover {
   color: white;
 }
 .top-nav-collapse {
-  background-color: #2f4154;
+  background-color: #2f41545d;
 }
 .navbar-col-show {
-  background-color: #2f4154;
+  background-color: #2f41545d;
 }
 @media (max-width: 768px) {
   .navbar {
@@ -529,7 +529,7 @@ h6::before {
   font-size: 15px;
 }
 .tocbot-link {
-  color: #EFFFE9;
+  color: #3c4858;
 }
 .tocbot-active-link {
   font-weight: 600;
