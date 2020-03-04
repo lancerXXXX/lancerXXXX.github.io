@@ -39,7 +39,7 @@
 
 
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 70vh;">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 100vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -106,10 +106,9 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background"
-         style="background: url('/img/banner_img.jpg')no-repeat center center;
-           background-size: cover;
-           background-attachment: fixed;">
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
       <div class="full-bg-img">
         <div class="mask rgba-black-light flex-center">
           <div class="container text-center white-text fadeInUp">
@@ -120,6 +119,10 @@
             
           </div>
 
+          
+            <div class="scroll-down-bar">
+              <i class="fas fa-angle-down scroll-down-arrow"></i>
+            </div>
           
         </div>
       </div>
@@ -137,61 +140,15 @@
                 
 
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/5_%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/">
-        <p class="h4 index-header">5_多元函数微分学</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1.多元函数的极限,连续,偏导数,全微分
- 1.1多元函数
- 1.2二元函数的连续与连续
-
-重极限的概念
-
-f(x,y)再开区间/闭区间D内有定义,P0(x0,y0)是D内的内点/边界点对于任意ε&gt;0,∃δ&gt;0,使得0&lt;(x−x0)2+(y−y0)2&lt;δ且P(x,y)∈D的一切都有∣f(x,y)−A∣&lt;ε,则称A为f(x,y)为x→x0,y→y0时的极限记为limx→x0y→y0f(x,y)=A\begin{aligned}
-&amp;f(x,y)再开区间/闭区间D内有{\color{red}定义},P_0(x_0,y_0)是D内的内点/边界点
-\\ &amp;对于任意\varepsilon &gt;0,\exists \delta  &gt;0,使得
-\\ &amp;0&lt;\sqrt[]{(x-x_0)^2+(y-y_0)^2}&lt;\delta  
-\\ &amp;且P(x,y)\in D的一切都有|f(x,y)-A|&lt;\varepsilon ,则称A为f(x,y)为x\rightarrow x_0,y\rightarrow y_0时的极</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%80%83%E7%A0%94">考研</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E5%AD%A6">数学</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/4_%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/">
         <p class="h4 index-header">4_向量代数与空间解析几何</p>
+      </a>
+
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/4_%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/">
         
         
           
@@ -215,7 +172,7 @@ b×a=−(a×b)
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
         
@@ -239,12 +196,15 @@ b×a=−(a×b)
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
         <p class="h4 index-header">3_一元函数积分学</p>
+      </a>
+
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
         
         
           
@@ -267,7 +227,7 @@ b×a=−(a×b)
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
         
@@ -291,12 +251,15 @@ b×a=−(a×b)
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/2_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/">
         <p class="h4 index-header">2_一元函数微分学</p>
+      </a>
+
+      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/2_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/">
         
         
           
@@ -321,7 +284,7 @@ f(x)在x=x0的某邻域U(x0)内有定义,lim⁡x→x0f(x)−f(x0)x−x0存在就
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
         
@@ -345,12 +308,15 @@ f(x)在x=x0的某邻域U(x0)内有定义,lim⁡x→x0f(x)−f(x0)x−x0存在就
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/02/01/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
         <p class="h4 index-header">题型3_一元函数积分学</p>
+      </a>
+
+      <a href="/2020/02/01/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_3_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/">
         
         
           
@@ -381,7 +347,7 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-01&nbsp;&nbsp;
         
@@ -409,12 +375,15 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/02/01/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_2_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/">
         <p class="h4 index-header">题型2_一元函数微分学</p>
+      </a>
+
+      <a href="/2020/02/01/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_2_%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/">
         
         
           
@@ -435,7 +404,7 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-01&nbsp;&nbsp;
         
@@ -463,12 +432,15 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/02/01/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_1_%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/">
         <p class="h4 index-header">题型1_函数极限连续</p>
+      </a>
+
+      <a href="/2020/02/01/%E6%95%B0%E5%AD%A6/%E9%A2%98%E5%9E%8B_1_%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/">
         
         
           
@@ -507,7 +479,7 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-01&nbsp;&nbsp;
         
@@ -535,12 +507,15 @@ sin⁡(a+b)=sin⁡(a)cos⁡(b)+cos⁡(a)sin⁡(b)cos⁡(a+b)=cos⁡(a)cos⁡(b)�
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/01/29/Flutter/Flutter%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/">
         <p class="h4 index-header">Flutter文件管理器开发</p>
+      </a>
+
+      <a href="/2020/01/29/Flutter/Flutter%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/">
         
         
           
@@ -577,7 +552,7 @@ class MyApp extends StatelessWidget {
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-29&nbsp;&nbsp;
         
@@ -597,12 +572,15 @@ class MyApp extends StatelessWidget {
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/4_%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E7%AE%A1%E7%90%86/">
         <p class="h4 index-header">4_运行时存储空间的组织和管理</p>
+      </a>
+
+      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/4_%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E7%AE%A1%E7%90%86/">
         
         
           
@@ -677,7 +655,7 @@ class MyApp extends StatelessWidget {
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
         
@@ -697,12 +675,15 @@ class MyApp extends StatelessWidget {
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
+    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/3_%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/">
         <p class="h4 index-header">3_语义分析</p>
+      </a>
+
+      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/3_%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/">
         
         
           
@@ -777,7 +758,89 @@ eg. 打印, 输出中间代码....
         </div>
       </a>
 
-      <div>
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86">编译原理</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/2_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/">
+        <p class="h4 index-header">2_语法分析</p>
+      </a>
+
+      <a href="/2020/01/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/2_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">&lt;!doctype html&gt;
+
+1. 语法分析
+
+目标:语法记号(token)流 \rightarrow 语法短语 (分析树)
+实质:无结构数据 \rightarrow 有结构数据
+依据:上下无关文法
+
+graph LR
+    A(字符)
+    subgraph 词法分析器-正规式
+    B(字符串)
+    C(记号)
+    end
+    subgraph 语法分析器-上下文无关文法
+    C
+    D(表达式)
+    E(语句)
+    F(程序块)
+    G(程序)
+    end
+    H(语法分析树)
+A--&amp;gt;B--&amp;gt;C--&amp;gt;D--&amp;gt;E--&amp;gt;F--&amp;gt;G--&amp;gt;H
+
+
+1.1. 上下无关文法
+
+正规式定义简单的语言
+
+给定结构 固定次数/无指定次数 重复
+
+描述配对/嵌套
+
+四元组
+
+V_T 终 非空有限 记号名-同义词
+V_N 非 非空有限 和终无交集
+S 开始符号
+P 产生式集合
+
+
+
+1.2. 最左推导
+1.3. 最右推导
+1.4. 判断满足语</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-13&nbsp;&nbsp;
         
@@ -862,14 +925,14 @@ eg. 打印, 输出中间代码....
   
     <!-- 不蒜子统计PV -->
     
-    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
-          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
   
   
     <!-- 不蒜子统计UV -->
     
-    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
-            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
   
   <br>
 
@@ -898,7 +961,7 @@ eg. 打印, 输出中间代码....
 
 
 
-  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
 
 
 
@@ -990,16 +1053,10 @@ eg. 打印, 输出中间代码....
         $(this).wrap(element);
       }
     );
-  </script>
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
-  
-
-  
-    <!-- KaTeX -->
-    <link rel="stylesheet" href="/lib/katex/katex.min.css"  ><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  
 
 
 
