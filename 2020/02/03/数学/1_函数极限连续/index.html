@@ -130,7 +130,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    4.5k 字
+                    4.6k 字
                   </span>&nbsp;
                 
 
@@ -138,7 +138,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      22 分钟
+                      23 分钟
                   </span>&nbsp;
                 
 
@@ -171,7 +171,19 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <h1 id="1-函数"><a class="markdownIt-Anchor" href="#1-函数"></a> 1. 函数</h1>
+            <head>
+    <style type="text/css">  
+        body b,body strong{
+            background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(255, 62, 242)), to(rgb(255, 0, 0)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            }
+        .katex *{
+            color:#1de48f;
+        }
+    </style>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<h1 id="1-函数"><a class="markdownIt-Anchor" href="#1-函数"></a> 1. 函数</h1>
 <h2 id="11-关于奇偶性"><a class="markdownIt-Anchor" href="#11-关于奇偶性"></a> 1.1. 关于奇偶性</h2>
 <p>任一定义在对称于原点的数集X上的函数 f(x), 必可以分解成一奇一偶函数之和</p>
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>2</mn></mfrac><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">f(x)= \frac{2}{2}[ f(x)- f(-x)]+\frac{1}{2} [ f(x) + f(-x) ]
@@ -449,6 +461,33 @@ f(u)在u=u_0处连续, g(x)在x=x_0处连续, 且g(x_0)=u_0, 则f(g(x_0))在x=x_
 <!-- Comments -->
 <div class="col-lg-7 mx-auto nopadding-md">
   <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.11.1/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '141649f765ab2d157740',
+      clientSecret: '633ae0ac8685d0cf4de6a1b0f1c4144938ffb936',
+      repo: 'lancerXXXX.github.io',
+      owner: 'lancerXXXX',
+      admin: 'lancerXXXX',
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 15,
+      pagerDirection: 'last',
+      createIssueManually: 'true',
+      distractionFreeMode: 'false'
+    });
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
     
   </div>
 </div>
