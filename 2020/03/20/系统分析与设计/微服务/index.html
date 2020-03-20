@@ -16,7 +16,7 @@
   <meta name="description" content="">
   <meta name="author" content="Swithun Liu">
   <meta name="keywords" content="">
-  <title>test ~ lancerXXXX</title>
+  <title>微服务是什么 ~ lancerXXXX</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -121,7 +121,7 @@
               
                 <p class="mt-3">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-                  Wednesday, February 12th 2020, 9:04 pm
+                  Friday, March 20th 2020, 12:00 am
                 </p>
               
 
@@ -130,7 +130,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    339 字
+                    541 字
                   </span>&nbsp;
                 
 
@@ -138,7 +138,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      2 分钟
+                      1 分钟
                   </span>&nbsp;
                 
 
@@ -171,139 +171,56 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <h1 id="notes"><a class="markdownIt-Anchor" href="#notes"></a> notes</h1>
-<link rel="stylesheet" href="/css/atom-one-dark.css">
-<script src="/js/highlight.pack.js"></script>
-<script> hljs.initHighlightingOnLoad(); </script>
-<pre class="highlight"><code class="cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
-
-<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
-
-<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T</span>&gt;
-<span class="hljs-title">struct</span> <span class="hljs-title">Node</span> {</span>
-    T element;
-    Node&lt;T&gt; *next = <span class="hljs-literal">nullptr</span>;
-};
-
-<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T</span>&gt;
-<span class="hljs-title">struct</span> <span class="hljs-title">DoubleNode</span> :</span> Node&lt;T&gt; {
-    Node&lt;T&gt; *previous;
-};
-
-<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T</span>&gt;
-<span class="hljs-title">class</span> <span class="hljs-title">List</span> {</span>
-<span class="hljs-keyword">protected</span>:
-    Node&lt;T&gt; *head;
-    Node&lt;T&gt; *current;
-    <span class="hljs-keyword">int</span> length = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">public</span>:
-    List() {
-        head = <span class="hljs-keyword">new</span> Node&lt;T&gt;();
-        current = head;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Length</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> length; }
-
-    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Add</span><span class="hljs-params">(T data)</span> </span>= <span class="hljs-number">0</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Delete</span><span class="hljs-params">(T data)</span> </span>= <span class="hljs-number">0</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Update</span><span class="hljs-params">(T old, T data)</span> </span>= <span class="hljs-number">0</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Search</span><span class="hljs-params">(T data)</span> </span>= <span class="hljs-number">0</span>;
-};
-
-<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T</span>&gt;
-<span class="hljs-title">class</span> <span class="hljs-title">SingleList</span> :</span> <span class="hljs-keyword">public</span> List&lt;T&gt; {
-<span class="hljs-keyword">public</span>:
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span><span class="hljs-params">(T data)</span> <span class="hljs-keyword">override</span> </span>{
-        <span class="hljs-keyword">auto</span> *next = <span class="hljs-keyword">new</span> Node&lt;T&gt;{data, <span class="hljs-literal">nullptr</span>};
-        <span class="hljs-keyword">this</span>-&gt;current-&gt;next = next;
-        <span class="hljs-keyword">this</span>-&gt;current = <span class="hljs-keyword">this</span>-&gt;current-&gt;next;
-        <span class="hljs-keyword">this</span>-&gt;length++;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Delete</span><span class="hljs-params">(T data)</span> <span class="hljs-keyword">override</span> </span>{
-        <span class="hljs-keyword">auto</span> previous = <span class="hljs-keyword">this</span>-&gt;head;
-        <span class="hljs-keyword">auto</span> current = previous-&gt;next;
-        <span class="hljs-keyword">while</span> (current != <span class="hljs-literal">nullptr</span>) {
-            <span class="hljs-keyword">if</span> (current-&gt;element == data) {
-                <span class="hljs-keyword">auto</span> removed = current;
-                previous-&gt;next = current-&gt;next;
-                <span class="hljs-keyword">delete</span> (removed);
-                <span class="hljs-keyword">this</span>-&gt;length--;
-                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+            <head>
+    <style type="text/css">  
+        body b,body strong{
+            background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(255, 62, 242)), to(rgb(255, 0, 0)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
             }
-            previous = current;
-            current = current-&gt;next;
+        .katex *{
+            color:#1de48f;
         }
-
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Update</span><span class="hljs-params">(T old, T data)</span> <span class="hljs-keyword">override</span> </span>{
-        <span class="hljs-keyword">auto</span> current = <span class="hljs-keyword">this</span>-&gt;head;
-        <span class="hljs-keyword">while</span> (current-&gt;next != <span class="hljs-literal">nullptr</span>) {
-            current = current-&gt;next;
-            <span class="hljs-keyword">if</span> (current-&gt;element == old) {
-                current-&gt;element = data;
-                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-            }
+        html body img{
+          border-radius: 15px;box-shadow: 12px 10px 10px;
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Search</span><span class="hljs-params">(T data)</span> <span class="hljs-keyword">override</span> </span>{
-        <span class="hljs-keyword">auto</span> current = <span class="hljs-keyword">this</span>-&gt;head;
-        <span class="hljs-keyword">while</span> (current-&gt;next != <span class="hljs-literal">nullptr</span>) {
-            current = current-&gt;next;
-            <span class="hljs-keyword">if</span> (current-&gt;element == data) {
-                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-            }
-        }
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    }
-};
-
-<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T</span>&gt;
-<span class="hljs-title">class</span> <span class="hljs-title">SingleCycleList</span> :</span> <span class="hljs-keyword">public</span> SingleList&lt;T&gt; {
-
-};
-
-<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T</span>&gt;
-<span class="hljs-title">class</span> <span class="hljs-title">DoubleList</span> :</span> <span class="hljs-keyword">public</span> List&lt;T&gt; {
-<span class="hljs-keyword">public</span>:
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span><span class="hljs-params">(T data)</span> <span class="hljs-keyword">override</span> </span>{
-
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Delete</span><span class="hljs-params">(T data)</span> <span class="hljs-keyword">override</span> </span>{
-
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span><span class="hljs-params">(T old, T data)</span> <span class="hljs-keyword">override</span> </span>{
-
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Search</span><span class="hljs-params">(T data)</span> <span class="hljs-keyword">override</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    }
-};
-</code></pre>
-<pre class="highlight"><code class="http"><span class="hljs-keyword">POST</span> <span class="hljs-string">/task?id=1</span> HTTP/1.1
-<span class="hljs-attribute">Host</span>: example.org
-<span class="hljs-attribute">Content-Type</span>: application/json; charset=utf-8
-<span class="hljs-attribute">Content-Length</span>: 137
-
-<span class="json">{
-  <span class="hljs-attr">"status"</span>: <span class="hljs-string">"ok"</span>,
-  <span class="hljs-attr">"extended"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"results"</span>: [
-    {<span class="hljs-attr">"value"</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">"type"</span>: <span class="hljs-string">"int64"</span>},
-    {<span class="hljs-attr">"value"</span>: <span class="hljs-number">1.0e+3</span>, <span class="hljs-attr">"type"</span>: <span class="hljs-string">"decimal"</span>}
-  ]
-}
-</span></code></pre>
+    </style>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<p><a href="https://www.jianshu.com/p/7293b148028f" target="_blank" rel="noopener">参考</a><br>
+<a href="https://www.cnblogs.com/xiao2shiqi/p/11298663.html" target="_blank" rel="noopener">参考2</a></p>
+<h1 id="1-应用架构的变迁"><a class="markdownIt-Anchor" href="#1-应用架构的变迁"></a> 1. 应用架构的变迁</h1>
+<p><img src="/2020/03/20/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1/2020-03-20-11-54-45.png" srcset="/img/loading.gif" alt></p>
+<h1 id="2-soa与微服务"><a class="markdownIt-Anchor" href="#2-soa与微服务"></a> 2. SOA与微服务</h1>
+<ul>
+<li>他们都是一种<strong>架构风格的设计方法</strong></li>
+<li>SOA(Service-Oriented Architecture) 面向服务的体系架构,包含多个服务,服务之间相互依赖提供一系列功能,服务独立,通过网络调用</li>
+<li>微服务体系架构,业务彻底的<strong>组件化和服务化</strong>,单个业务拆分为多个可以<strong>并行,独立开发,设计,运行的小应用</strong>,小应用通过服务完成<strong>交互和集成</strong></li>
+</ul>
+<p>! 微服务与SOA类似, 是SOA的升华</p>
+<h1 id="3-微服务解决了单体架构的什么问题"><a class="markdownIt-Anchor" href="#3-微服务解决了单体架构的什么问题"></a> 3. 微服务解决了单体架构的什么问题</h1>
+<ul>
+<li>部署成本高（无论是修改 1 行代码，还是 10 行代码，都要全量替换）</li>
+<li>改动影响大，风险高（不论代码改动多小，成本都相同）</li>
+<li>因为成本高，风险高，所以导致部署频率低（无法快速交付客户需求）</li>
+</ul>
+<h1 id="4-微服务的特点"><a class="markdownIt-Anchor" href="#4-微服务的特点"></a> 4. 微服务的特点</h1>
+<ul>
+<li>针对特定服务发布，影响小，风险小，成本低</li>
+<li>频繁发布版本，快速交付需求</li>
+<li>低成本扩容，弹性伸缩，适应云环境</li>
+</ul>
+<h1 id="5-怎样算微服务"><a class="markdownIt-Anchor" href="#5-怎样算微服务"></a> 5. 怎样算微服务</h1>
+<ul>
+<li>单一职责的。一个微服务应该都是单一职责的，这才是 “微” 的体现，<strong>一个微服务解决一个业务问题</strong>（注意是一个业务问题而不是一个接口）。</li>
+<li>面向服务的。<strong>将自己的业务能力封装并对外提供服务</strong>，这是继承 SOA 的核心思想，一个微服务本身也可能使用到其它微服务的能力。</li>
+</ul>
+<h1 id="6-典型的微服务架构"><a class="markdownIt-Anchor" href="#6-典型的微服务架构"></a> 6. 典型的微服务架构</h1>
+<p><img src="/2020/03/20/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1/2020-03-20-11-00-43.png" srcset="/img/loading.gif" alt></p>
+<ul>
+<li><strong>服务注册中心</strong>: 服务在此注册,发现其他服务(服务发现,可以获取当前可用服务的清单,从而去调用</li>
+<li><strong>服务配置中心</strong>: 在这里统一配置所有服务的配置文件</li>
+<li><strong>服务网关</strong>: 客户端或者外部应用调用服务</li>
+</ul>
 
             <hr>
           </div>
@@ -311,6 +228,26 @@
           <div>
             <p>
             
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1">系统分析与设计</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1">微服务</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1">系统分析与设计</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1">微服务</a>
+                
+              </span>
             
             </p>
             
@@ -491,7 +428,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "test&nbsp;",
+        "微服务是什么&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
