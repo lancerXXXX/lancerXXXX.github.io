@@ -489,12 +489,12 @@ a.beian-police img {
 .navbar {
   background-color: transparent;
   font-size: 0.875rem;
-  color: white;
+  color: black;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .navbar a {
-  color: white;
+  color: black;
 }
 .navbar a:hover {
   background-color: rgba(0,0,0,0.1);
@@ -529,16 +529,16 @@ a.beian-police img {
   padding-bottom: 5px;
 }
 .navbar-custom {
-  color: white;
+  color: black;
 }
 .navbar-custom a {
-  color: white;
+  color: black;
 }
 .top-nav-collapse {
-  background-color: #2f4154;
+  background-color: white;
 }
 .navbar-col-show {
-  background-color: #2f4154;
+  background-color: white;
 }
 @media (max-width: 767px) {
   .navbar {
