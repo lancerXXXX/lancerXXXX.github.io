@@ -6,7 +6,7 @@ header,
   overflow-wrap: break-word;
 }
 body {
-  background-color: #cccccc;
+  background-color: #ffffff00;
   color: #3c4858;
 }
 body a {
@@ -30,7 +30,7 @@ body a:hover {
 #board {
   position: relative;
   margin-top: -3rem;
-  background-color: #fffcf0;
+  background-color: white;
   border-radius: 0.5rem;
   z-index: 3;
 }
@@ -69,25 +69,25 @@ body a:hover {
 .navbar {
   background-color: transparent;
   font-size: 0.875rem;
-  color: white;
+  color: black;
 }
 .navbar a {
-  color: white;
+  color: black;
 }
 .navbar a:hover {
   background-color: rgba(0,0,0,0.1);
 }
 .navbar-custom {
-  color: white;
+  color: black;
 }
 .navbar-custom a {
-  color: white;
+  color: black;
 }
 .top-nav-collapse {
-  background-color: #2f41545d;
+  background-color: #ffffffdd;
 }
 .navbar-col-show {
-  background-color: #2f41545d;
+  background-color: #ffffffdd;
 }
 @media (max-width: 768px) {
   .navbar {
