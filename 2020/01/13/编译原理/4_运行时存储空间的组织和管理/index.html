@@ -128,7 +128,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    3.8k 字
+                    3.9k 字
                   </span>
                 
 
@@ -295,8 +295,9 @@
 </li>
 </ol>
 <center>
-<pre class="mermaid">graph LR
-名字--环境-->存储单元--状态-->值</pre>
+<pre class="highlight"><code class="mermaid">graph LR
+名字--环境--&gt;存储单元--状态--&gt;值
+</code></pre>
 </center>
 <ol>
 <li>环境把名字映射到左值（存储单元），而状态把左值映射到右值（值）。</li>
@@ -733,17 +734,18 @@
 <ol>
 <li>例 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>∗</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi>c</mi><mo>∗</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">a=(-b+c*d)+c*d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span></span></span></span></li>
 </ol>
-  <pre class="mermaid">        graph TD
-  assign-->a
-  assign-->jia[+]
-  jia-->+
-  jia-->cheng[*]
-  +-->uminus-->dii[b]
-  +-->*
-  *-->c
-  *-->d
-  cheng-->ci[c]
-  cheng-->di[d]</pre>
+<pre class="highlight"><code class="mermaid">graph TD
+assign--&gt;a
+assign--&gt;jia[+]
+jia--&gt;+
+jia--&gt;cheng[*]
++--&gt;uminus--&gt;dii[b]
++--&gt;*
+*--&gt;c
+*--&gt;d
+cheng--&gt;ci[c]
+cheng--&gt;di[d] 
+</code></pre>
 <p>后缀表达式: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mtext> </mtext><mi>b</mi><mtext> </mtext><mi>u</mi><mi>m</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>s</mi><mtext> </mtext><mi>c</mi><mtext> </mtext><mi>d</mi><mtext> </mtext><mo>∗</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>c</mi><mtext> </mtext><mi>d</mi><mtext> </mtext><mo>∗</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>a</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">a\ b\ uminus\ c\ d\ *\ +\ c\ d\ *\ +\ assign</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace"> </span><span class="mord mathdefault">b</span><span class="mspace"> </span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">u</span><span class="mord mathdefault">s</span><span class="mspace"> </span><span class="mord mathdefault">c</span><span class="mspace"> </span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace"> </span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace"> </span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mspace"> </span><span class="mord mathdefault">c</span><span class="mspace"> </span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace"> </span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace"> </span></span><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord">+</span><span class="mspace"> </span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">n</span></span></span></span></p>
 </li>
 <li>
@@ -774,12 +776,13 @@
 <li>enterProc(table,name,newtable) 过程名name</li>
 </ol>
 <h1 id="3-代码生成"><a class="markdownIt-Anchor" href="#3-代码生成"></a> 3. 代码生成</h1>
-<pre class="mermaid">graph LR
+<pre class="highlight"><code class="mermaid">graph LR
 
-源程序-->前端
-前端--中间代码-->代码优化器
-代码优化器--中间代码-->代码生成器
-代码生成器-->目标程序</pre>
+源程序--&gt;前端
+前端--中间代码--&gt;代码优化器
+代码优化器--中间代码--&gt;代码生成器
+代码生成器--&gt;目标程序
+</code></pre>
 <ol>
 <li>绝对机器语言程序
 <ol>
