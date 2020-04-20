@@ -1,501 +1,1653 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
-
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
-  <link rel="icon" type="image/png" href="/img/avatar.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>时间是静止的,是我们在流逝 [ lancerXXXX ]</title>
+
+
+  <!-- 字体图片库-->
   
-  <meta name="theme-color" content="white">
-  <meta name="description" content="">
-  <meta name="author" content="Swithun Liu">
-  <meta name="keywords" content="">
-  <title>lancerXXXX</title>
-
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+<link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
-
-  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
+  <!-- 代码高亮库 -->
+  
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.css">
 
 
+  <!-- Katex -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet">
+
+
+  
+  <!-- stylesheets list from _config.yml -->
+  
+  <link rel="stylesheet" href="/css/again.css">
+  
+  
 <meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
-
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand"
-       href="/">&nbsp;<strong>lancerXXXX</strong>&nbsp;</a>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/archives/">Archives</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/categories/">Categories</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/tags/">Tags</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
-          </li>
-        
-      </ul>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- menu -->
+  <div id="menu-outer">
+    <div id="menu-inner">
+      
+      <a class="menu-button" href="/">Home</a>
+      
+      <a class="menu-button" href="/about">About</a>
+      
+      <a class="menu-button" href="/contact">Contact</a>
+      
+      <a class="menu-button" href="/archives">Archives</a>
+      
     </div>
   </div>
-</nav>
 
-    <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center">
-          <div class="container text-center white-text fadeInUp">
-            <span class="h2" id="subtitle">
+  <!-- 中间主体 -->
+  <div id="main">
+    <!-- 侧边栏 -->
+    <div id="aside-outer">
+      <aside>
+        <!-- 搜索栏 -->
+<div id="search">
+    <input class="search-input" type="text" placeholder="search">
+    <i id="search-icon" class="fa fa-bars" title="切换目录与索引"></i>
+</div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+    
+
+    
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/12/test/">
+                            <i class="fa fa-file"></i>
+                            test
+                        </a>
+                    </li>
+                </ul>
+
               
-            </span>
 
-            
-          </div>
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Markdown
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/27/Markdown/一份完整的vscode-markdown配置/">
+                            <i class="fa fa-file"></i>
+                            一份完整的vscode-markdown配置
+                        </a>
+                    </li>
+                </ul>
 
-          
-            <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </header>
+              
+                    </li>
+                </ul>
 
-  <main>
-    
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+                 
 
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Flutter
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/29/Flutter/Flutter文件管理器/">
+                            <i class="fa fa-file"></i>
+                            Flutter文件管理器
+                        </a>
+                    </li>
+                </ul>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%BE%91%E5%99%A8/sublime%20Text/" target="_self">
-          <img src="/post_index_img/%E5%93%80%E9%85%B1.jpeg" srcset="/img/loading.gif" alt="工具/编辑器/sublime Text"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%BE%91%E5%99%A8/sublime%20Text/">
-        <p class="h4 index-header">工具/编辑器/sublime Text</p>
-      </a>
+              
+                    </li>
+                </ul>
 
-      <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%BE%91%E5%99%A8/sublime%20Text/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 对比文件
-插件: Sublimerge Pro
-graph TD
-A[Hard] --&gt;|Text| B(Round)
-B --&gt; C{Decision}
-C --&gt;|One| D[Result 1]
-C --&gt;|Two| E[Result 2]
+                 
 
-pie
-&quot;Dogs&quot; : 386
-&quot;Cats&quot; : 85
-&quot;Rats&quot; : 15
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            VIM
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/20/VIM/windows_vim_配置/">
+                            <i class="fa fa-file"></i>
+                            windows_vim_配置
+                        </a>
+                    </li>
+                </ul>
 
-stateDiagram
-[*] --&gt; Still
-Still --&gt; [*]
-Still --&gt; Moving
-Moving --&gt; Still
-Mov</div>
-        </div>
-      </a>
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2019/08/15/VIM/wsl以及vim配置/">
+                            <i class="fa fa-file"></i>
+                            wsl以及vim配置
+                        </a>
+                    </li>
+                </ul>
 
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-03&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
+              
+                    </li>
+                </ul>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/Hexo/hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/" target="_self">
-          <img src="/post_index_img/%E5%93%80%E9%85%B1.jpeg" srcset="/img/loading.gif" alt="工具/Hexo/hexo主题更新"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/Hexo/hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/">
-        <p class="h4 index-header">工具/Hexo/hexo主题更新</p>
-      </a>
+                 
 
-      <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/Hexo/hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 下载主题包
- 配置主题
- 主题原来的文件
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            工具
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/12/工具/Virtual Box虚拟机安装/">
+                            <i class="fa fa-file"></i>
+                            Virtual Box虚拟机安装
+                        </a>
+                    </li>
+                </ul>
 
-主题\source\img
-主题\source\post_index_img
+              
 
- 配置_config.yaml
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Hexo
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/03/工具/Hexo/hexo配置/">
+                            <i class="fa fa-file"></i>
+                            hexo配置
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            chrome
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/03/工具/chrome/chrome扩展/">
+                            <i class="fa fa-file"></i>
+                            chrome扩展
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            pdf
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/01/工具/pdf/pdf工具/">
+                            <i class="fa fa-file"></i>
+                            pdf工具
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            windows效率
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/05/工具/windows效率/windows效率工具/">
+                            <i class="fa fa-file"></i>
+                            windows效率工具
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            写作
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/05/工具/写作/写作工具/">
+                            <i class="fa fa-file"></i>
+                            写作工具
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            数据库
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/14/工具/数据库/Power Designer安装使用/">
+                            <i class="fa fa-file"></i>
+                            Power Designer安装使用
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            时间管理
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/05/工具/时间管理/windows-时间管理软件/">
+                            <i class="fa fa-file"></i>
+                            windows-时间管理软件
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            编辑器
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/17/工具/编辑器/Vscode/">
+                            <i class="fa fa-file"></i>
+                            Vscode
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/09/工具/编辑器/sublime Text/">
+                            <i class="fa fa-file"></i>
+                            sublime Text
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            数学
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/2_一元函数微分学/">
+                            <i class="fa fa-file"></i>
+                            2_一元函数微分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/1_函数极限连续/">
+                            <i class="fa fa-file"></i>
+                            1_函数极限连续
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/3_一元函数积分学/">
+                            <i class="fa fa-file"></i>
+                            3_一元函数积分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/4_向量代数与空间解析几何/">
+                            <i class="fa fa-file"></i>
+                            4_向量代数与空间解析几何
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/5_多元函数微分学/">
+                            <i class="fa fa-file"></i>
+                            5_多元函数微分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/6_多元函数积分学/">
+                            <i class="fa fa-file"></i>
+                            6_多元函数积分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/8_常微分方程/">
+                            <i class="fa fa-file"></i>
+                            8_常微分方程
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/7_无穷级数/">
+                            <i class="fa fa-file"></i>
+                            7_无穷级数
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/09/数学/自然对数/">
+                            <i class="fa fa-file"></i>
+                            自然对数
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/01/数学/题型_1_函数极限连续/">
+                            <i class="fa fa-file"></i>
+                            题型_1_函数极限连续
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/01/数学/题型_2_一元函数微分学/">
+                            <i class="fa fa-file"></i>
+                            题型_2_一元函数微分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/01/数学/题型_3_一元函数积分学/">
+                            <i class="fa fa-file"></i>
+                            题型_3_一元函数积分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            系统分析与设计
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/12/系统分析与设计/git/">
+                            <i class="fa fa-file"></i>
+                            git
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/20/系统分析与设计/微服务/">
+                            <i class="fa fa-file"></i>
+                            微服务
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/19/系统分析与设计/敏捷管理/">
+                            <i class="fa fa-file"></i>
+                            敏捷管理
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/09/系统分析与设计/数据库设计/">
+                            <i class="fa fa-file"></i>
+                            数据库设计
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            编译原理
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/1_词法分析/">
+                            <i class="fa fa-file"></i>
+                            1_词法分析
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/2_语法分析/">
+                            <i class="fa fa-file"></i>
+                            2_语法分析
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/3_语义分析/">
+                            <i class="fa fa-file"></i>
+                            3_语义分析
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/4_运行时存储空间的组织和管理/">
+                            <i class="fa fa-file"></i>
+                            4_运行时存储空间的组织和管理
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            英语
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList10/">
+                            <i class="fa fa-file"></i>
+                            WordList10
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList11/">
+                            <i class="fa fa-file"></i>
+                            WordList11
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList1/">
+                            <i class="fa fa-file"></i>
+                            WordList1
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList12/">
+                            <i class="fa fa-file"></i>
+                            WordList12
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList13/">
+                            <i class="fa fa-file"></i>
+                            WordList13
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList14/">
+                            <i class="fa fa-file"></i>
+                            WordList14
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList15/">
+                            <i class="fa fa-file"></i>
+                            WordList15
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList16/">
+                            <i class="fa fa-file"></i>
+                            WordList16
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList17/">
+                            <i class="fa fa-file"></i>
+                            WordList17
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList18/">
+                            <i class="fa fa-file"></i>
+                            WordList18
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList19/">
+                            <i class="fa fa-file"></i>
+                            WordList19
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList20/">
+                            <i class="fa fa-file"></i>
+                            WordList20
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList2/">
+                            <i class="fa fa-file"></i>
+                            WordList2
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList21/">
+                            <i class="fa fa-file"></i>
+                            WordList21
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList22/">
+                            <i class="fa fa-file"></i>
+                            WordList22
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList24/">
+                            <i class="fa fa-file"></i>
+                            WordList24
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList25/">
+                            <i class="fa fa-file"></i>
+                            WordList25
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList23/">
+                            <i class="fa fa-file"></i>
+                            WordList23
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList26/">
+                            <i class="fa fa-file"></i>
+                            WordList26
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList28/">
+                            <i class="fa fa-file"></i>
+                            WordList28
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList27/">
+                            <i class="fa fa-file"></i>
+                            WordList27
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList29/">
+                            <i class="fa fa-file"></i>
+                            WordList29
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList3/">
+                            <i class="fa fa-file"></i>
+                            WordList3
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList30/">
+                            <i class="fa fa-file"></i>
+                            WordList30
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList32/">
+                            <i class="fa fa-file"></i>
+                            WordList32
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList33/">
+                            <i class="fa fa-file"></i>
+                            WordList33
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList35/">
+                            <i class="fa fa-file"></i>
+                            WordList35
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList34/">
+                            <i class="fa fa-file"></i>
+                            WordList34
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList36/">
+                            <i class="fa fa-file"></i>
+                            WordList36
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList37/">
+                            <i class="fa fa-file"></i>
+                            WordList37
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList38/">
+                            <i class="fa fa-file"></i>
+                            WordList38
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList39/">
+                            <i class="fa fa-file"></i>
+                            WordList39
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList4/">
+                            <i class="fa fa-file"></i>
+                            WordList4
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList40/">
+                            <i class="fa fa-file"></i>
+                            WordList40
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList41/">
+                            <i class="fa fa-file"></i>
+                            WordList41
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList42/">
+                            <i class="fa fa-file"></i>
+                            WordList42
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList43/">
+                            <i class="fa fa-file"></i>
+                            WordList43
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList44/">
+                            <i class="fa fa-file"></i>
+                            WordList44
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList45/">
+                            <i class="fa fa-file"></i>
+                            WordList45
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList46/">
+                            <i class="fa fa-file"></i>
+                            WordList46
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList47/">
+                            <i class="fa fa-file"></i>
+                            WordList47
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList48/">
+                            <i class="fa fa-file"></i>
+                            WordList48
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList49/">
+                            <i class="fa fa-file"></i>
+                            WordList49
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList5/">
+                            <i class="fa fa-file"></i>
+                            WordList5
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList6/">
+                            <i class="fa fa-file"></i>
+                            WordList6
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList7/">
+                            <i class="fa fa-file"></i>
+                            WordList7
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList8/">
+                            <i class="fa fa-file"></i>
+                            WordList8
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList9/">
+                            <i class="fa fa-file"></i>
+                            WordList9
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList31/">
+                            <i class="fa fa-file"></i>
+                            WordList31
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/WordList50/">
+                            <i class="fa fa-file"></i>
+                            WordList50
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            软件测试
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/17/软件测试/PDCA循环/">
+                            <i class="fa fa-file"></i>
+                            PDCA循环
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/26/软件测试/软件测试/">
+                            <i class="fa fa-file"></i>
+                            软件测试
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            软件工程
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/14/软件工程/软件工程概述/">
+                            <i class="fa fa-file"></i>
+                            软件工程概述
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            技巧
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            windows
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/02/技巧/windows/simpread-Windows 和 Linux 创建软链接和硬链接/">
+                            <i class="fa fa-file"></i>
+                            simpread-Windows 和 Linux 创建软链接和硬链接
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            数据库
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Mysql
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/01/数据库/Mysql/Mysql/">
+                            <i class="fa fa-file"></i>
+                            Mysql
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Oracle
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/03/数据库/Oracle/Identity Column(身份列) 实现自增长字段/">
+                            <i class="fa fa-file"></i>
+                            Identity Column(身份列) 实现自增长字段
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            密码学基础
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/04/密码学基础/密码学/">
+                            <i class="fa fa-file"></i>
+                            密码学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
 </div>
-        </div>
-      </a>
 
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-03&nbsp;&nbsp;
-        
-        
-        
-      </div>
+<div id="toc" style="display: none;"></div>
+      </aside>
     </div>
-  </div>
+    <!-- 文章内容 -->
+    <div id="content-outer">
+      <div id="content-inner">
+        <body>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/Identity%20Column(%E8%BA%AB%E4%BB%BD%E5%88%97)%20%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%A2%9E%E9%95%BF%E5%AD%97%E6%AE%B5/" target="_self">
-          <img src="/post_index_img/" srcset="/img/loading.gif" alt="Identity Column(身份列) 实现自增长字段"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/Identity%20Column(%E8%BA%AB%E4%BB%BD%E5%88%97)%20%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%A2%9E%E9%95%BF%E5%AD%97%E6%AE%B5/">
-        <p class="h4 index-header">Identity Column(身份列) 实现自增长字段</p>
-      </a>
 
-      <a href="/2020/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/Identity%20Column(%E8%BA%AB%E4%BB%BD%E5%88%97)%20%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%A2%9E%E9%95%BF%E5%AD%97%E6%AE%B5/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-本文由 简悦 SimpRead 转码， 原文地址 https://www.cnblogs.com/zyon/p/11067115.html
 
- Identity Column
-Oracle 12c 提供的 Identity Column 特性简化了自增字段的定义。
-声明自增字段通常有 3 种常见的用法，以下三种方式都支持INSERT语句中省略自增字段的插入，但有些许差别。
- 1. GENERATED [ALWAYS] AS IDENTITY
+  
+<div id="recent-posts">
+  <h1>Recent Posts</h1>
+  
+  <div class="recent-post-item">
 
-此时ALWAYS关键字是可选的：
-create table tb_test (
-    id number GENERATED ALWAYS AS I</div>
-        </div>
-      </a>
 
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-03&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>&nbsp;
-          
-            <a href="/tags/Oracle/">Oracle</a>&nbsp;
-          
-        
-      </div>
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
     </div>
-  </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/04/02/%E6%8A%80%E5%B7%A7/windows/simpread-Windows%20%E5%92%8C%20Linux%20%E5%88%9B%E5%BB%BA%E8%BD%AF%E9%93%BE%E6%8E%A5%E5%92%8C%E7%A1%AC%E9%93%BE%E6%8E%A5/" target="_self">
-          <img src="/post_index_img/" srcset="/img/loading.gif" alt="Windows软链接"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/17/%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%BE%91%E5%99%A8/Vscode/">vscode插件</a>
+      <time class="recent-post-time" datetime="2020-04-17T15:17:09.000Z">
+        2020-04-17
+      </time>
+
+      <div class="article-digest">
+         grammaly
+根据上下文检测单词拼写,给出修改建议
+
+        ...
       </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/04/02/%E6%8A%80%E5%B7%A7/windows/simpread-Windows%20%E5%92%8C%20Linux%20%E5%88%9B%E5%BB%BA%E8%BD%AF%E9%93%BE%E6%8E%A5%E5%92%8C%E7%A1%AC%E9%93%BE%E6%8E%A5/">
-        <p class="h4 index-header">Windows软链接</p>
-      </a>
 
-      <a href="/2020/04/02/%E6%8A%80%E5%B7%A7/windows/simpread-Windows%20%E5%92%8C%20Linux%20%E5%88%9B%E5%BB%BA%E8%BD%AF%E9%93%BE%E6%8E%A5%E5%92%8C%E7%A1%AC%E9%93%BE%E6%8E%A5/" class="index-excerpt-wrap">
-        
-        
+    </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/17/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/PDCA%E5%BE%AA%E7%8E%AF/">PDCA循环</a>
+      <time class="recent-post-time" datetime="2020-04-17T12:30:31.000Z">
+        2020-04-17
+      </time>
+
+      <div class="article-digest">
+         PDCA
+
+an iterative four-step management method used in business for the control and continuous improvements of processes and products
+Alias: Deming circle/cycle/wheel, the Shewhart cycle, the control circle/cycle, or plan–do–study–act (PDSA).
+
+
+Plan: Establish the objectives and processes required 
+        ...
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/14/%E5%B7%A5%E5%85%B7/%E6%95%B0%E6%8D%AE%E5%BA%93/Power%20Designer%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/">Power Designer安装使用</a>
+      <time class="recent-post-time" datetime="2020-04-14T01:31:59.000Z">
+        2020-04-14
+      </time>
+
+      <div class="article-digest">
           
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">  
     body b,body strong{ color: #F07172; }
-    .katex *{ color: #139f64; }
-    html body img{ border-radius: 15px;box-shadow: 6px 7px 4px; }
+    html body img{ border-radius: 15px;box-shadow: 3px 3px 2px; }
     body .mord .cjk_fallback{ color: white; }
 
+ PowerDesigner 安装教程（含下载 + 汉化 + 破解）
 原文
- 1.Wondows 创建软链接和硬链接
-mklink [/d] [/h] link target
-mklink [/d] [/h] 要把链接文件放的路径 被链接的文件路径
-/d– 创建目录软链接；默认为文件软链接</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a>&nbsp;
-          
-            <a href="/categories/%E6%8A%80%E5%B7%A7/Windows/">Windows</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%8A%80%E5%B7%A7/">技巧</a>&nbsp;
-          
-            <a href="/tags/Windows/">Windows</a>&nbsp;
-          
-        
+软件版本：Sybase PowerDesigner 16.5
+软件版本：Sybase PowerDesigner 16.5
+准备工作：
+需要下载以下 3 个文件，我直接把下面 3 个文件放到百度网盘中。如果网
+        ...
       </div>
+
     </div>
+
   </div>
+  
+  <div class="recent-post-item">
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/04/01/%E5%B7%A5%E5%85%B7/pdf/pdf%E5%B7%A5%E5%85%B7/" target="_self">
-          <img src="/post_index_img/" srcset="/img/loading.gif" alt="pdf工具"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/04/01/%E5%B7%A5%E5%85%B7/pdf/pdf%E5%B7%A5%E5%85%B7/">
-        <p class="h4 index-header">pdf工具</p>
-      </a>
 
-      <a href="/2020/04/01/%E5%B7%A5%E5%85%B7/pdf/pdf%E5%B7%A5%E5%85%B7/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> Sumatra PDF
-
-简洁
-只能看
-官网
-
-</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>&nbsp;
-          
-            <a href="/categories/%E5%B7%A5%E5%85%B7/pdf/">pdf</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>&nbsp;
-          
-            <a href="/tags/pdf/">pdf</a>&nbsp;
-          
-        
-      </div>
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
     </div>
-  </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/04/01/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/Mysql/" target="_self">
-          <img src="/post_index_img/" srcset="/img/loading.gif" alt="Mysql数据库"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/04/01/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/Mysql/">
-        <p class="h4 index-header">Mysql数据库</p>
-      </a>
+    <div class="recent-post-right">
 
-      <a href="/2020/04/01/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/Mysql/" class="index-excerpt-wrap">
-        
-        
+      <a class="recent-post-title" href="/2020/04/12/%E5%B7%A5%E5%85%B7/Virtual%20Box%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85/">Virtual Box虚拟机安装</a>
+      <time class="recent-post-time" datetime="2020-04-11T16:00:00.000Z">
+        2020-04-12
+      </time>
+
+      <div class="article-digest">
           
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">  
     body b,body strong{ color: #F07172; }
-    .katex *{ color: #139f64; }
-    html body img{ border-radius: 15px;box-shadow: 6px 7px 4px; }
+    html body img{ border-radius: 15px;box-shadow: 3px 3px 2px; }
     body .mord .cjk_fallback{ color: white; }
 
- 函数
- limit
-原文
-SELECT 
-    column1,column2,...
-FROM
-    table
-LIMIT offset , count;
+ 1. 和Hyper-V冲突
+参考
 
+之前装wsl启用了hyper-v, 但是装win7卡在完成安装,就想换成Virtual Box, 但是, 这个玩意和hyper-v有冲突, 会无法选择盘片(镜像)–&gt;无法安装系统, 所以就要彻底关掉hyper-v
+解决
 
-offset参数指定要返回的第一行的偏移量。第一行</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/">Mysql</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>&nbsp;
-          
-            <a href="/tags/Mysql/">Mysql</a>&nbsp;
-          
-        
+启动或关闭 Win
+        ...
       </div>
+
     </div>
+
   </div>
+  
+  <div class="recent-post-item">
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/30/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/" target="_self">
-          <img src="/post_index_img/%E5%93%80%E9%85%B1.jpeg" srcset="/img/loading.gif" alt="系统分析与设计/数据库设计"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/12/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/git/">git</a>
+      <time class="recent-post-time" datetime="2020-04-11T16:00:00.000Z">
+        2020-04-12
+      </time>
+
+      <div class="article-digest">
+         git和svn
+
+管理方式
+
+Git
+
+分布式
+
+
+SVN
+
+集中式
+
+
+
+
+Git 关心整个仓库的 文件是否发生变化， 而大多数版本控制系 统则只关心内容变化 了的文件。若文件没 有变化，其他版本系 统不会记录，Git 而 会对未变化的文件的 做一链接。
+版本库的安全性高
+
+Git
+
+分布式系统，每个用户相当于一个备份
+通过SHA1哈希保证数据的完整性，防止恶意篡改
+
+
+SVN
+
+集中式存在单点故障的风险
+服务器端历史数据被篡改时，客户端难以发现
+
+
+
+
+分支功能强大
+
+Git
+
+便于查询和追溯分支间的提交历史
+支持双向合并
+
+
+SVN
+
+分支不支持提交隔离
+一次提交可同时更改主线和分支的
+        ...
       </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/30/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/">
-        <p class="h4 index-header">系统分析与设计/数据库设计</p>
-      </a>
 
-      <a href="/2020/03/30/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 文件系统与数据库系统的区别
+    </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/09/%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%AF%B9%E6%95%B0/">数学</a>
+      <time class="recent-post-time" datetime="2020-04-08T16:00:00.000Z">
+        2020-04-09
+      </time>
+
+      <div class="article-digest">
+         自然对数为什么自然
+  
+    body b,body strong{ color: #F07172; }
+    html body img{ border-radius: 15px;box-shadow: 3px 3px 2px; }
+    body .mord .cjk_fallback{ color: white; }
+
+原视频
+例子
+M(t)=2tM(t)=2^{t}
+M(t)=2t
+
+以111为dt\mathrm{d}tdtdMdt(t)=2t+1−2t1=2t⏟d(2t)dt=2t\frac{\mathrm{d}M}{\mathrm{d}t}(t)=\underbrace{
+        ...
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/09/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/">数据库设计</a>
+      <time class="recent-post-time" datetime="2020-04-08T16:00:00.000Z">
+        2020-04-09
+      </time>
+
+      <div class="article-digest">
+         文件系统与数据库系统的区别
 参考
 
 本质区别: 数据库实现了整体数据的结构化
@@ -512,724 +1664,173 @@ offset参数指定要返回的第一行的偏移量。第一行</div>
 
 数据库系统的共享度高
 
-系统现有用户和程序可以共享数据库中的</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-30&nbsp;&nbsp;
-        
-        
-        
+系统现有用户和程序可以共享数据库中的
+        ...
       </div>
+
     </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/09/%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%BE%91%E5%99%A8/sublime%20Text/">编辑器配置</a>
+      <time class="recent-post-time" datetime="2020-04-08T16:00:00.000Z">
+        2020-04-09
+      </time>
+
+      <div class="article-digest">
+         对比文件
+插件: Sublimerge Pro
+
+        ...
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/05/%E5%B7%A5%E5%85%B7/windows%E6%95%88%E7%8E%87/windows%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">windows高效工具</a>
+      <time class="recent-post-time" datetime="2020-04-04T16:00:00.000Z">
+        2020-04-05
+      </time>
+
+      <div class="article-digest">
+         窗口置顶
+
+鼠标长按标题栏置顶
+官网
+
+
+
+
+        ...
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="recent-post-item">
+
+
+    <div class="recent-post-left">
+      <img class="recent-post-img"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587310824422&di=a90413e3977b72cf1fe41ed68e5ee799&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201501%2F25%2F20150125090226_KF3uB.png" />
+    </div>
+
+    <div class="recent-post-right">
+
+      <a class="recent-post-title" href="/2020/04/05/%E5%B7%A5%E5%85%B7/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7/">写作工具</a>
+      <time class="recent-post-time" datetime="2020-04-04T16:00:00.000Z">
+        2020-04-05
+      </time>
+
+      <div class="article-digest">
+         公式识别
+
+每月免费1000次
+官网
+
+
+
+
+
+点击MathpxiOCR API Credentials,打开链接以获取API
+登录/注册
+使用信用卡激活
+
+
+        ...
+      </div>
+
+    </div>
+
+  </div>
+  
+</div>
+
+
+  <div id="paginator">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">Next</a>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/26/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" target="_self">
-          <img src="/post_index_img/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95.jfif" srcset="/img/loading.gif" alt="软件测试"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/26/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
-        <p class="h4 index-header">软件测试</p>
-      </a>
-
-      <a href="/2020/03/26/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">  
-    body b,body strong{ color: #F07172;}
-    .katex *{ color: #1de48f; }
-    html body img{ border-radius: 15px;box-shadow: 12px 10px 10px; }
-
- 1. 软件开发
- 1.1. 软件开发[过程]模型
-
-英文名: Software Development Model
-概念: 软件开发全部过程,活动和任务的结构框架
-作用: 清晰,直观地表达软件开发过程,明确规定要完成地任务,作为软件项目工作的基础
-
- 1.2. 典型开发模型
-
-边做边改模型（Build-a</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-26&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/20/VIM/windows_vim_%E9%85%8D%E7%BD%AE/" target="_self">
-          <img src="/post_index_img/vim.png" srcset="/img/loading.gif" alt="windows vim 配置"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/20/VIM/windows_vim_%E9%85%8D%E7%BD%AE/">
-        <p class="h4 index-header">windows vim 配置</p>
-      </a>
-
-      <a href="/2020/03/20/VIM/windows_vim_%E9%85%8D%E7%BD%AE/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-Windows上配置vim8.1
-
-介绍下情况, 之前是在wsl上使用rwindowsTerminal+angeer+vim_8
-为什么使用wsl, 有些软件Windows离不开, cmd是屎, ranger太香, linux太香
-为什么要windows装gvim, , 因为wsl, windowsteminal有bug
-其次是性能的问题
- 我的配置(常用快捷键/命令)
-
-&lt;leader&gt; : 空格(Space)
-文件操作
-
-&lt;leader&gt;w : 保存
-&lt;leader&gt;WQ : 保存退出
-
-
-buffer
-
-ml : 循环下一个buffer
-mh : 循</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-20&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/vim/">vim</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/vim/">vim</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/20/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" target="_self">
-          <img src="/post_index_img/%E5%BE%AE%E6%9C%8D%E5%8A%A1.png" srcset="/img/loading.gif" alt="微服务是什么"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/20/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
-        <p class="h4 index-header">微服务是什么</p>
-      </a>
-
-      <a href="/2020/03/20/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-      
-        body b,body strong{
-            background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(255, 62, 242)), to(rgb(255, 0, 0)));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: rgba(0, 0, 0, 0);
-            }
-        .katex *{
-            colo</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-20&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/">系统分析与设计</a>&nbsp;
-          
-            <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/">系统分析与设计</a>&nbsp;
-          
-            <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/19/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%8F%E6%8D%B7%E7%AE%A1%E7%90%86/" target="_self">
-          <img src="/post_index_img/2020-03-19-22-58-41.png" srcset="/img/loading.gif" alt="关于敏捷管理的问题"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/19/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%8F%E6%8D%B7%E7%AE%A1%E7%90%86/">
-        <p class="h4 index-header">关于敏捷管理的问题</p>
-      </a>
-
-      <a href="/2020/03/19/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%8F%E6%8D%B7%E7%AE%A1%E7%90%86/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-参考
- 敏捷项目管理源于?
-丰田在汽车制造业中创造的&quot;精益管理&quot;理念 + 在2001年正式化的&quot;敏捷宣言&quot;(Agile Manifesto)
- Scrum就是敏捷(Agile)吗?
-敏捷方法(Agile mothodology)有很多种,Scrum是其中最受欢迎的
- Scrum为什么受欢迎?
-
-简单+很大的灵活性
-独一无二的地方: 引入了&quot;经验过程控制(empirical process control)&quot;: 使用项目的实际进度(best guess or uninformed forecast)规划和安排发布,因此可以在更短的时间</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-19&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/">系统分析与设计</a>&nbsp;
-          
-            <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%95%8F%E6%8D%B7/">敏捷</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/">系统分析与设计</a>&nbsp;
-          
-            <a href="/tags/%E6%95%8F%E6%8D%B7/">敏捷</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/" target="_self">
-          <img src="/post_index_img/vscode.png" srcset="/img/loading.gif" alt="一份完整的vscode-markdown配置"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/">
-        <p class="h4 index-header">一份完整的vscode-markdown配置</p>
-      </a>
-
-      <a href="/2020/02/27/Markdown/%E4%B8%80%E4%BB%BD%E5%AE%8C%E6%95%B4%E7%9A%84vscode-markdown%E9%85%8D%E7%BD%AE/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-      
-        body b,body strong{
-            background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(255, 62, 242)), to(rgb(255, 0, 0)));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: rgba(0, 0, 0, 0);
-            }
-        .katex *{
-            colo</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-27&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Markdown/">Markdown</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Markdown/">Markdown</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/02/04/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%AF%86%E7%A0%81%E5%AD%A6/" target="_self">
-          <img src="/post_index_img/%E5%AF%86%E7%A0%81%E5%AD%A6.jpg" srcset="/img/loading.gif" alt="密码学"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/02/04/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-        <p class="h4 index-header">密码学</p>
-      </a>
-
-      <a href="/2020/02/04/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%AF%86%E7%A0%81%E5%AD%A6/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">&lt;!doctype html&gt;
-
-
-第一章
-安全攻击
-
-对任何机构信息资源破坏的行为
-
-被动攻击
-
-泄露
-流量分析
-
-
-主动攻击
-
-伪装
-重放
-信息修改
-拒绝服务
-
-
-
-
-安全机制
-
-检测.防止安全攻击/或攻击中恢复
-需多种机制合作
-重要机制之一: 密码编码体制
-
-
-
-第二章传统加密技术
-
-密码
-
-一组含有参数K的变换E
-
-
-理论安全
-
-一次一密  :  密钥长度\geq密文长度  不实用  大规模随机密钥产生困难/密钥分配和保护困难
-
-
-实际安全
-
-有限资源范围内, 破译系统计算上不可行  (通过系统的分析)
-
-
-密码体制:  基本要素 : 密码算法  /  密钥
-
-序列密码
 
 </div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-04&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>&nbsp;
-          
-            <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/%E6%A6%82%E8%BF%B0/">概述</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%A6%82%E8%BF%B0/">概述</a>&nbsp;
-          
-            <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>&nbsp;
-          
-        
       </div>
     </div>
+
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/8_%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" target="_self">
-          <img src="/post_index_img/maths.jpg" srcset="/img/loading.gif" alt="8_常微分方程"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/8_%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">
-        <p class="h4 index-header">8_常微分方程</p>
-      </a>
-
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/8_%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 常微分方程
- 1.1. 基本概念
-
-
-通解: 与微分函数方程阶数相同个数的独立的任意常数的解
-特解: 不含任意常数的解
-定解条件: 用来确定通解中任意常数的条件
-积分曲线: 微分方程的解的y=y(x)y=y(x)y=y(x)表示的曲线
-
-
- 1.2. 常见的几类一阶方程及解法
- 1.2.1. 可分离变量的方程
-
-dydx=f(x)g(y)\frac{dy}{dx}=f(x)g(y)
-dxdy​=f(x)g(y)
-
-
-改写成:
-dyg(y)=f(x)dx  (g(y)≠0)\frac{dy}{g(y)}=f(x)dx\ \ (g(y)\neq 0)
-g(y)dy​=f(x)dx  (g(</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%80%83%E7%A0%94/">考研</a>&nbsp;
-          
-            <a href="/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%80%83%E7%A0%94/">考研</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/7_%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" target="_self">
-          <img src="/post_index_img/maths.jpg" srcset="/img/loading.gif" alt="7_无穷级数"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/7_%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">
-        <p class="h4 index-header">7_无穷级数</p>
-      </a>
-
-      <a href="/2020/02/03/%E6%95%B0%E5%AD%A6/7_%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" class="index-excerpt-wrap">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> 1. 常数项级数
- 1.1. 1.1级数的概念与性质
-
-
-定义
-
-设有数列{un}\{ u_{n}\}{un​},则称∑n=1∞=u1+u2+⋅⋅⋅+un+⋅⋅⋅\sum_{n=1}^{\infty}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdot∑n=1∞​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅为无穷级数，
-令Sn=u1+u2+⋅⋅⋅+un+⋅⋅⋅S_{n}=u_1+u_2+\cdot \cdot \cdot +u_{n}+\cdot \cdot \cdotSn​=u1​+u2​+⋅⋅⋅+un​+⋅⋅⋅，则称数列SnS_{n}Sn​为</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-03&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E8%80%83%E7%A0%94/">考研</a>&nbsp;
-          
-            <a href="/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%80%83%E7%A0%94/">考研</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
-          
-        
-      </div>
+  <!-- 底部信息 -->
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by Swithun Liu using
+      <a href="http://hexo.io">hexo blog framework</a>.
+      <br>
+      <a href="/">Home</a>
     </div>
   </div>
 
 
 
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-double-right"></i></a>
-    </span>
-  </nav>
+  <!-- 引入代码高亮的 js -->
   
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
-      ele.href += '#board';
-    }
-  </script>
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+  <!-- 引入jQuery -->
+  
+<script src="/lib/jquery-3.4.1.min.js"></script>
 
 
+  <!-- 引入 pjax -->
+  
+<script src="/lib/jquery.pjax.js"></script>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+  
+  <!-- scripts list from theme config.yml -->
+  
+  <script src="/js/again.js"></script>
+  
+  
+
+
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <footer>
+
     
-  </main>
 
-  
-    <a id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
-    </a>
-  
-
-  
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+    <div class=".pjax-reload">
+      <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
     </div>
-  </div>
-</div>
-  
-
-  
-
-  
-
-  <footer class="mt-5">
-  <div class="text-center py-3">
-    <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-      <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
-        <span>Fluid</span></a>
-    </div>
-    
-  <div>
-    
-      <!-- 不蒜子统计PV -->
-      
-      <span id="busuanzi_container_site_pv" style="display: none">
-      总访问量 <span id="busuanzi_value_site_pv"></span> 次
-    </span>
-    
-    
-      <!-- 不蒜子统计UV -->
-      
-      <span id="busuanzi_container_site_uv" style="display: none">
-      总访客数 <span id="busuanzi_value_site_uv"></span> 人
-    </span>
-    
-  </div>
-
-
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({ theme: 'dark' });
+      }
+    </script>
     
 
-    
-  </div>
-</footer>
-
-<!-- SCRIPTS -->
-<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
-<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="/js/main.js" ></script>
-
-
-  <script  src="/js/lazyload.js" ></script>
-
-
-
-
-
-  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
-  <script  src="/js/clipboard-use.js" ></script>
-
-
-
-
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
-
-
-
-
-<!-- Plugins -->
-
-
-
-
-
-  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
-  <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "时间是静止的,是我们在流逝&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
-  </script>
-
-
-
-  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
-      
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
-
-
-
-  <script  src="/js/local-search.js" ></script>
-  <script>
-    var path = "/local-search.xml";
-    var inputArea = document.querySelector("#local-search-input");
-    inputArea.onclick = function () {
-      getSearchFile(path);
-      this.onclick = null
-    }
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </footer><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
+
 </html>
