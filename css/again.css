@@ -132,6 +132,7 @@ img {
   border-radius: 10px;
   background: #2d343b;
   box-shadow: 5px 5px 5px #20252a, -5px -5px 5px #3a434c;
+  max-width: 90%;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -168,7 +169,7 @@ img {
   justify-content: flex-start;
 }
 .recent-post-left {
-  width: 20%;
+  width: 400px;
   padding: 20px;
 }
 .recent-post-img {
@@ -177,6 +178,7 @@ img {
 }
 .recent-post-right {
   padding: 20px;
+  width: 100%;
 }
 .recent-post-title {
   padding: 10px;
@@ -207,3 +209,30 @@ img {
   background: #2d343b;
   box-shadow: 5px 5px 10px #1c2025, -5px -5px 10px #3e4851;
 }
+/* #################### 自适应 #################### */
+@media screen and (max-width: 800px) {
+  aside {
+    width: 0%;
+  }
+  #content {
+    padding-left: 0;
+  }
+  canvas#live2dcanvas {
+    display: none;
+  }
+}
+/*竖屏*/
+@media all and (orientation: portrait) {
+  #aside-outer {
+    display: none;
+  }
+  #content-outer {
+    width: 100%;
+    margin: 20;
+    padding: 0;
+  }
+  canvas#live2dcanvas {
+    display: none;
+  }
+}
+/* #################### 自适应 #################### */

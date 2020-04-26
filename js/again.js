@@ -2,7 +2,7 @@ $(document).ready(function () {
 	hljs.initHighlightingOnLoad();
 	clickTreeDirectory();
 	serachTree();
-	pjaxLoad();
+	// pjaxLoad();
 	showArticleIndex();
 	switchTreeOrIndex();
 });
@@ -92,7 +92,7 @@ function pjaxLoad() {
 	$(document).pjax('#articleList a', '#content-outer', { fragment: '#content-outer', timeout: 8000 });
 	$(document).on({
 		"pjax:complete": function (e) {
-		console.log('1');
+			console.log('1');
 			$("pre code").each(function (i, block) {
 				hljs.highlightBlock(block);
 			});
@@ -102,13 +102,25 @@ function pjaxLoad() {
 			showArticleIndex();
 		}
 	});
-	document.addEventListener("pjax:complete", function () {
+	document.querySelector("script[data-pjax], .pjax-reload script").forEach(function (elem) {
 		console.log('2');
-		$("script[data-pjax], .pjax-reload script").each(function () {
-			$(this)
-				.parent()
-				.append($(this).remove());
-		});
+		var id = element.id || "";
+		var src = element.src || "";
+		var code = element.text || element.textContent || element.innerHTML || "";
+		var parent = element.parentNode;
+		var script = document.createElement("script");
+		parent.removeChild(element);
+		if (id !== "") {
+			script.id = element.id;
+		}
+		if (src !== "") {
+			script.src = src;
+			script.async = false;
+		}
+		if (code !== "") {
+			script.appendChild(document.createTextNode(code));
+		}
+		parent.appendChild(script);
 	});
 }
 
