@@ -1,11 +1,30 @@
 $(document).ready(function () {
 	hljs.initHighlightingOnLoad();
 	clickTreeDirectory();
+	// getImage();
 	serachTree();
 	// pjaxLoad();
 	showArticleIndex();
 	switchTreeOrIndex();
 });
+
+//获取必应每日壁纸
+
+function getImage() {
+	var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
+	httpRequest.open('GET', 'http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US', true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
+	httpRequest.send();//第三步：发送请求  将请求参数写在URL中
+	/**
+	 * 获取数据后的处理程序
+	 */
+	httpRequest.onreadystatechange = function () {
+		if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+			var json = httpRequest.responseText;//获取到json字符串，还需解析
+			console.log(json);
+		}
+	};
+}
+
 
 // 点击搜索旁的按钮，切换目录与索引
 function switchTreeOrIndex() {
