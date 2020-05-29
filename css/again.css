@@ -114,9 +114,9 @@ aside #toc a:hover {
 }
 #content-outer {
   width: 80%;
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--bgcolors);
-  box-shadow: 1px 1px 4px #16191c, -1px -1px 4px #444f5a;
+  box-shadow: 1px 1px 2px #16191c, -1px -1px 2px #444f5a;
 }
 #content-inner {
   margin-left: 20px;
@@ -152,8 +152,8 @@ body,
   bottom: 0;
   left: 0;
   z-index: -1;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 .glass2 {
   position: relative;
@@ -166,8 +166,8 @@ body,
   bottom: 0;
   left: 0;
   z-index: -1;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 #bottom-outer {
   width: 100%;
@@ -179,6 +179,9 @@ body,
   width: 75%;
   padding: 10px;
 }
+.hljs {
+  background: rgba(40,44,52,0.533);
+}
 a {
   color: #00b5db;
 }
@@ -186,6 +189,7 @@ img {
   margin: 5px;
   border-radius: 10px;
   background: #2d343b;
+  background: rgba(255,255,255,0.467);
   box-shadow: 5px 5px 5px #20252a, -5px -5px 5px #3a434c;
   max-width: 90%;
 }
