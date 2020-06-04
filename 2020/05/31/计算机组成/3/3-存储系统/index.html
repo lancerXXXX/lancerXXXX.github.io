@@ -1,0 +1,3424 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+  <title>3-存储系统 [ lancerXXXX ]</title>
+
+  
+  <!-- stylesheets list from _config.yml -->
+  
+  <link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  
+  <link rel="stylesheet" href="/css/again.css">
+  
+  
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+<body>
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- menu -->
+  <div id="menu-outer" >
+    <div id="menu-inner">
+      
+      <a class="menu-button" href="/">Home</a>
+      
+      <a class="menu-button" href="/about">About</a>
+      
+      <a class="menu-button" href="/contact">Contact</a>
+      
+      <a class="menu-button" href="/archives">Archives</a>
+      
+      <a class="menu-button" href="/categories">Category</a>
+      
+    </div>
+  </div>
+
+  <!-- 中间主体 -->
+  <div id="main">
+    <!-- 侧边栏 -->
+
+    <div id="aside-outer" class="glass">
+      <aside>
+        <!-- 搜索栏 -->
+<div id="search">
+    <input class="search-input" type="text" placeholder="search">
+    <i id="search-icon" class="fa fa-bars" title="切换目录与索引"></i>
+</div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+    
+
+    
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            test
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/09/test/math/">
+                            <i class="fa fa-file"></i>
+                            math
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/03/test/test/">
+                            <i class="fa fa-file"></i>
+                            test
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Flutter
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/29/Flutter/Flutter文件管理器/">
+                            <i class="fa fa-file"></i>
+                            Flutter文件管理器
+                        </a>
+                    </li>
+                </ul>
+
+              
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Widget
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/16/Flutter/Widget/SizeTransition/">
+                            <i class="fa fa-file"></i>
+                            SizeTransition
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            VIM
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2019/08/15/VIM/wsl以及vim配置/">
+                            <i class="fa fa-file"></i>
+                            wsl以及vim配置
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/20/VIM/windows_vim_配置/">
+                            <i class="fa fa-file"></i>
+                            windows_vim_配置
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            系统分析与设计
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/12/系统分析与设计/git/">
+                            <i class="fa fa-file"></i>
+                            git
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/20/系统分析与设计/微服务/">
+                            <i class="fa fa-file"></i>
+                            微服务
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/19/系统分析与设计/敏捷管理/">
+                            <i class="fa fa-file"></i>
+                            敏捷管理
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/09/系统分析与设计/数据库设计/">
+                            <i class="fa fa-file"></i>
+                            数据库设计
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            工具
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/12/工具/Virtual Box虚拟机安装/">
+                            <i class="fa fa-file"></i>
+                            Virtual Box虚拟机安装
+                        </a>
+                    </li>
+                </ul>
+
+              
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Hexo
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/26/工具/Hexo/heox环境变量/">
+                            <i class="fa fa-file"></i>
+                            heox环境变量
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/02/工具/Hexo/hexo配置/">
+                            <i class="fa fa-file"></i>
+                            hexo配置
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            chrome
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/03/工具/chrome/chrome扩展/">
+                            <i class="fa fa-file"></i>
+                            chrome扩展
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            写作
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/05/工具/写作/写作工具/">
+                            <i class="fa fa-file"></i>
+                            写作工具
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            数据库
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/14/工具/数据库/Power Designer安装使用/">
+                            <i class="fa fa-file"></i>
+                            Power Designer安装使用
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            windows效率
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/05/工具/windows效率/windows效率工具/">
+                            <i class="fa fa-file"></i>
+                            windows效率工具
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            pdf
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/01/工具/pdf/pdf工具/">
+                            <i class="fa fa-file"></i>
+                            pdf工具
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            编辑器
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/09/工具/编辑器/sublime Text/">
+                            <i class="fa fa-file"></i>
+                            sublime Text
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/17/工具/编辑器/Vscode/">
+                            <i class="fa fa-file"></i>
+                            Vscode
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            时间管理
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/05/工具/时间管理/windows-时间管理软件/">
+                            <i class="fa fa-file"></i>
+                            windows-时间管理软件
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            编译原理
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/1_词法分析/">
+                            <i class="fa fa-file"></i>
+                            1_词法分析
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/2_语法分析/">
+                            <i class="fa fa-file"></i>
+                            2_语法分析
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/3_语义分析/">
+                            <i class="fa fa-file"></i>
+                            3_语义分析
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/13/编译原理/4_运行时存储空间的组织和管理/">
+                            <i class="fa fa-file"></i>
+                            4_运行时存储空间的组织和管理
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            软件测试
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/17/软件测试/PDCA循环/">
+                            <i class="fa fa-file"></i>
+                            PDCA循环
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/03/软件测试/Decision-to-decision path/">
+                            <i class="fa fa-file"></i>
+                            Decision-to-decision path
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/03/26/软件测试/软件测试/">
+                            <i class="fa fa-file"></i>
+                            软件测试
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/25/软件测试/事件流场景的测试设计/">
+                            <i class="fa fa-file"></i>
+                            事件流场景的测试设计
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/25/软件测试/类状态的测试设计/">
+                            <i class="fa fa-file"></i>
+                            类状态的测试设计
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            软件工程
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/03/软件工程/软件工程概述/">
+                            <i class="fa fa-file"></i>
+                            软件工程概述
+                        </a>
+                    </li>
+                </ul>
+
+              
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            软件工程中的图
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/25/软件工程/软件工程中的图/软件工程中的各种图/">
+                            <i class="fa fa-file"></i>
+                            软件工程中的各种图
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            设计模式
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            创建型模式
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/03/软件工程/设计模式/创建型模式/原型模式/">
+                            <i class="fa fa-file"></i>
+                            原型模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/02/软件工程/设计模式/创建型模式/构造器模式/">
+                            <i class="fa fa-file"></i>
+                            构造器模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/03/软件工程/设计模式/创建型模式/单例模式/">
+                            <i class="fa fa-file"></i>
+                            单例模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            结构型模式
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/12/软件工程/设计模式/结构型模式/享元模式/">
+                            <i class="fa fa-file"></i>
+                            享元模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/05/软件工程/设计模式/结构型模式/桥接模式/">
+                            <i class="fa fa-file"></i>
+                            桥接模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/17/软件工程/设计模式/结构型模式/代理模式/">
+                            <i class="fa fa-file"></i>
+                            代理模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/07/软件工程/设计模式/结构型模式/组合模式/">
+                            <i class="fa fa-file"></i>
+                            组合模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/18/软件工程/设计模式/结构型模式/门面模式/">
+                            <i class="fa fa-file"></i>
+                            门面模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/07/软件工程/设计模式/结构型模式/装饰者模式/">
+                            <i class="fa fa-file"></i>
+                            装饰者模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/06/软件工程/设计模式/结构型模式/适配器模式/">
+                            <i class="fa fa-file"></i>
+                            适配器模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            行为型模式
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/06/04/软件工程/设计模式/行为型模式/模板/">
+                            <i class="fa fa-file"></i>
+                            模板
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/06/02/软件工程/设计模式/行为型模式/仲裁者模式/">
+                            <i class="fa fa-file"></i>
+                            仲裁者模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/06/04/软件工程/设计模式/行为型模式/观察者模式/">
+                            <i class="fa fa-file"></i>
+                            观察者模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/21/软件工程/设计模式/行为型模式/命令模式/">
+                            <i class="fa fa-file"></i>
+                            命令模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/21/软件工程/设计模式/行为型模式/职责链/">
+                            <i class="fa fa-file"></i>
+                            职责链
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/21/软件工程/设计模式/行为型模式/迭代器模式/">
+                            <i class="fa fa-file"></i>
+                            迭代器模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/06/02/软件工程/设计模式/行为型模式/解释器模式/">
+                            <i class="fa fa-file"></i>
+                            解释器模式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            技巧
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            windows
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/02/技巧/windows/simpread-Windows 和 Linux 创建软链接和硬链接/">
+                            <i class="fa fa-file"></i>
+                            simpread-Windows 和 Linux 创建软链接和硬链接
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            美化
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/21/技巧/美化/百度搜索结果美化/">
+                            <i class="fa fa-file"></i>
+                            百度搜索结果美化
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            wsl
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/03/技巧/wsl/tmux使用/">
+                            <i class="fa fa-file"></i>
+                            tmux使用
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            写作
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Markdown
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/22/技巧/写作/Markdown/Markdown设置锚点/">
+                            <i class="fa fa-file"></i>
+                            Markdown设置锚点
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/27/技巧/写作/Markdown/一份完整的vscode-markdown配置/">
+                            <i class="fa fa-file"></i>
+                            一份完整的vscode-markdown配置
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            数学
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            线性代数
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/30/数学/线性代数/1-行列式/">
+                            <i class="fa fa-file"></i>
+                            1-行列式
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/31/数学/线性代数/2-矩阵/">
+                            <i class="fa fa-file"></i>
+                            2-矩阵
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            高等数学
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/1_函数极限连续/">
+                            <i class="fa fa-file"></i>
+                            1_函数极限连续
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/2_一元函数微分学/">
+                            <i class="fa fa-file"></i>
+                            2_一元函数微分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/3_一元函数积分学/">
+                            <i class="fa fa-file"></i>
+                            3_一元函数积分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/4_向量代数与空间解析几何/">
+                            <i class="fa fa-file"></i>
+                            4_向量代数与空间解析几何
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/6_多元函数积分学/">
+                            <i class="fa fa-file"></i>
+                            6_多元函数积分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/5_多元函数微分学/">
+                            <i class="fa fa-file"></i>
+                            5_多元函数微分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/7_无穷级数/">
+                            <i class="fa fa-file"></i>
+                            7_无穷级数
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/03/数学/高等数学/8_常微分方程/">
+                            <i class="fa fa-file"></i>
+                            8_常微分方程
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/09/数学/高等数学/自然对数/">
+                            <i class="fa fa-file"></i>
+                            自然对数
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/01/数学/高等数学/题型_1_函数极限连续/">
+                            <i class="fa fa-file"></i>
+                            题型_1_函数极限连续
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/01/数学/高等数学/题型_2_一元函数微分学/">
+                            <i class="fa fa-file"></i>
+                            题型_2_一元函数微分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/01/数学/高等数学/题型_3_一元函数积分学/">
+                            <i class="fa fa-file"></i>
+                            题型_3_一元函数积分学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            数据库
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Mysql
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/01/数据库/Mysql/Mysql/">
+                            <i class="fa fa-file"></i>
+                            Mysql
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            Oracle
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/04/03/数据库/Oracle/Identity Column(身份列) 实现自增长字段/">
+                            <i class="fa fa-file"></i>
+                            Identity Column(身份列) 实现自增长字段
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            英语
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            句型
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/15/英语/句型/句型/">
+                            <i class="fa fa-file"></i>
+                            句型
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            单词
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList01/">
+                            <i class="fa fa-file"></i>
+                            WordList01
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList03/">
+                            <i class="fa fa-file"></i>
+                            WordList03
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList02/">
+                            <i class="fa fa-file"></i>
+                            WordList02
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList05/">
+                            <i class="fa fa-file"></i>
+                            WordList05
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList06/">
+                            <i class="fa fa-file"></i>
+                            WordList06
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList04/">
+                            <i class="fa fa-file"></i>
+                            WordList04
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList07/">
+                            <i class="fa fa-file"></i>
+                            WordList07
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList08/">
+                            <i class="fa fa-file"></i>
+                            WordList08
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList09/">
+                            <i class="fa fa-file"></i>
+                            WordList09
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList10/">
+                            <i class="fa fa-file"></i>
+                            WordList10
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList11/">
+                            <i class="fa fa-file"></i>
+                            WordList11
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList12/">
+                            <i class="fa fa-file"></i>
+                            WordList12
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList14/">
+                            <i class="fa fa-file"></i>
+                            WordList14
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList13/">
+                            <i class="fa fa-file"></i>
+                            WordList13
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList15/">
+                            <i class="fa fa-file"></i>
+                            WordList15
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList17/">
+                            <i class="fa fa-file"></i>
+                            WordList17
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList16/">
+                            <i class="fa fa-file"></i>
+                            WordList16
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList18/">
+                            <i class="fa fa-file"></i>
+                            WordList18
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList21/">
+                            <i class="fa fa-file"></i>
+                            WordList21
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList22/">
+                            <i class="fa fa-file"></i>
+                            WordList22
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList19/">
+                            <i class="fa fa-file"></i>
+                            WordList19
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList20/">
+                            <i class="fa fa-file"></i>
+                            WordList20
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList23/">
+                            <i class="fa fa-file"></i>
+                            WordList23
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList24/">
+                            <i class="fa fa-file"></i>
+                            WordList24
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList28/">
+                            <i class="fa fa-file"></i>
+                            WordList28
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList26/">
+                            <i class="fa fa-file"></i>
+                            WordList26
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList27/">
+                            <i class="fa fa-file"></i>
+                            WordList27
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList29/">
+                            <i class="fa fa-file"></i>
+                            WordList29
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList32/">
+                            <i class="fa fa-file"></i>
+                            WordList32
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList30/">
+                            <i class="fa fa-file"></i>
+                            WordList30
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList31/">
+                            <i class="fa fa-file"></i>
+                            WordList31
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList33/">
+                            <i class="fa fa-file"></i>
+                            WordList33
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList34/">
+                            <i class="fa fa-file"></i>
+                            WordList34
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList35/">
+                            <i class="fa fa-file"></i>
+                            WordList35
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList37/">
+                            <i class="fa fa-file"></i>
+                            WordList37
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList38/">
+                            <i class="fa fa-file"></i>
+                            WordList38
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList36/">
+                            <i class="fa fa-file"></i>
+                            WordList36
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList39/">
+                            <i class="fa fa-file"></i>
+                            WordList39
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList41/">
+                            <i class="fa fa-file"></i>
+                            WordList41
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList42/">
+                            <i class="fa fa-file"></i>
+                            WordList42
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList40/">
+                            <i class="fa fa-file"></i>
+                            WordList40
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList44/">
+                            <i class="fa fa-file"></i>
+                            WordList44
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList45/">
+                            <i class="fa fa-file"></i>
+                            WordList45
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList43/">
+                            <i class="fa fa-file"></i>
+                            WordList43
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList46/">
+                            <i class="fa fa-file"></i>
+                            WordList46
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList48/">
+                            <i class="fa fa-file"></i>
+                            WordList48
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList49/">
+                            <i class="fa fa-file"></i>
+                            WordList49
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList47/">
+                            <i class="fa fa-file"></i>
+                            WordList47
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList25/">
+                            <i class="fa fa-file"></i>
+                            WordList25
+                        </a>
+                    </li>
+                </ul>
+
+              
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/01/01/英语/单词/WordList50/">
+                            <i class="fa fa-file"></i>
+                            WordList50
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            计算机组成
+                        </a>
+                        
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            1
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/23/计算机组成/1/计算机系统概述/">
+                            <i class="fa fa-file"></i>
+                            计算机系统概述
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            2
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/05/27/计算机组成/2/数据的表示与运算/">
+                            <i class="fa fa-file"></i>
+                            数据的表示与运算
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            3
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file active">
+                        <a href="/2020/05/31/计算机组成/3/3-存储系统/">
+                            <i class="fa fa-file"></i>
+                            3-存储系统
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+                    </li>
+                </ul>
+
+                 
+
+                <!--如果是文件夹-->
+                <ul>
+                    <li class="directory">
+                        <a href="#" class="directory">
+                            <i class="fa fa-folder"></i>
+                            密码学基础
+                        </a>
+                        
+                <!--如果是文章-->
+                <ul>
+                    <li class="file">
+                        <a href="/2020/02/04/密码学基础/密码学/">
+                            <i class="fa fa-file"></i>
+                            密码学
+                        </a>
+                    </li>
+                </ul>
+
+              
+                    </li>
+                </ul>
+
+                 
+</div>
+
+<div id="toc" style="display: none;"></div>
+      </aside>
+    </div>
+
+    <!-- 文章内容 -->
+
+    <div id="content-outer" class="glass">
+      <div id="content-inner" >
+        
+<article id="post">
+  <h1>3-存储系统</h1>
+  <h1 id="1-概述"><a class="markdownIt-Anchor" href="#1-概述"></a> 1. 概述</h1>
+<h2 id="11-分类"><a class="markdownIt-Anchor" href="#11-分类"></a> 1.1. 分类</h2>
+<h3 id="111-按-计算机中的作用层次分类"><a class="markdownIt-Anchor" href="#111-按-计算机中的作用层次分类"></a> 1.1.1. 按 计算机中的作用(层次)分类</h3>
+<ol>
+<li>主存储器
+<ol>
+<li>存放
+<ol>
+<li>大量程序和数据</li>
+</ol>
+</li>
+<li>访问
+<ol>
+<li>CPU随时随地访问</li>
+</ol>
+</li>
+<li>交换数据
+<ol>
+<li>Cache</li>
+<li>辅助存储器</li>
+</ol>
+</li>
+<li>特点
+<ol>
+<li>容量小</li>
+<li>存取速度较快</li>
+<li>价格较高</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>辅助存储器
+<ol>
+<li>存放
+<ol>
+<li>当前暂时不用的程序和数据,永久性保存的信息</li>
+</ol>
+</li>
+<li>访问
+<ol>
+<li>CPU不能</li>
+</ol>
+</li>
+<li>特点
+<ol>
+<li>容量极大</li>
+<li>存取速度较慢</li>
+<li>单位成本底</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>高速缓冲存储器
+<ol>
+<li>存放
+<ol>
+<li>正在执行的程序段和数据</li>
+</ol>
+</li>
+<li>访问
+<ol>
+<li>CPU高速使用</li>
+</ol>
+</li>
+<li>特点
+<ol>
+<li>容量小</li>
+<li>速度和CPU速度相匹配</li>
+<li>价格高</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="112-按-存储介质-分类"><a class="markdownIt-Anchor" href="#112-按-存储介质-分类"></a> 1.1.2. 按 存储介质 分类</h3>
+<ul>
+<li>磁表面存储器
+<ul>
+<li>磁盘</li>
+<li>磁带</li>
+</ul>
+</li>
+<li>磁芯存储器半导体存储器
+<ul>
+<li>MOS型存储器</li>
+<li>双极型存储器</li>
+</ul>
+</li>
+<li>光存储器
+<ul>
+<li>光盘</li>
+</ul>
+</li>
+</ul>
+<h3 id="113-按-存取方式-分类"><a class="markdownIt-Anchor" href="#113-按-存取方式-分类"></a> 1.1.3. 按 存取方式 分类</h3>
+<ul>
+<li>随机存储器(RAM)
+<ul>
+<li>特点
+<ul>
+<li>任意单元内容随机存取</li>
+</ul>
+</li>
+<li>时间
+<ul>
+<li>存储单元的物理位置</li>
+</ul>
+</li>
+<li>应用
+<ul>
+<li>主存</li>
+<li>高速缓冲存储器</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>静态RAM(触发器)</li>
+<li>动态RAM(电容充电)</li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>读写方便</li>
+<li>使用灵活</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>只读存储器(ROM)
+<ul>
+<li>特点
+<ul>
+<li>只能随机读出不能写入</li>
+<li>断电不消失</li>
+</ul>
+</li>
+<li>应用
+<ul>
+<li>固定不变的程序,常数,汉字字库</li>
+<li>操作系统的固化</li>
+<li>(ROM+RAM)-&gt;构成主存的存储域</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>不可反复重写</li>
+<li>可反复重写
+<ul>
+<li>电擦除等
+<ul>
+<li>写入速度慢</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>串行访问存储器
+<ul>
+<li>特点
+<ul>
+<li>按其物理地址先后顺序寻址</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>顺序存取存储器(磁带)
+<ul>
+<li>必按顺序存取</li>
+<li>时间
+<ul>
+<li>存储器上的物理位置</li>
+<li>慢</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>直接存取存储器(磁盘)
+<ul>
+<li>先找小区域-&gt;再顺序查找</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="114-按-信息的可保存性-分类"><a class="markdownIt-Anchor" href="#114-按-信息的可保存性-分类"></a> 1.1.4. 按 信息的可保存性 分类</h3>
+<ul>
+<li>易失性存储器
+<ul>
+<li>如
+<ul>
+<li>RAM</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非易失性存储器
+<ul>
+<li>如
+<ul>
+<li>ROM</li>
+<li>磁表面存储器</li>
+<li>光存储器</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>破坏性读出
+<ul>
+<li>原存储信息被破坏</li>
+<li>必须
+<ul>
+<li>紧接一个再生操作-&gt;恢复信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非破坏性读出</li>
+</ul>
+<h2 id="12-性能指标"><a class="markdownIt-Anchor" href="#12-性能指标"></a> 1.2. 性能指标</h2>
+<ul>
+<li>存储容量
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>存储字数</mtext><mo>×</mo><mi mathvariant="normal">字</mi><mi mathvariant="normal">长</mi><mo stretchy="false">(</mo><mn>1</mn><mi>M</mi><mo>×</mo><mn>8</mn><mi mathvariant="normal">位</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{存储字数}\times字长(1M\times 8位)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord cjk_fallback">存储字数</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">字</span><span class="mord cjk_fallback">长</span><span class="mopen">(</span><span class="mord">1</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">8</span><span class="mord cjk_fallback">位</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+</li>
+<li>单位成本
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>每位价格</mtext><mo>=</mo><mtext>总成本</mtext><mi mathvariant="normal">/</mi><mtext>总容量</mtext></mrow><annotation encoding="application/x-tex">\text{每位价格}=\text{总成本}/\text{总容量}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">每位价格</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord cjk_fallback">总成本</span></span><span class="mord">/</span><span class="mord text"><span class="mord cjk_fallback">总容量</span></span></span></span></span></li>
+</ul>
+</li>
+<li>存储速度
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>数据传输率</mtext><mo>=</mo><mtext>数据的宽度</mtext><mi mathvariant="normal">/</mi><mtext>存储周期</mtext></mrow><annotation encoding="application/x-tex">\text{数据传输率}=\text{数据的宽度}/\text{存储周期}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">数据传输率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord cjk_fallback">数据的宽度</span></span><span class="mord">/</span><span class="mord text"><span class="mord cjk_fallback">存储周期</span></span></span></span></span>
+<ul>
+<li>存取时间(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">T_{a}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>)
+<ul>
+<li>启动一次存储器~完成该操作</li>
+<li>分类
+<ul>
+<li>读出时间</li>
+<li>写入时间</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>存取周期(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">T_{m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>)
+<ul>
+<li>存储器完整读写操作
+<ul>
+<li>连续两次独立访问存储器操作(读/写)间隔</li>
+</ul>
+</li>
+<li>等于
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">T_{a}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>+( 内部状态的复原时间)
+<ul>
+<li>破坏性读出存储器
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>m</mi></msub><mo>&gt;</mo><mo>&gt;</mo><msub><mi>T</mi><mi>a</mi></msub><mo>→</mo><msub><mi>T</mi><mi>m</mi></msub><mo>=</mo><mn>2</mn><msub><mi>T</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">T_{m}&gt;&gt;T_{a}\rightarrow T_{m}=2T_{a}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>主存带宽(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>B</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">B_{m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>)(数据传输率)
+<ul>
+<li>每秒从主存进出的最大数量</li>
+<li>单位
+<ul>
+<li>字/s,字节/s,位/s</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-层次化结构"><a class="markdownIt-Anchor" href="#2-层次化结构"></a> 2. 层次化结构</h1>
+<h2 id="21-多级存储系统"><a class="markdownIt-Anchor" href="#21-多级存储系统"></a> 2.1. 多级存储系统</h2>
+<ul>
+<li>多级存储器结构<br>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-05-31-18-07-03.png" width="500px"></li>
+<li>三级存储系统的层次结构及其构成<br>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-05-31-18-08-05.png" width="500px">
+<ul>
+<li>Cache-主存
+<ul>
+<li>解决
+<ul>
+<li>CPU和主存速度不匹配</li>
+</ul>
+</li>
+<li>数据调动实现
+<ul>
+<li>硬件自动完成</li>
+<li>对程序员透明</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>主存-辅存
+<ul>
+<li>解决
+<ul>
+<li>存储系统容量</li>
+</ul>
+</li>
+<li>数据调动实现
+<ul>
+<li>硬件和操作系统</li>
+<li>对程序员不透明</li>
+</ul>
+</li>
+<li>扩展
+<ul>
+<li>虚拟存储系统
+<ul>
+<li>编程的地址<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇔</mo></mrow><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">⇔</span></span></span></span>虚拟存储器的地址空间</li>
+<li>编程可用空间远大于主存空间</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-半导体随机存储器"><a class="markdownIt-Anchor" href="#3-半导体随机存储器"></a> 3. 半导体随机存储器</h1>
+<h2 id="31-sram和dram"><a class="markdownIt-Anchor" href="#31-sram和dram"></a> 3.1. SRAM和DRAM</h2>
+<h3 id="311-sram"><a class="markdownIt-Anchor" href="#311-sram"></a> 3.1.1. SRAM</h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>存储体</mtext><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mover><mover><mtext>存储单元</mtext><mo stretchy="true">⏞</mo></mover><mtext>若干</mtext></mover><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mover><mover><mtext>存储元</mtext><mo stretchy="true">⏞</mo></mover><mtext>多个地址码相同的</mtext></mover><mo>:</mo><mtext>存放一个二进制位的物理器件</mtext></mrow></mstyle></mtd></mtr></mtable></mrow></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\text{存储体}\left\{\begin{matrix}
+\overbrace{\text{存储单元}}^{\text{若干}}\left\{\begin{matrix}
+\overbrace{\text{存储元}}^{\text{多个地址码相同的}}: \text{存放一个二进制位的物理器件}
+\end{matrix}\right.
+\end{matrix}\right.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="mord text"><span class="mord cjk_fallback">存储体</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.7298454999999997em;"><span style="top:-3.7298454999999993em;"><span class="pstrut" style="height:4.0096609999999995em;"></span><span class="mord"><span class="mord mover"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:2.009661em;"><span style="top:-3.33133em;"><span class="pstrut" style="height:3.33133em;"></span><span class="mord mover"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.33133em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">存储单元</span></span></span></span><span class="svg-align" style="top:-3.78333em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMinYMin slice"><path d="M6 548l-6-6v-35l6-11c56-104 135.3-181.3 238-232 57.3-28.7 117
+-45 179-50h399577v120H403c-43.3 7-81 15-113 26-100.7 33-179.7 91-237 174-2.7
+ 5-6 9-10 13-.7 1-7.3 1-20 1H6z"/></svg></span><span class="brace-center" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMidYMin slice"><path d="M200428 334
+c-100.7-8.3-195.3-44-280-108-55.3-42-101.7-93-139-153l-9-14c-2.7 4-5.7 8.7-9 14
+-53.3 86.7-123.7 153-211 199-66.7 36-137.3 56.3-212 62H0V214h199568c178.3-11.7
+ 311.7-78.3 403-201 6-8 9.7-12 11-12 .7-.7 6.7-1 18-1s17.3.3 18 1c1.3 0 5 4 11
+ 12 44.7 59.3 101.3 106.3 170 141s145.3 54.3 229 60h199572v120z"/></svg></span><span class="brace-right" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMaxYMin slice"><path d="M400000 542l
+-6 6h-17c-12.7 0-19.3-.3-20-1-4-4-7.3-8.3-10-13-35.3-51.3-80.8-93.8-136.5-127.5
+s-117.2-55.8-184.5-66.5c-.7 0-2-.3-4-1-18.7-2.7-76-4.3-172-5H0V214h399571l6 1
+c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z"/></svg></span></span></span></span></span></span></span></span><span style="top:-4.86266em;"><span class="pstrut" style="height:3.33133em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">若干</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4348304999999997em;"><span style="top:-3.434830499999999em;"><span class="pstrut" style="height:4.0096609999999995em;"></span><span class="mord"><span class="mord mover"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:2.009661em;"><span style="top:-3.33133em;"><span class="pstrut" style="height:3.33133em;"></span><span class="mord mover"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.33133em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">存储元</span></span></span></span><span class="svg-align" style="top:-3.78333em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMinYMin slice"><path d="M6 548l-6-6v-35l6-11c56-104 135.3-181.3 238-232 57.3-28.7 117
+-45 179-50h399577v120H403c-43.3 7-81 15-113 26-100.7 33-179.7 91-237 174-2.7
+ 5-6 9-10 13-.7 1-7.3 1-20 1H6z"/></svg></span><span class="brace-center" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMidYMin slice"><path d="M200428 334
+c-100.7-8.3-195.3-44-280-108-55.3-42-101.7-93-139-153l-9-14c-2.7 4-5.7 8.7-9 14
+-53.3 86.7-123.7 153-211 199-66.7 36-137.3 56.3-212 62H0V214h199568c178.3-11.7
+ 311.7-78.3 403-201 6-8 9.7-12 11-12 .7-.7 6.7-1 18-1s17.3.3 18 1c1.3 0 5 4 11
+ 12 44.7 59.3 101.3 106.3 170 141s145.3 54.3 229 60h199572v120z"/></svg></span><span class="brace-right" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMaxYMin slice"><path d="M400000 542l
+-6 6h-17c-12.7 0-19.3-.3-20-1-4-4-7.3-8.3-10-13-35.3-51.3-80.8-93.8-136.5-127.5
+s-117.2-55.8-184.5-66.5c-.7 0-2-.3-4-1-18.7-2.7-76-4.3-172-5H0V214h399571l6 1
+c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z"/></svg></span></span></span></span></span></span></span></span><span style="top:-4.86266em;"><span class="pstrut" style="height:3.33133em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">多个地址码相同的</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord cjk_fallback">存放一个二进制位的物理器件</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9348305000000001em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2298455000000001em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<ul>
+<li>存储元
+<ul>
+<li>组成
+<ul>
+<li>双稳态触发器(六晶体管MOS)
+<ul>
+<li>非破坏性读出</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>读取速度块</li>
+<li>集成度低</li>
+<li>功耗大</li>
+</ul>
+</li>
+<li>应用
+<ul>
+<li>高速缓冲存储器</li>
+</ul>
+</li>
+</ul>
+<h3 id="312-dram"><a class="markdownIt-Anchor" href="#312-dram"></a> 3.1.2. DRAM</h3>
+<ul>
+<li>存储原理
+<ul>
+<li>存储元电路中栅极电容上的电荷</li>
+<li>维持(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>∼</mo><mn>2</mn><mi>m</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">1\sim 2ms</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">m</span><span class="mord mathdefault">s</span></span></span></span>)
+<ul>
+<li>刷新周期(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mi>m</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">2ms</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">m</span><span class="mord mathdefault">s</span></span></span></span>)
+<ul>
+<li>集中刷新
+<ul>
+<li>方式
+<ul>
+<li>固定时间</li>
+<li>存储所有行逐一再生</li>
+<li>停止读写操作
+<ul>
+<li>死时间(死区)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>读写操作不受刷新工作影响<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>存取速度较高</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>死区不能访问</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分散刷新
+<ul>
+<li>方式
+<ul>
+<li>工作周期划分
+<ul>
+<li>前半
+<ul>
+<li>读写</li>
+</ul>
+</li>
+<li>后半
+<ul>
+<li>刷新某一行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>没有死区</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>存取周期长</li>
+<li>整机速度降低</li>
+</ul>
+</li>
+<li>发展
+<ul>
+<li>透明刷新
+<ul>
+<li>刷新安排在存储器的译码阶段</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>异步刷新
+<ul>
+<li>前两种结合</li>
+<li>方式
+<ul>
+<li>时间间隔 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span> : 刷新周期/行数</li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>避免CPU等待时间过长</li>
+<li>减少刷新次数</li>
+<li>(根本上)提高整机效率</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>对CPU透明<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>刷新不依赖外部的访问</li>
+<li>动态RAM刷线代为是行<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>刷新操作需要行地址</li>
+<li>类似读操作
+<ul>
+<li>不同
+<ul>
+<li>仅给栅极电容补充电荷,不需要信息输出</li>
+<li>不需要选片(整个存储器中的所有芯片同时被刷新)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>和易失性存储器概念不同
+<ul>
+<li>SRAM和DRAM都断电内容消失</li>
+<li>只DRAM需要刷新</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>存储元
+<ul>
+<li>通常一个晶体管</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>比SRAM密度高(存储元通常一个晶体管)</li>
+<li>地址线是原来的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>(地址复用技术)</li>
+<li>地址信号分行列两次传送</li>
+<li>读取速度相对慢</li>
+<li>容易集成</li>
+<li>位价低</li>
+<li>容量大</li>
+<li>低功耗</li>
+</ul>
+</li>
+<li>应用
+<ul>
+<li>大容量主存系统</li>
+</ul>
+</li>
+</ul>
+<h3 id="313-存储器的读写周期"><a class="markdownIt-Anchor" href="#313-存储器的读写周期"></a> 3.1.3. 存储器的读写周期</h3>
+<h4 id="3131-ram读周期"><a class="markdownIt-Anchor" href="#3131-ram读周期"></a> 3.1.3.1. RAM读周期</h4>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-01-17-34-19.png" width="600px">
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mi>A</mi></msub><mo>:</mo><mspace width="1em"><mtext>读出时间</mtext></mspace></mrow><annotation encoding="application/x-tex">t_{A}:\quad\text{读出时间}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">读出时间</span></span></span></span></span>
+<ul>
+<li>给出有效地址~读出单元内容~外部数据总线稳定出现</li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>C</mi><mi>S</mi></mrow><mo stretchy="true">‾</mo></mover><mo>:</mo><mspace width="1em"><mtext>地址片选信号</mtext></mspace></mrow><annotation encoding="application/x-tex">\overline{CS}:\quad \text{地址片选信号}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">地址片选信号</span></span></span></span></span>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mtext>保持到</mtext></mover><mtext>数据稳定输出</mtext></mrow><annotation encoding="application/x-tex">\overset{\text{保持到}}{\rightarrow}\text{数据稳定输出}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">保持到</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">数据稳定输出</span></span></span></span></span></li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mi>C</mi><mi>O</mi></mrow></msub><mo>:</mo><mspace width="1em"><mtext>片选的保持时间</mtext></mspace></mrow><annotation encoding="application/x-tex">t_{CO}:\quad\text{片选的保持时间}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">O</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">片选的保持时间</span></span></span></span></span>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>W</mi><mi>E</mi></mrow><mo stretchy="true">‾</mo></mover><mover><mo><mo>→</mo></mo><mtext>读周期</mtext></mover><mtext>高电平</mtext></mrow><annotation encoding="application/x-tex">\overline{WE}\overset{\text{读周期}}{\rightarrow}\text{高电平}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">读周期</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">高电平</span></span></span></span></span></li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mi>R</mi><mi>C</mi></mrow></msub><mo>:</mo><mspace width="2em"><mtext>读周期时间</mtext></mspace></mrow><annotation encoding="application/x-tex">t_{RC}:\qquad \text{读周期时间}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.00773em;">R</span><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:2em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">读周期时间</span></span></span></span></span></li>
+</ul>
+<h4 id="3132-ram写周期"><a class="markdownIt-Anchor" href="#3132-ram写周期"></a> 3.1.3.2. RAM写周期</h4>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-01-17-50-10.png" width="500px">
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mi>W</mi></msub><mo>:</mo><mspace width="1em"><mtext>保证数据总线上的信息能可靠写入存储器</mtext></mspace></mrow><annotation encoding="application/x-tex">t_{W}:\quad \text{保证数据总线上的信息能可靠写入存储器}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">W</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">保证数据总线上的信息能可靠写入存储器</span></span></span></span></span>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>C</mi><mi>S</mi></mrow><mo stretchy="true">‾</mo></mover><mo separator="true">,</mo><mover accent="true"><mrow><mi>W</mi><mi>E</mi></mrow><mo stretchy="true">‾</mo></mover><mtext>相与最小宽度</mtext></mrow><annotation encoding="application/x-tex">\overline{CS},\overline{WE}\text{相与最小宽度}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0777700000000001em;vertical-align:-0.19444em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mord text"><span class="mord cjk_fallback">相与最小宽度</span></span></span></span></span></li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>W</mi><mi>E</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{WE}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span>
+<ul>
+<li>低电平</li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mi>W</mi><mi>C</mi></mrow></msub><mo>:</mo><mspace width="1em"><mtext>地址有效时间</mtext></mspace></mrow><annotation encoding="application/x-tex">t_{WC}:\quad \text{地址有效时间}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">W</span><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">地址有效时间</span></span></span></span></span>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>至少</mtext><mo>=</mo><msub><mi>t</mi><mrow><mi>A</mi><mi>W</mi></mrow></msub><mo>+</mo><msub><mi>t</mi><mi>W</mi></msub><mo>+</mo><msub><mi>t</mi><mrow><mi>W</mi><mi>R</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\text{至少}=t_{AW}+t_{W}+t_{WR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">至少</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">A</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">W</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">W</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">W</span><span class="mord mathdefault mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mi>D</mi><mi>W</mi></mrow></msub></mrow><annotation encoding="application/x-tex">t_{DW}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">W</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>
+<ul>
+<li>写入数据在此之前在数据总线上稳定</li>
+</ul>
+</li>
+</ul>
+<h3 id="314-比较"><a class="markdownIt-Anchor" href="#314-比较"></a> 3.1.4. 比较</h3>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-01-19-05-32.png" width="700px">
+<h2 id="32-只读存储器rom"><a class="markdownIt-Anchor" href="#32-只读存储器rom"></a> 3.2. 只读存储器(ROM)</h2>
+<h3 id="321-特点"><a class="markdownIt-Anchor" href="#321-特点"></a> 3.2.1. 特点</h3>
+<ul>
+<li>ROM,RAM都随机存取</li>
+<li>SRAM,DRAM都 易失性半导体存储器</li>
+<li>ROM特点
+<ul>
+<li>结构简单<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>位密度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&gt;</mo></mrow><annotation encoding="application/x-tex">&gt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&gt;</span></span></span></span>可读写存储器</li>
+<li>非易失性<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>可靠性高</li>
+</ul>
+</li>
+</ul>
+<h3 id="322-rom的类型"><a class="markdownIt-Anchor" href="#322-rom的类型"></a> 3.2.2. ROM的类型</h3>
+<ul>
+<li>制造工艺
+<ul>
+<li>MROM(掩模式)
+<ul>
+<li>特点
+<ul>
+<li>生产过程写入</li>
+<li>无法改变</li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>可靠性高</li>
+<li>集成度高</li>
+<li>价格便宜</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>灵活性差</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>PROM(一次可编程只读存储器)
+<ul>
+<li>特点
+<ul>
+<li>用户编程器写入</li>
+<li>无法改变</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>EPROM(可擦除只读存储器)
+<ul>
+<li>特点
+<ul>
+<li>用户编程器写入</li>
+<li>可以多次改写
+<ul>
+<li>写入时间过长, 变成次数有限<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>不能取代RAM</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>UVEPROM(紫外线擦除)</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>E</mi><mn>2</mn></msup><mi>P</mi><mi>R</mi><mi>O</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">E^2PROM</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span>(电擦除)</li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>价格便宜</li>
+<li>集成度高</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Flash Memory(闪存存储器)
+<ul>
+<li>发展基础
+<ul>
+<li>EPROM和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>E</mi><mn>2</mn></msup><mi>P</mi><mi>R</mi><mi>O</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">E^2PROM</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span></li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>不加电长期保存</li>
+<li>在线快速擦除与重写</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Solid State Drives(固态硬盘)
+<ul>
+<li>发展基础
+<ul>
+<li>Flash Memory</li>
+</ul>
+</li>
+<li>组成
+<ul>
+<li>控制单元</li>
+<li>存储单元(FLASH芯片)</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>不加电长期保存</li>
+<li>在线快速擦除与重写</li>
+<li>对比传统硬盘
+<ul>
+<li>读写速度快</li>
+<li>低功耗</li>
+<li>缺点
+<ul>
+<li>价格较高</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="33-主存储器的基本组成"><a class="markdownIt-Anchor" href="#33-主存储器的基本组成"></a> 3.3. 主存储器的基本组成</h2>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-13-26-09.png" alt></p>
+<blockquote>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>容量</mtext><mo>:</mo><msup><mn>2</mn><mn>36</mn></msup><mo>×</mo><mn>64</mn><mtext>位</mtext></mrow><annotation encoding="application/x-tex">\text{容量}: 2^{36}\times 64\text{位}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">容量</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">4</span><span class="mord text"><span class="mord cjk_fallback">位</span></span></span></span></span></p>
+</blockquote>
+<ul>
+<li><strong>存储器</strong>
+<ul>
+<li>核心
+<ul>
+<li><strong>存储矩阵</strong>(<strong>存储体</strong>)
+<ul>
+<li><strong>记忆单元</strong>(<strong>存储单元</strong>)
+<ul>
+<li>具有两种稳态表示01的物理器件</li>
+</ul>
+</li>
+<li>信息存取
+<ul>
+<li>编址(对存储单元编号)
+<ul>
+<li><strong>编址单位</strong>
+<ul>
+<li>具有相同地址的 存储元件 构成的一个单位 : <strong>存储字</strong>
+<ul>
+<li>按字节编址(现代计算机)–一个地址有1字节</li>
+<li>按字编址</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>访问过程
+<ol>
+<li>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>被访问单元</mtext><mo stretchy="false">(</mo><mtext>主存地址</mtext><mo stretchy="false">)</mo><mover><mo><mo>→</mo></mo><mrow><mi>C</mi><mi>P</mi><mi>U</mi></mrow></mover><mi>M</mi><mi>A</mi><mi>R</mi><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mover><mo><mo>→</mo></mo><mrow><mtext>地址线</mtext><mo stretchy="false">(</mo><mtext>单向</mtext><mo stretchy="false">)</mo></mrow></mover><mtext>地址寄存器</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>读</mtext></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo separator="true">,</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>读信号</mtext><mover><mo><mo>→</mo></mo><mtext>控制线</mtext></mover><mtext>读写控制电路</mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>读出的内容</mtext><mover><mo><mo>→</mo></mo><mtext>数据线</mtext></mover><mi>M</mi><mi>D</mi><mi>R</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr></mtable></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>写</mtext></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo separator="true">,</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>写信号</mtext><mover><mo><mo>→</mo></mo><mtext>控制线</mtext></mover><mtext>读写控制电路</mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>要写的信息</mtext><mover><mo><mo>→</mo></mo><mrow><mi>C</mi><mi>P</mi><mi>U</mi></mrow></mover><mi>M</mi><mi>D</mi><mi>R</mi><mover><mo><mo>→</mo></mo><mrow><mtext>数据线</mtext><mo stretchy="false">(</mo><mtext>双向</mtext><mo stretchy="false">)</mo></mrow></mover><mtext>写入选中的单元</mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr></mtable></mrow></mrow></mstyle></mtd></mtr></mtable></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\text{被访问单元}
+(\text{主存地址})\overset{CPU}{\rightarrow}
+MAR
+\begin{cases}
+   \overset{\text{地址线}(\text{单向})}{\rightarrow}
+   \text{地址寄存器}\\
+   \begin{cases}
+      \text{读} &amp; , 
+      \begin{cases}
+         \text{读信号}\overset{\text{控制线}}{\rightarrow} \text{读写控制电路} &amp; \\
+          \text{读出的内容}\overset{\text{数据线}}{\rightarrow}MDR &amp; 
+      \end{cases}\\
+      \text{写} &amp; ,
+      \begin{cases}
+         \text{写信号}\overset{\text{控制线}}{\rightarrow}\text{读写控制电路}&amp;  \\
+         \text{要写的信息}\overset{CPU}{\rightarrow} MDR\overset{\text{数据线}(\text{双向})}{\rightarrow}\text{写入选中的单元}&amp;
+      \end{cases}
+   \end{cases}
+\end{cases}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.3952010000000001em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord cjk_fallback">被访问单元</span></span><span class="mopen">(</span><span class="mord text"><span class="mord cjk_fallback">主存地址</span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">U</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:8.151343em;vertical-align:-3.8256715000000003em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.15002em;"><span style="top:-0.39998999999999985em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-0.39998999999999985em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.6999899999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.9999899999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.2999899999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.5999899999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.8999899999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.1999899999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.1500099999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.300009999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.600009999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.90001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.20001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.50001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.800009999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.100009999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.400019999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.65002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.3256715em;"><span style="top:-8.518538000000001em;"><span class="pstrut" style="height:5.4707365em;"></span><span class="mord"><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.27787em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.6528699999999996em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">地址线</span></span><span class="mopen mtight">(</span><span class="mord text mtight"><span class="mord cjk_fallback mtight">单向</span></span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord cjk_fallback">地址寄存器</span></span></span></span><span style="top:-4.6158015em;"><span class="pstrut" style="height:5.4707365em;"></span><span class="mord"><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.2500199999999997em;"><span style="top:-1.2999899999999998em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-1.2999899999999998em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.5999899999999998em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.8999899999999998em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.1999899999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.15001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.30001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.60001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.90001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.20001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.500019999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.75002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.4707365em;"><span style="top:-5.537071000000001em;"><span class="pstrut" style="height:3.8935355em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">读</span></span></span></span><span style="top:-2.3163345em;"><span class="pstrut" style="height:3.8935355em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">写</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.9707365em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.4707365em;"><span style="top:-5.537071000000001em;"><span class="pstrut" style="height:3.8935355em;"></span><span class="mord"><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.827201em;"><span style="top:-3.827201em;"><span class="pstrut" style="height:3.145201em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">读信号</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">控制线</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord cjk_fallback">读写控制电路</span></span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.145201em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">读出的内容</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">数据线</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.327201em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.827201em;"><span style="top:-3.827201em;"><span class="pstrut" style="height:3.145201em;"></span><span class="mord"></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.145201em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.327201em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span><span style="top:-2.3163345em;"><span class="pstrut" style="height:3.8935355em;"></span><span class="mord"><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8935355em;"><span style="top:-4.0262045em;"><span class="pstrut" style="height:3.27787em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">写信号</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">控制线</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord cjk_fallback">读写控制电路</span></span></span></span><span style="top:-2.3163345em;"><span class="pstrut" style="height:3.27787em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">要写的信息</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">U</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.27787em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.6528699999999996em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">数据线</span></span><span class="mopen mtight">(</span><span class="mord text mtight"><span class="mord cjk_fallback mtight">双向</span></span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord cjk_fallback">写入选中的单元</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3935355em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8935355em;"><span style="top:-4.0262045em;"><span class="pstrut" style="height:3.27787em;"></span><span class="mord"></span></span><span style="top:-2.3163345em;"><span class="pstrut" style="height:3.27787em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3935355em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.9707365em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.8256715000000003em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="4-主存储器与cpu的连接"><a class="markdownIt-Anchor" href="#4-主存储器与cpu的连接"></a> 4. 主存储器与CPU的连接</h1>
+<h2 id="41-连接原理"><a class="markdownIt-Anchor" href="#41-连接原理"></a> 4.1. 连接原理</h2>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-14-28-07.png" alt></p>
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>数据传输率</mtext><mover><mo><mo>→</mo></mo><mtext>正比</mtext></mover><mtext>数据总线位数</mtext><mo>×</mo><mtext>工作频率</mtext></mrow><annotation encoding="application/x-tex">\text{数据传输率}\overset{\text{正比}}{\rightarrow}\text{数据总线位数}\times\text{工作频率}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">数据传输率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">正比</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord cjk_fallback">数据总线位数</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">工作频率</span></span></span></span></span></li>
+</ol>
+<h2 id="42-主存容量的扩展"><a class="markdownIt-Anchor" href="#42-主存容量的扩展"></a> 4.2. 主存容量的扩展</h2>
+<h3 id="421-位扩展法"><a class="markdownIt-Anchor" href="#421-位扩展法"></a> 4.2.1. 位扩展法</h3>
+<ul>
+<li>使 数据位数 CPU的数据线数 相等</li>
+</ul>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-14-32-58.png" alt></p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>8</mn><mi>K</mi><mo>×</mo><mn>1</mn><mtext>位</mtext><mo>→</mo><mn>8</mn><mi>K</mi><mo>×</mo><mn>8</mn><mtext>位</mtext></mrow><annotation encoding="application/x-tex">8K\times 1\text{位}\rightarrow 8K\times 8\text{位}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">8</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord text"><span class="mord cjk_fallback">位</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">8</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">8</span><span class="mord text"><span class="mord cjk_fallback">位</span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>C</mi><mi>S</mi></mrow><mo stretchy="true">‾</mo></mover><mo separator="true">,</mo><mover accent="true"><mrow><mi>W</mi><mi>E</mi></mrow><mo stretchy="true">‾</mo></mover><mtext>连到一起</mtext></mrow><annotation encoding="application/x-tex">\overline{CS},\overline{WE}\text{连到一起}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0777700000000001em;vertical-align:-0.19444em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mord text"><span class="mord cjk_fallback">连到一起</span></span></span></span></span></li>
+</ul>
+<h3 id="422-字扩展法"><a class="markdownIt-Anchor" href="#422-字扩展法"></a> 4.2.2. 字扩展法</h3>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-15-20-25.png" alt></p>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-15-21-04.png" alt></p>
+<h2 id="43-字位同时扩展"><a class="markdownIt-Anchor" href="#43-字位同时扩展"></a> 4.3. 字位同时扩展</h2>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-15-24-37.png" alt></p>
+<h2 id="44-存储芯片的地址分配和片选"><a class="markdownIt-Anchor" href="#44-存储芯片的地址分配和片选"></a> 4.4. 存储芯片的地址分配和片选</h2>
+<ol>
+<li>CPU访问存储单元
+<ol>
+<li>步骤
+<ol>
+<li><strong>片选</strong>(选择存储芯片)
+<ol>
+<li>实现方式
+<ol>
+<li><strong>线选法</strong>
+<ol>
+<li>高地址线分别接至 各个存储器的 片选端</li>
+<li>&quot;0&quot;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>选中</li>
+<li><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-16-08-30.png" alt></li>
+<li>优点
+<ol>
+<li>不需要地址译码器,线路简单</li>
+</ol>
+</li>
+<li>缺点
+<ol>
+<li>地址空间不连续</li>
+<li>选片的地址线必须分时位低电平(否则不工作)</li>
+<li>不能充分利用系统存储空间, 地址资源浪费</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>译码片选法</strong>
+<ol>
+<li>高位地址<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mtext>地址译码器</mtext></mover></mrow><annotation encoding="application/x-tex">\overset{\text{地址译码器}}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">地址译码器</span></span></span></span></span></span></span></span></span></span></span></span></span>片选信号</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>字选</strong>(选中的芯片依地址码选择响应的存储单元)
+<ol>
+<li>功能
+<ol>
+<li>数据的存取</li>
+</ol>
+</li>
+<li>实现方式
+<ol>
+<li>CPU送出的N条地位地址线</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="45-存储器与cpu连接"><a class="markdownIt-Anchor" href="#45-存储器与cpu连接"></a> 4.5. 存储器与CPU连接</h2>
+<ol>
+<li>存储芯片 选择
+<ol>
+<li>类型(ROM/RAM)
+<ol>
+<li>ROM
+<ol>
+<li>存放
+<ol>
+<li>系统程序</li>
+<li>标准子程序</li>
+<li>各类常数</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>RAM
+<ol>
+<li>用户编程</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数量
+<ol>
+<li>同时
+<ol>
+<li>连线尽量简单,方便</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>地址线 选择
+<ol>
+<li>字选
+<ol>
+<li>CPU地址线地位
+<ol>
+<li>译码
+<ol>
+<li>芯片的片内逻辑</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>CPU地址线高位
+<ol>
+<li>译码
+<ol>
+<li>外接译码器</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据线 的 连接
+<ol>
+<li>CPU的数据线数与存储线片的数据线数
+<ol>
+<li>相等
+<ol>
+<li>直接相连</li>
+</ol>
+</li>
+<li>不相等
+<ol>
+<li>对存储芯片扩位</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>读/写命令线
+<ol>
+<li>分类
+<ol>
+<li>一条
+<ol>
+<li>高电平读</li>
+<li>低电平写</li>
+</ol>
+</li>
+<li>两条 (低电平有效)
+<ol>
+<li>读 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>R</mi><mi>D</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{RD}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span>
+<ol>
+<li>连接存储芯片允许读控制端</li>
+</ol>
+</li>
+<li>写 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>W</mi><mi>E</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{WE}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span>
+<ol>
+<li>连接存储芯片允许写控制端</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>片选线
+<ol>
+<li>选片
+<ol>
+<li>取决于
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>C</mi><mi>S</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{CS}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span>能否收到 片选有效信号
+<ol>
+<li>片选有效信号
+<ol>
+<li>相关
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>M</mi><mi>R</mi><mi>E</mi><mi>Q</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{MREQ}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0777700000000001em;vertical-align:-0.19444em;"></span><span class="mord overline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault">Q</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span></span></span>:CPU的访存控制信号(底)
+<ol>
+<li>访问IO,(高),不要求存储器工作</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="5-双端口ram和多模块存储器"><a class="markdownIt-Anchor" href="#5-双端口ram和多模块存储器"></a> 5. 双端口RAM和多模块存储器</h1>
+<h2 id="51-双端口ram"><a class="markdownIt-Anchor" href="#51-双端口ram"></a> 5.1. 双端口RAM</h2>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-17-10-36.png" alt></p>
+<ol>
+<li>数据冲突
+<ol>
+<li>错误种类
+<ol>
+<li>无错误
+<ol>
+<li>不同时 同一地址存取</li>
+<li>同时 同一地址读</li>
+</ol>
+</li>
+<li>写入错误
+<ol>
+<li>同时 同一地址写</li>
+</ol>
+</li>
+<li>读出错误
+<ol>
+<li>同时 同一地址 一个写 一个读</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>解决
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>B</mi><mi>U</mi><mi>S</mi><mi>Y</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{BUSY}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.10903em;">U</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span> &quot;忙&quot;信号置为零
+<ol>
+<li>延迟访问</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="52-多模块存储器"><a class="markdownIt-Anchor" href="#52-多模块存储器"></a> 5.2. 多模块存储器</h2>
+<ol>
+<li>作用
+<ol>
+<li>提高访存速度</li>
+</ol>
+</li>
+<li>分类
+<ol>
+<li><strong>单体多字存储器</strong>
+<ol>
+<li>特点
+<ol>
+<li>一个存储体</li>
+<li>一个存储单元m个字</li>
+<li>总线宽度m个字</li>
+<li>地址顺序排列&amp;处于同一存储单元</li>
+</ol>
+</li>
+<li>存取方式
+<ol>
+<li>一个存取周期, 同一地址取出m条指令</li>
+<li>每隔 1/m 存取周期, CPU向主存取一条指令</li>
+</ol>
+</li>
+<li>优点
+<ol>
+<li>增加 存储器带宽</li>
+<li>提高单体存储器 运行速度</li>
+</ol>
+</li>
+<li>缺点
+<ol>
+<li>指令和数据在主存必须连续存放
+<ol>
+<li>否则 效果不明显
+<ol>
+<li>例如
+<ol>
+<li>转移指令</li>
+<li>操作数不连续存放</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>多体并行存储器</strong>
+<ol>
+<li>特点
+<ol>
+<li>各模块独立读写控制电路,地址寄存器,数据寄存器</li>
+<li>并行工作/交叉工作</li>
+</ol>
+</li>
+<li>分类
+<ol>
+<li><strong>高位交叉编址</strong>
+<ol>
+<li>不能提高存储器的吞吐率(仍是<strong>顺序存储器</strong>)
+<ol>
+<li>CPU总是顺序访问存储模块
+<ol>
+<li>访问连续主存块
+<ol>
+<li>现在一个模块内访问</li>
+<li>完后访问下一个</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>存储模块不能被并行访问</li>
+</ol>
+</li>
+<li>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-02-17-39-48.png" width="800px">
+</li>
+</ol>
+</li>
+<li><strong>低位交叉编址</strong>
+<ol>
+<li>模块按照模m交叉编址
+<ol>
+<li>模块号 = 单元地址 % m
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>:</mo><mn>0</mn><mo separator="true">,</mo><mi>m</mi><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi>m</mi><mi mathvariant="normal">单</mi><mi mathvariant="normal">元</mi></mrow><annotation encoding="application/x-tex">M_0: 0,m,\cdots,(k-1)m单元</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">单</span><span class="mord cjk_fallback">元</span></span></span></span></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-14-15-16.png" alt></li>
+<li><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-14-34-38.png" alt>
+<ol>
+<li>存储器交叉模块数应
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⩾</mo><mi>m</mi><mo>=</mo><mi>T</mi><mi mathvariant="normal">/</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">\geqslant m=T/r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7733399999999999em;vertical-align:-0.13667em;"></span><span class="mrel amsrm">⩾</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span></li>
+<li>T: 模块存取一个字周期</li>
+<li>r: 总线传输周期</li>
+<li>存取m个字
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mi>T</mi><mo>+</mo><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">t_1=T+(m-1)r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="6-高速缓冲存储器"><a class="markdownIt-Anchor" href="#6-高速缓冲存储器"></a> 6. 高速缓冲存储器</h1>
+<ul>
+<li>单纯依靠并行主存<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>提高主存系统的频宽有限
+<ul>
+<li>程序的转移概率不会很低</li>
+<li>数据分布的离散型较大</li>
+<li>因此
+<ul>
+<li>从系统结构上改进
+<ul>
+<li><strong>存储体系</strong>
+<ul>
+<li>Cache-主存 层次</li>
+<li>主存-辅存 层次</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="61-程序访问的局部性原理"><a class="markdownIt-Anchor" href="#61-程序访问的局部性原理"></a> 6.1. 程序访问的局部性原理</h2>
+<ol>
+<li>程序访问的局部性
+<ol>
+<li>分类
+<ol>
+<li>时间局部性
+<ol>
+<li>程序存在循环
+<ol>
+<li>未来用的很可能是现在用的</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>空间局部性
+<ol>
+<li>指令通常顺序存放,执行</li>
+<li>数据一般簇聚存储(向量,数组)
+<ol>
+<li>未来用的很可能存储空间临近</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>应用
+<ol>
+<li><strong>高速缓冲技术</strong>
+<ol>
+<li>正在使用的部分<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mtext>放入</mtext></mover></mrow><annotation encoding="application/x-tex">\overset{\text{放入}}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">放入</span></span></span></span></span></span></span></span></span></span></span></span></span>Cache</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="62-cache的基本工作原理"><a class="markdownIt-Anchor" href="#62-cache的基本工作原理"></a> 6.2. Cache的基本工作原理</h2>
+<p><img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-15-22-24.png" alt></p>
+<ol>
+<li>构成
+<ol>
+<li>SRAM</li>
+</ol>
+</li>
+<li>划分
+<ol>
+<li>Cache &amp; 主存 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mtext>相等</mtext></mover></mrow><annotation encoding="application/x-tex">\overset{\text{相等}}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">相等</span></span></span></span></span></span></span></span></span></span></span></span></span>块</li>
+<li>Cache块(行)
+<ol>
+<li>组成
+<ol>
+<li>若干字节</li>
+</ol>
+</li>
+<li>块长(Cache行长)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>过程
+<ol>
+<li>读
+<ol>
+<li>CPU发出读请求</li>
+<li>Cache命中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mtext>转换</mtext></mover></mrow><annotation encoding="application/x-tex">\overset{\text{转换}}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1452010000000001em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.1452010000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">转换</span></span></span></span></span></span></span></span></span></span></span></span></span>Cache地址</li>
+<li>不命中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>访问主存 &amp; 此字所在块一并存入Cache(可能替换)</li>
+<li>特殊
+<ol>
+<li>Cache和内存同时访问
+<ol>
+<li>Cache访问到了就停止对内存的访问</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>写
+<ol>
+<li>Cache和内存种的内容不一致
+<ol>
+<li>写策略问题
+<ol>
+<li>全写法</li>
+<li>写回法</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>交换单位
+<ol>
+<li>CPU-Cache: 字</li>
+<li>Cache-主存: 块</li>
+</ol>
+</li>
+<li>命中率
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mo>=</mo><msub><mi>N</mi><mi>c</mi></msub><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><msub><mi>N</mi><mi>c</mi></msub><mo>+</mo><msub><mi>N</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H=N_{c}/(N_{c}+N_{m})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>a</mi></msub><mo>=</mo><mi>H</mi><msub><mi>t</mi><mi>c</mi></msub><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>H</mi><mo stretchy="false">)</mo><msub><mi>t</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">T_{a}=Ht_{c}+(1-H)t_{m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mclose">)</span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mi>m</mi></msub><mo>:</mo><mtext>未命中访问时间</mtext></mrow><annotation encoding="application/x-tex">t_{m}: \text{未命中访问时间}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">未命中访问时间</span></span></span></span></span></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="63-cache和主存的映射方式"><a class="markdownIt-Anchor" href="#63-cache和主存的映射方式"></a> 6.3. Cache和主存的映射方式</h2>
+<h3 id="631-直接映射"><a class="markdownIt-Anchor" href="#631-直接映射"></a> 6.3.1. 直接映射</h3>
+<ol>
+<li>关系
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi><mo>=</mo><mi>i</mi><mspace></mspace><mspace width="0.6666666666666666em"><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><msup><mn>2</mn><mi>c</mi></msup></mspace></mrow><annotation encoding="application/x-tex">j=i\mod 2^{c}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6666666666666666em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span></span></span></span></span></span></span></span>
+<ol>
+<li>j: Cache块号/行号</li>
+<li>i: 主存的块号</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>c</mi></msup></mrow><annotation encoding="application/x-tex">2^{c}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span></span></span></span></span></span></span></span>: Cache总块数</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>优点
+<ol>
+<li>实现简单</li>
+</ol>
+</li>
+<li>缺点
+<ol>
+<li>不够灵活</li>
+<li>块冲突率最高</li>
+<li>空间利用率最低</li>
+</ol>
+</li>
+<li>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-17-16-05.png" width="400px">
+</li>
+<li>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-17-16-45.png" width="700px">
+</li>
+<li>过程
+<ol>
+<li>c位<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>Cache行</li>
+<li>比较 Cache行中的标记<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>t位标记
+<ol>
+<li>相等&amp;&amp;有效位=1 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>命中</li>
+<li>否则
+<ol>
+<li>不命中
+<ol>
+<li>CPU从内存读信息<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>Cache行</li>
+<li>&amp;&amp;有效位=1</li>
+<li>&amp;&amp;标记=地址中的高t位</li>
+<li>&amp;&amp;内容<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>CPU</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="632-全相联映射"><a class="markdownIt-Anchor" href="#632-全相联映射"></a> 6.3.2. 全相联映射</h3>
+<ol>
+<li>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-18-19-31.png" width="700px">
+</li>
+<li>
+<img src="/2020/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3/3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/2020-06-03-18-24-06.png" width="400px">
+</li>
+<li>特点
+<ol>
+<li>需要比较所有标记</li>
+</ol>
+</li>
+<li>优点
+<ol>
+<li>比较灵活</li>
+<li>冲突概率低</li>
+<li>空间利用率高</li>
+<li>命中率高</li>
+</ol>
+</li>
+<li>缺点
+<ol>
+<li>标记比较速度慢</li>
+<li>实现成本较高
+<ol>
+<li>相联存储器<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mo><mo>→</mo></mo><mrow></mrow></mover></mrow><annotation encoding="application/x-tex">\overset{}{\rightarrow}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66687em;vertical-align:0em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66687em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">→</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span></span></span></span>地址映射
+<ol>
+<li>昂贵</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="组相联映射"><a class="markdownIt-Anchor" href="#组相联映射"></a> 组相联映射</h3>
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 底部信息 -->
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by Swithun Liu using
+      <a href="http://hexo.io">hexo blog framework</a>.
+    </div>
+  </div>
+
+
+  
+  <!-- scripts list from theme config.yml -->
+  
+  <script src="/lib/highlight/highlight.pack.js"></script>
+  
+  <script src="/lib/jquery-3.4.1.min.js"></script>
+  
+  <script src="/lib/jquery.pjax.js"></script>
+  
+  <script src="/js/again.js"></script>
+  
+  
+
+<footer>
+
+  <!-- 高亮脚本启动 -->
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'dark'});
+    }
+  </script>
+
+
+</footer><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+
+</html>
