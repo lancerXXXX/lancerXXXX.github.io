@@ -1,5 +1,7 @@
 body {
-  --bgcolors: rgba(45,52,59,0.8);
+  --bgcolors: rgba(52,61,70,0.8);
+  --contentcolor: #343d46;
+  --asidenor: #999;
   margin: 0;
   color: #a8a8a8;
   display: flex;
@@ -17,14 +19,15 @@ body {
   z-index: 10;
   color: #008000;
   top: 0;
-  width: 100%;
   border-radius: 10px;
   display: flex;
   justify-content: flex-end;
   height: 37px;
   background: var(--bgcolors);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(30px);
   box-shadow: 3px 3px 8px #121518, -3px -3px 8px #48535e;
+  left: 15px;
+  right: 15px;
 }
 #main {
   color: #b9b9b9;
@@ -57,7 +60,7 @@ aside ul li {
   list-style: none;
 }
 aside ul li a {
-  color: #999;
+  color: var(--asidenor);
   text-decoration: none;
 }
 aside ul li a:hover {
@@ -115,7 +118,8 @@ aside #toc a:hover {
 #content-outer {
   width: 80%;
   border-radius: 10px;
-  background: var(--bgcolors);
+  background-color: var(--bgcolors);
+  background-color: #343d46;
   box-shadow: 1px 1px 2px #16191c, -1px -1px 2px #444f5a;
 }
 #content-inner {
@@ -152,8 +156,8 @@ body,
   bottom: 0;
   left: 0;
   z-index: -1;
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
 }
 .glass2 {
   position: relative;
@@ -166,8 +170,8 @@ body,
   bottom: 0;
   left: 0;
   z-index: -1;
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
 }
 #bottom-outer {
   width: 100%;
@@ -194,18 +198,17 @@ img {
   max-width: 90%;
 }
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 /* 这是针对缺省样式 (必须的) */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: #224a53;
-  box-shadow: inset 3px 3px 5px #12272c, inset -3px -3px 5px #469bae;
+  background: var(--contentcolor);
 }
 /* 滚动条的滑轨背景颜色 */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: linear-gradient(145deg, #285762, #2f6875);
+  background: linear-gradient(145deg, var(--contentcolor), #0ff);
   box-shadow: 3px 3px 5px #12272c;
 }
 /* 滑块颜色 */
